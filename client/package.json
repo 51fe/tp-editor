@@ -1,0 +1,20 @@
+{
+  "name": "tpeditor",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint src/**/*.js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "canvg": "^2.0.0"
+  }
+}

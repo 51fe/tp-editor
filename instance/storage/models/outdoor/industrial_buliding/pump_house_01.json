@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/outdoor/industrial_buliding/pump_house_01.obj",
+  "mtl": "assets/objs/outdoor/industrial_buliding/pump_house_01.mtl",
+  "image": "",
+  "prefix": "assets/objs/outdoor/industrial_buliding/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    1,
+    1,
+    1
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "v": "6.0.9",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "previewURL": "display-temperature.html"
+  },
+  "d": [
+    {
+      "c": "ht.Block",
+      "i": 387,
+      "p": {
+        "displayName": "M001",
+        "position": {
+          "x": 105.5,
+          "y": 220.36902
+        },
+        "width": 79,
+        "height": 224
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 388,
+      "p": {
+        "displayName": "节点",
+        "parent": {
+          "__i": 387
+        },
+        "dataBindings": {
+          "a": {
+            "pb.fore.color": {
+              "id": "M001",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            },
+            "pb.value": {
+              "id": "M001",
+              "func": "__ht__function(value) {\n    return (value || 0) / 100;\n}"
+            }
+          }
+        },
+        "image": "symbols/basic/vProgressBar.json",
+        "position": {
+          "x": 105.5,
+          "y": 198.36902
+        },
+        "width": 52,
+        "height": 180
+      },
+      "a": {
+        "pb.value.visible": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 389,
+      "p": {
+        "parent": {
+          "__i": 387
+        },
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "M001",
+              "func": "__ht__function(value) {\n    return (value || 0) + ' °C';\n}"
+            },
+            "text.color": {
+              "id": "M001",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            }
+          }
+        },
+        "position": {
+          "x": 105.5,
+          "y": 311.86902
+        },
+        "width": 79,
+        "height": 41
+      },
+      "s": {
+        "text": "0 °C",
+        "text.align": "center",
+        "text.shadow": true
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 390,
+      "p": {
+        "displayName": "M002",
+        "position": {
+          "x": 203.08711,
+          "y": 220.36902
+        },
+        "width": 79,
+        "height": 224
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 391,
+      "p": {
+        "displayName": "节点",
+        "parent": {
+          "__i": 390
+        },
+        "dataBindings": {
+          "a": {
+            "pb.fore.color": {
+              "id": "M002",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            },
+            "pb.value": {
+              "id": "M002",
+              "func": "__ht__function(value) {\n    return (value || 0) / 100;\n}"
+            }
+          }
+        },
+        "image": "symbols/basic/vProgressBar.json",
+        "position": {
+          "x": 203.08711,
+          "y": 198.36902
+        },
+        "width": 52,
+        "height": 180
+      },
+      "a": {
+        "pb.value.visible": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 392,
+      "p": {
+        "parent": {
+          "__i": 390
+        },
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "M002",
+              "func": "__ht__function(value) {\n    return (value || 0) + ' °C';\n}"
+            },
+            "text.color": {
+              "id": "M002",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            }
+          }
+        },
+        "position": {
+          "x": 203.08711,
+          "y": 311.86902
+        },
+        "width": 79,
+        "height": 41
+      },
+      "s": {
+        "text": "0 °C",
+        "text.align": "center",
+        "text.shadow": true
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 393,
+      "p": {
+        "displayName": "M003",
+        "position": {
+          "x": 300.67422,
+          "y": 220.36902
+        },
+        "width": 79,
+        "height": 224
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 394,
+      "p": {
+        "displayName": "节点",
+        "parent": {
+          "__i": 393
+        },
+        "dataBindings": {
+          "a": {
+            "pb.fore.color": {
+              "id": "M003",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            },
+            "pb.value": {
+              "id": "M003",
+              "func": "__ht__function(value) {\n    return (value || 0) / 100;\n}"
+            }
+          }
+        },
+        "image": "symbols/basic/vProgressBar.json",
+        "position": {
+          "x": 300.67422,
+          "y": 198.36902
+        },
+        "width": 52,
+        "height": 180
+      },
+      "a": {
+        "pb.value.visible": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 395,
+      "p": {
+        "parent": {
+          "__i": 393
+        },
+        "dataBindings": {
+          "s": {
+            "text": {
+              "id": "M003",
+              "func": "__ht__function(value) {\n    return (value || 0) + ' °C';\n}"
+            },
+            "text.color": {
+              "id": "M003",
+              "func": "__ht__function(value) {\n    if (value > 80) return 'red';\n    if (value > 60) return 'orange';\n    if (value > 40) return 'yellow';\n    return '#34BCFB';\n}"
+            }
+          }
+        },
+        "position": {
+          "x": 300.67422,
+          "y": 311.86902
+        },
+        "width": 79,
+        "height": 41
+      },
+      "s": {
+        "text": "0 °C",
+        "text.align": "center",
+        "text.shadow": true
+      }
+    }
+  ]
+}

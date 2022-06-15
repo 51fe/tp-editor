@@ -1,0 +1,173 @@
+{
+  "modified": "Tue Sep 10 2019 21:25:44 GMT+0800 (中国标准时间)",
+  "width": 128,
+  "height": 128,
+  "comps": [
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        0,
+        -1,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        0,
+        127,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rotation": 1.5708,
+      "rect": [
+        -64,
+        63,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rotation": 1.5708,
+      "rect": [
+        64,
+        63,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        0,
+        -1,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        0,
+        127,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rotation": 1.5708,
+      "rect": [
+        -64,
+        63,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "oval",
+      "background": "rgb(49,133,235)",
+      "borderColor": "#979797",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(131,186,252)",
+      "shadow": true,
+      "shadowColor": "rgb(49,133,235)",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rotation": 1.5708,
+      "rect": [
+        64,
+        63,
+        128,
+        2
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(49,140,232,0.28)",
+      "borderColor": "#979797",
+      "gradient": "linear.south",
+      "gradientColor": "rgba(34,79,156,0.00)",
+      "shadowColor": "#32D3EB",
+      "shadowBlur": 16,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rotation": 3.14159,
+      "rect": [
+        0,
+        -1,
+        128,
+        128
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3221 @@
+{
+  "v": "7.0.1-dev23",
+  "p": {
+    "background": "rgb(61,61,61)",
+    "envmap": "assets/map/environment/indoor_01.jpg",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "bloom": {
+        "enable": false,
+        "strength": 0.36,
+        "threshold": 0.18,
+        "radius": 0.4,
+        "overrideAlpha": false
+      },
+      "dof": {
+        "enable": true,
+        "aperture": 0.016,
+        "maxblur": 1,
+        "image": "assets/vague/Axialshift_01.png"
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 9193,
+      "p": {
+        "displayName": "环境球",
+        "position": {
+          "x": -650,
+          "y": -200
+        },
+        "width": 9000,
+        "height": 9000,
+        "tall": 9000
+      },
+      "s": {
+        "shape3d": "sphere",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.reverse.flip": true,
+        "shape3d.image": "assets/map/skybox/dusk_01.jpg",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9194,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": 252.31955,
+          "y": -728.62769
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 53.68289
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9195,
+      "p": {
+        "parent": {
+          "__i": 9194
+        },
+        "host": {
+          "__i": 9194
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": 259.53399,
+          "y": -736.3643
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 53.68289
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9196,
+      "p": {
+        "parent": {
+          "__i": 9194
+        },
+        "host": {
+          "__i": 9194
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": 250.48468,
+          "y": -726.19155
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 189.06542
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9197,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": -501.76841,
+          "y": -815.91489
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 81.25368
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9198,
+      "p": {
+        "parent": {
+          "__i": 9197
+        },
+        "host": {
+          "__i": 9197
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -494.55397,
+          "y": -823.6515
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 81.25368
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9199,
+      "p": {
+        "parent": {
+          "__i": 9197
+        },
+        "host": {
+          "__i": 9197
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -503.60328,
+          "y": -813.47875
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 216.63621
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9200,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": -673.32711,
+          "y": -624.97245
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 40.22155
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9201,
+      "p": {
+        "parent": {
+          "__i": 9200
+        },
+        "host": {
+          "__i": 9200
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -666.11267,
+          "y": -632.70906
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 40.22155
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9202,
+      "p": {
+        "parent": {
+          "__i": 9200
+        },
+        "host": {
+          "__i": 9200
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -675.16198,
+          "y": -622.53631
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 175.60408
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9203,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": -313.24642,
+          "y": -758.98807
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 195.12882
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9204,
+      "p": {
+        "parent": {
+          "__i": 9203
+        },
+        "host": {
+          "__i": 9203
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -306.03198,
+          "y": -766.72468
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 195.12882
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9205,
+      "p": {
+        "parent": {
+          "__i": 9203
+        },
+        "host": {
+          "__i": 9203
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -315.08129,
+          "y": -756.55193
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 330.51135
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9206,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": 63.79756,
+          "y": -787.35793
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 21.39256
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9207,
+      "p": {
+        "parent": {
+          "__i": 9206
+        },
+        "host": {
+          "__i": 9206
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": 71.012,
+          "y": -795.09454
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 21.39256
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9208,
+      "p": {
+        "parent": {
+          "__i": 9206
+        },
+        "host": {
+          "__i": 9206
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": 61.96269,
+          "y": -784.92179
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 156.77509
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9209,
+      "p": {
+        "displayName": "风机",
+        "rotation": 6.77188,
+        "position": {
+          "x": -124.72443,
+          "y": -787.35793
+        },
+        "anchorElevation": 0,
+        "width": 86.8401,
+        "height": 86.85843,
+        "tall": 1,
+        "elevation": 62.19125
+      },
+      "s": {
+        "all.color": "rgba(21,65,110,0.69)",
+        "all.transparent": true,
+        "all.reverse.flip": true,
+        "shape3d": "cylinder",
+        "shape3d.opacity": 1,
+        "shape3d.side": 6,
+        "shape3d.color": "#32D3EB",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.top.color": "rgba(53,153,219,0.25)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9210,
+      "p": {
+        "parent": {
+          "__i": 9209
+        },
+        "host": {
+          "__i": 9209
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -117.50999,
+          "y": -795.09454
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 62.19125
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_body_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9211,
+      "p": {
+        "parent": {
+          "__i": 9209
+        },
+        "host": {
+          "__i": 9209
+        },
+        "rotation": 0.75049,
+        "position": {
+          "x": -126.5593,
+          "y": -784.92179
+        },
+        "anchor": {
+          "x": 0.66,
+          "y": 0
+        },
+        "anchorElevation": 0.51,
+        "scale": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "scaleTall": 1.5,
+        "elevation": 197.57378
+      },
+      "s": {
+        "shape3d": "models/equipment/power/wind_powe_blade_01.json",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9212,
+      "p": {
+        "rotation": 1.70093,
+        "position": {
+          "x": -399.49822,
+          "y": -773.61095
+        },
+        "anchorElevation": 0,
+        "scaleTall": 3.51688,
+        "width": 839.01373,
+        "height": 762.19206
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/hill_01.json",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.3,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9213,
+      "p": {
+        "rotation": 1.96778,
+        "position": {
+          "x": 17.70496,
+          "y": -1138.275
+        },
+        "anchor": {
+          "x": 0.96181,
+          "y": 0.95271
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "scaleTall": 2.58758,
+        "width": 629.74943,
+        "height": 1345.07388
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/hill_01.json",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.3,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9214,
+      "p": {
+        "rotation": 2.11605,
+        "position": {
+          "x": -607.86102,
+          "y": -1352.77073
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.47207
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "scaleTall": 2.58758,
+        "width": 500.25051,
+        "height": 656.95447
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/hill_01.json",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.1,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9215,
+      "p": {
+        "rotation": 1.39392,
+        "position": {
+          "x": 280.76798,
+          "y": -1677.48744
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.47207
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "scaleTall": 4.6778,
+        "width": 1420.29201,
+        "height": 1774.60564
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/hill_01.json",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.1,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9216,
+      "p": {
+        "position": {
+          "x": -604.8474,
+          "y": -268.2188
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/plant_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9217,
+      "p": {
+        "position": {
+          "x": 971.24074,
+          "y": 461.23484
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 4,
+          "y": 4
+        },
+        "scaleTall": 4,
+        "width": 54.3993,
+        "height": 46.45596,
+        "tall": 24.726
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/market_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9218,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 992.74151,
+          "y": 335.48454
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9219,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 1082.79319,
+          "y": 335.48454
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9220,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 449.19985,
+          "y": 258.62833
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": -1.4,
+          "y": 1.4
+        },
+        "scaleTall": 0.64,
+        "width": 122.48168,
+        "height": 50.9992
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/multi_storied_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9221,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -35.82381,
+          "y": -52.45503
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9222,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 540.06566,
+          "y": -62.06901
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9223,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 630.11734,
+          "y": -62.06901
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9224,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 720.16902,
+          "y": -62.06901
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9225,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 540.06566,
+          "y": -132.20075
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9226,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 630.11734,
+          "y": -132.20075
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9227,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 720.16902,
+          "y": -132.20075
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9228,
+      "p": {
+        "position": {
+          "x": 756.45951,
+          "y": 325.59088
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 32.16155,
+        "height": 32.04108,
+        "tall": 23.82
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9229,
+      "p": {
+        "position": {
+          "x": 832.09806,
+          "y": 325.59088
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 32.16155,
+        "height": 32.04108,
+        "tall": 23.82
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9230,
+      "p": {
+        "position": {
+          "x": 908.80608,
+          "y": 325.59088
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 32.16155,
+        "height": 32.04108,
+        "tall": 23.82
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9231,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 870.45207,
+          "y": 124.44138
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9232,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 960.50375,
+          "y": 124.44138
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9233,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 1050.55543,
+          "y": 124.44138
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9234,
+      "p": {
+        "position": {
+          "x": 940.96762,
+          "y": 226.58725
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 32.16155,
+        "height": 32.04108,
+        "tall": 23.82
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9235,
+      "p": {
+        "position": {
+          "x": 1017.67564,
+          "y": 226.58725
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 32.16155,
+        "height": 32.04108,
+        "tall": 23.82
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9236,
+      "p": {
+        "position": {
+          "x": -604.8474,
+          "y": -7.05942
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/plant_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9237,
+      "p": {
+        "position": {
+          "x": -467.56293,
+          "y": 254.09996
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/plant_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9238,
+      "p": {
+        "position": {
+          "x": 19.61145,
+          "y": -385.10086
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 4,
+          "y": 4
+        },
+        "scaleTall": 4,
+        "elevation": 3.97793
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/power_station_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9239,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -248.57015,
+          "y": -385.10449
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/power_station_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9240,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": 155.53408,
+          "y": -135.3056
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 55.23372,
+        "height": 34.50191
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9241,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -205.82615,
+          "y": -184.99168
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9242,
+      "p": {
+        "position": {
+          "x": -34.97371,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9243,
+      "p": {
+        "position": {
+          "x": 68.01389,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9244,
+      "p": {
+        "position": {
+          "x": 171.00149,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9245,
+      "p": {
+        "position": {
+          "x": 120.38449,
+          "y": 256.03796
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/art_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9246,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -46.4691,
+          "y": 279.04804
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 38.77902,
+        "height": 25.76358
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9247,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -203.92378,
+          "y": -71.34813
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9248,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -367.7883,
+          "y": -184.99168
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9249,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -367.7883,
+          "y": -71.80917
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9250,
+      "p": {
+        "position": {
+          "x": -365.88593,
+          "y": 83.22852
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496,
+        "tall": 12.443
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_04.json",
+        "shape3d.blend": null,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9251,
+      "p": {
+        "position": {
+          "x": -203.92378,
+          "y": 196.41103
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496,
+        "tall": 12.443
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_04.json",
+        "shape3d.blend": null,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9252,
+      "p": {
+        "position": {
+          "x": -203.92378,
+          "y": 83.22852
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 40.369,
+        "height": 25.496,
+        "tall": 12.443
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_04.json",
+        "shape3d.blend": null,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9253,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 52.6823,
+          "y": -52.45503
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 40.369,
+        "height": 25.496
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9254,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": -46.76046,
+          "y": 185.67556
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9255,
+      "p": {
+        "position": {
+          "x": -1.31325,
+          "y": -154.21039
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 4,
+          "y": 4
+        },
+        "scaleTall": 4,
+        "width": 37.43982,
+        "height": 31.97289,
+        "tall": 15.726
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/market_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9256,
+      "p": {
+        "position": {
+          "x": 383.32451,
+          "y": -135.28599
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/water_processing_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9257,
+      "p": {
+        "position": {
+          "x": 377.98451,
+          "y": 98.14972
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.4,
+          "y": 1.4
+        },
+        "scaleTall": 1.4
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/multi_storied_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9258,
+      "p": {
+        "position": {
+          "x": 595.23192,
+          "y": 253.12389
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/place_interest_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9259,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 340.00853,
+          "y": 258.62833
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": -1.4,
+          "y": 1.4
+        },
+        "scaleTall": 0.64,
+        "width": 122.48168,
+        "height": 98.1486
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/multi_storied_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9260,
+      "p": {
+        "position": {
+          "x": 544.62592,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9261,
+      "p": {
+        "position": {
+          "x": 647.61352,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9262,
+      "p": {
+        "position": {
+          "x": 750.60112,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9263,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 797.43731,
+          "y": 208.69895
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 51.51219,
+        "height": 34.2231
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_02.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9264,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 870.45207,
+          "y": 51.5561
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9265,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 960.50375,
+          "y": 51.5561
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9266,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 1050.55543,
+          "y": 51.5561
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 38.35395,
+        "height": 22.14732,
+        "elevation": -2.75981
+      },
+      "s": {
+        "shape3d": "models/outdoor/business/house_03.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9267,
+      "p": {
+        "position": {
+          "x": -604.19911,
+          "y": 299.58415
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.3,
+          "y": 0.3
+        },
+        "scaleTall": 0.3,
+        "width": 129,
+        "height": 788,
+        "tall": 208
+      },
+      "s": {
+        "shape3d": "models/traffic/water/freighter_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9268,
+      "p": {
+        "position": {
+          "x": -757.89314,
+          "y": -7.05942
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.3,
+          "y": 0.3
+        },
+        "scaleTall": 0.3,
+        "width": 129,
+        "height": 788,
+        "tall": 208
+      },
+      "s": {
+        "shape3d": "models/traffic/water/freighter_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9269,
+      "p": {
+        "position": {
+          "x": -757.89314,
+          "y": -275.99783
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.3,
+          "y": 0.3
+        },
+        "scaleTall": 0.3,
+        "width": 129,
+        "height": 788,
+        "tall": 208
+      },
+      "s": {
+        "shape3d": "models/traffic/water/freighter_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9270,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 1007.23134,
+          "y": 0.20953
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9271,
+      "p": {
+        "position": {
+          "x": -109.76786,
+          "y": -164.62431
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 85.47688,
+        "elevation": -0.48151
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9272,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": -286.42418,
+          "y": 0.20927
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 99.55061
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9273,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": -509.19772,
+          "y": 80.20568
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": -2
+        },
+        "scaleTall": 2,
+        "width": 63
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9274,
+      "p": {
+        "position": {
+          "x": -109.76786,
+          "y": -256.82317
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/4_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9275,
+      "p": {
+        "position": {
+          "x": 245.79564,
+          "y": 0.10309
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/4_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9276,
+      "p": {
+        "position": {
+          "x": -109.33612,
+          "y": 0.10309
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/4_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9277,
+      "p": {
+        "position": {
+          "x": -423.23825,
+          "y": -212.51751
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9278,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 201.84092,
+          "y": -214.4908
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9279,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": -65.38156,
+          "y": 344.57303
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9280,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 780.44789,
+          "y": 429.85599
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9281,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 868.51679,
+          "y": 553.18801
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/bend_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9282,
+      "p": {
+        "position": {
+          "x": -109.33612,
+          "y": 180.52613
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 103.07452
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9283,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -624.73042,
+          "y": -138.11236
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 81.79393
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9284,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 68.86316,
+          "y": 0.20927
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 99.27446
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9285,
+      "p": {
+        "position": {
+          "x": -109.76786,
+          "y": -428.6651
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 101.13977
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9286,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 53.72791,
+          "y": -256.31242
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 85.17095
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9287,
+      "p": {
+        "position": {
+          "x": 245.79564,
+          "y": -134.70037
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 85.47687,
+        "elevation": -0.48151
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9288,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -275.7101,
+          "y": -256.31241
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 87.05187
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9289,
+      "p": {
+        "position": {
+          "x": 245.79564,
+          "y": 192.5336
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 115.082
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9290,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 421.53262,
+          "y": 0.20917
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9291,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 145.2272,
+          "y": 143.20557
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 76.76229
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9292,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -8.20111,
+          "y": 143.20557
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 76.91334
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9293,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 5.0711,
+          "y": 203.90988
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 54.31968
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9294,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 82.38623,
+          "y": 386.55395
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 19.68504,
+        "height": 85.38078
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9295,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 5.0711,
+          "y": 312.54926
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 54.31968
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9296,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": -435.43954,
+          "y": 0.20927
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/3_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9297,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": -495.05996,
+          "y": -137.63911
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/3_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9298,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 246.20513,
+          "y": 357.09698
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/3_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9299,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 421.53262,
+          "y": 386.8926
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9300,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 618.38309,
+          "y": 386.8926
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9301,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 618.38309,
+          "y": 0.20953
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9302,
+      "p": {
+        "rotation": 1.5708,
+        "position": {
+          "x": 810.38081,
+          "y": 0.20953
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9303,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 816.76535,
+          "y": 83.2607
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 63.36648
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9304,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 763.22826,
+          "y": 279.48451
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9305,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 704.98599,
+          "y": 177.99643
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 37.79201
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9306,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 704.98599,
+          "y": 252.51009
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 37.79201
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9307,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 704.98599,
+          "y": 328.09415
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 37.79201
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9308,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 758.52303,
+          "y": 140.20441
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9309,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 654.8074,
+          "y": 140.20441
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9310,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 548.23752,
+          "y": 140.2044
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 54.71206
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9311,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 866.94389,
+          "y": 279.48451
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9312,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 941.84601,
+          "y": 177.99643
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9313,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 1045.56164,
+          "y": 177.99643
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9314,
+      "p": {
+        "position": {
+          "x": 883.60384,
+          "y": 223.46984
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9315,
+      "p": {
+        "rotation": 4.71239,
+        "position": {
+          "x": 970.65952,
+          "y": 279.48451
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 6.38435,
+        "height": 51.85781
+      },
+      "s": {
+        "shape3d": "models/traffic/road/1_01.json",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 9316,
+      "p": {
+        "position": {
+          "x": 323.08336,
+          "y": 47.04298
+        },
+        "anchorElevation": 0,
+        "width": 141,
+        "height": 143,
+        "tall": 85,
+        "elevation": 198.31876
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/text/3_7_01.json",
+        "shape3d.transparent": true,
+        "shape3d.autorotate": true,
+        "shape3d.image.cache": true,
+        "shape3d.alwaysOnTop": true
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -890.57411,
+      995.71779,
+      759.30862
+    ],
+    "center": [
+      270.35466,
+      -232.96326,
+      -388.98257
+    ],
+    "near": 10,
+    "far": 10000,
+    "background": "rgb(61,61,61)",
+    "gridVisible": false,
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ],
+    "editHelperDisabled": false
+  }
+}

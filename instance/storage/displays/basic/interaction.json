@@ -1,0 +1,426 @@
+{
+  "v": "6.3.1",
+  "p": {
+    "background": "#000000",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "rotateAsClock": false,
+    "gridBlockSize": 10,
+    "connectActionType": null,
+    "fitContent": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 32518,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 141.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32519,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 321.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32520,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 381.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32521,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 201.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32522,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 261.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32523,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 81.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32524,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "position": {
+          "x": 523.19073,
+          "y": 441.42543
+        }
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.78499,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32525,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 684.41391,
+          "y": 261.31815
+        },
+        "width": 409.78544,
+        "height": 102.44636
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.43673,
+        "h1.value": 0.51582,
+        "h2.value": 0.3225,
+        "v1.value": 0.81385
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32526,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 363.19073,
+          "y": 261.31815
+        },
+        "width": 407.98147,
+        "height": 101.99537
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.76435,
+        "v1.value": 0.45258
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32527,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 0.5236,
+        "position": {
+          "x": 802.23018,
+          "y": 121.53642
+        },
+        "width": 87.81745,
+        "height": 64.25599
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false,
+        "image.stretch": "uniform"
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32528,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 5.75959,
+        "position": {
+          "x": 802.23018,
+          "y": 191.75839
+        },
+        "width": 87.81745,
+        "height": 64.25599
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false,
+        "image.stretch": "uniform"
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32529,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 0.5236,
+        "position": {
+          "x": 802.23018,
+          "y": 291.53642
+        },
+        "width": 87.81745,
+        "height": 64.25599
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32530,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 5.75959,
+        "position": {
+          "x": 802.23018,
+          "y": 401.31444
+        },
+        "width": 87.81745,
+        "height": 64.25599
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.2806
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32531,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 0.5236,
+        "position": {
+          "x": 157.64157,
+          "y": 154.98655
+        },
+        "width": 229.27458,
+        "height": 123.19886
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false,
+        "image.stretch": "centerUniform"
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.64107,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32532,
+      "p": {
+        "displayName": "interaction",
+        "image": "symbols/basic/interaction.json",
+        "rotation": 5.75959,
+        "position": {
+          "x": 157.64157,
+          "y": 367.64975
+        },
+        "width": 229.27458,
+        "height": 123.19886
+      },
+      "s": {
+        "interactive": true,
+        "2d.movable": false,
+        "image.stretch": "centerUniform"
+      },
+      "a": {
+        "logo.scale": 0.5,
+        "logo.clip": 0.4,
+        "h3.value": 0.72688,
+        "h1.value": 0.23293,
+        "h2.value": 0.46738,
+        "v1.value": 0.20456
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 32533,
+      "p": {
+        "displayName": "机柜弹窗",
+        "image": "symbols/basic/机柜弹窗.json",
+        "position": {
+          "x": 523.19073,
+          "y": 1144.20785
+        }
+      },
+      "s": {
+        "2d.movable": false
+      }
+    }
+  ],
+  "modified": "Tue Feb 26 2019 10:33:52 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": -1476.80927,
+    "y": 44.32115,
+    "width": 4000,
+    "height": 1429.8867
+  }
+}

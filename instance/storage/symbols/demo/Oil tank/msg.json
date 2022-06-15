@@ -1,0 +1,104 @@
+{
+  "background": "rgb(171,171,171)",
+  "dataBindings": [
+    {
+      "attr": "unit",
+      "valueType": "String"
+    },
+    {
+      "attr": "title",
+      "valueType": "String"
+    },
+    {
+      "attr": "value",
+      "valueType": "Number"
+    }
+  ],
+  "width": 100,
+  "height": 35,
+  "comps": [
+    {
+      "type": "shape",
+      "background": "rgb(43,43,43)",
+      "fillRule": "evenodd",
+      "shadowColor": "#1ABC9C",
+      "scaleX": -1,
+      "rotation": 3.14159,
+      "points": [
+        98.45968,
+        15.59686,
+        98.45968,
+        31.07281,
+        96.27705,
+        33.58102,
+        0.90184,
+        33.58102,
+        0.90184,
+        15.58102
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(89,89,89)",
+      "borderCap": "round",
+      "fillRule": "evenodd",
+      "shadowColor": "#1ABC9C",
+      "scaleX": -1,
+      "rotation": 3.14159,
+      "points": [
+        98.45968,
+        15.58103,
+        98.45968,
+        20.54963,
+        95.73376,
+        23.75346,
+        19.73668,
+        23.75346
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@unit",
+        "value": "MPa"
+      },
+      "align": "right",
+      "color": "rgb(89,89,89)",
+      "rect": [
+        98.4587,
+        24.58202,
+        0.001,
+        0.001
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@title",
+        "value": "压差"
+      },
+      "color": "rgb(255,255,255)",
+      "rect": [
+        19.73567,
+        7.79001,
+        0.001,
+        0.001
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value",
+        "value": "0.0002"
+      },
+      "color": "#ff8400",
+      "rect": [
+        5.78062,
+        24.58102,
+        0.001,
+        0.001
+      ]
+    }
+  ]
+}

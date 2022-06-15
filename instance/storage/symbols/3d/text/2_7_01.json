@@ -1,0 +1,249 @@
+{
+  "modified": "Wed Sep 11 2019 09:40:20 GMT+0800 (中国标准时间)",
+  "background": "rgb(61,61,61)",
+  "dataBindings": [
+    {
+      "attr": "ht.color",
+      "valueType": "Color"
+    },
+    {
+      "attr": "name",
+      "valueType": "String"
+    },
+    {
+      "attr": "unit",
+      "valueType": "String"
+    },
+    {
+      "attr": "t1",
+      "valueType": "String"
+    },
+    {
+      "attr": "t2",
+      "valueType": "String"
+    },
+    {
+      "attr": "num1",
+      "valueType": "Number"
+    },
+    {
+      "attr": "num2",
+      "valueType": "Number"
+    }
+  ],
+  "width": 563,
+  "height": 81,
+  "pixelPerfect": false,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(0,0,0,0.4)",
+      "borderColor": "#979797",
+      "visible": false,
+      "rect": [
+        0,
+        0,
+        563,
+        81
+      ]
+    },
+    {
+      "type": "shape",
+      "background": {
+        "func": "attr@ht.color",
+        "value": null
+      },
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "points": [
+        38.01947,
+        24.99504,
+        38.01947,
+        4.60845,
+        213.75,
+        4.60845,
+        321,
+        76.2692,
+        38.01947,
+        76.2692,
+        38.01947,
+        58.76027
+      ],
+      "segments": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "opacity": 0.3,
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        34.5,
+        3.99812,
+        46.5,
+        15.99812,
+        46.5
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@name",
+        "value": "流量: "
+      },
+      "color": "rgb(247,247,247)",
+      "font": "bold 64px sans-serif, Arial",
+      "rect": [
+        47.50059,
+        9.27655,
+        147.492,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@unit",
+        "value": "%"
+      },
+      "align": "center",
+      "color": "rgb(124,145,155)",
+      "font": "40px PingFangSC-Thin",
+      "visible": false,
+      "rect": [
+        182.68508,
+        4.60845,
+        69.87713,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@t1",
+        "value": "Tunnel Excavation"
+      },
+      "color": "rgb(124,145,155)",
+      "font": "32px PingFangSC-Thin",
+      "visible": false,
+      "rect": [
+        262.0003,
+        4.60845,
+        211.06191,
+        32.65584
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@t2",
+        "value": "Reference equipment"
+      },
+      "color": "rgb(124,145,155)",
+      "font": "24px PingFangSC-Thin",
+      "visible": false,
+      "rect": [
+        262.0003,
+        37.26429,
+        211.06191,
+        32.65584
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "opacity": 0.6,
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        47.59221,
+        3.99812,
+        59.59221,
+        15.99812,
+        59.59221
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        60.1752,
+        3.99812,
+        72.1752,
+        15.99812,
+        72.1752
+      ]
+    },
+    {
+      "type": "text",
+      "text": "(       )",
+      "color": "rgb(247,247,247)",
+      "font": "bold 64px sans-serif, Arial",
+      "rect": [
+        371.14827,
+        9.33925,
+        147.492,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": "%",
+      "color": "rgb(247,247,247)",
+      "font": "bold 64px sans-serif, Arial",
+      "rect": [
+        475.85389,
+        9.27655,
+        67.77838,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@num1",
+        "value": "1024"
+      },
+      "color": "rgb(247,247,247)",
+      "font": "bold 64px sans-serif, Arial",
+      "rect": [
+        213.28393,
+        9.33925,
+        147.492,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@num2",
+        "value": "20"
+      },
+      "color": "rgb(247,247,247)",
+      "font": "bold 64px sans-serif, Arial",
+      "rect": [
+        396.14028,
+        9.33925,
+        147.492,
+        71.66075
+      ]
+    }
+  ]
+}

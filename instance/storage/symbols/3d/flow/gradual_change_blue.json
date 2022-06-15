@@ -1,0 +1,20 @@
+{
+  "modified": "Tue Sep 10 2019 22:28:26 GMT+0800 (中国标准时间)",
+  "width": 64,
+  "height": 64,
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(51,153,255,0.12)",
+      "borderColor": "#979797",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgba(51,153,255,0.3)",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ]
+    }
+  ]
+}

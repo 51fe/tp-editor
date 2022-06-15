@@ -1,0 +1,82 @@
+{
+  "modified": "Tue Jun 14 2022 20:48:23 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "progressPercentage",
+      "valueType": "Percentage",
+      "name": "进度百分比",
+      "description": "进度"
+    },
+    {
+      "attr": "linearOuter",
+      "valueType": "ColorArray",
+      "name": "圆环渐变色",
+      "description": "圆环渐变色"
+    },
+    {
+      "attr": "linearInner",
+      "valueType": "ColorArray",
+      "name": "内圆渐变色",
+      "description": "内圆渐变色"
+    },
+    {
+      "attr": "fontScale",
+      "valueType": "Number",
+      "name": "字体缩放比例",
+      "description": "默认为1倍"
+    },
+    {
+      "attr": "showOrigin",
+      "valueType": "Boolean",
+      "name": "是否显示为原始值",
+      "description": "false为百分比显示，true为原始值显示"
+    },
+    {
+      "attr": "progressLineCap",
+      "valueType": "CapStyle",
+      "name": "进度条样式",
+      "description": "分为平直/圆形/方形"
+    },
+    {
+      "attr": "isAnimate",
+      "valueType": "Boolean",
+      "defaultValue": true,
+      "name": "是否使用进度动画"
+    }
+  ],
+  "width": 100,
+  "height": 100,
+  "comps": [
+    {
+      "type": "components/progressBar/circleProgressBar.json",
+      "pixelPerfect": true,
+      "shadowBlur": 60,
+      "displayName": "circleProgressBarSymbol",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "progressPercentage": {
+        "func": "attr@progressPercentage",
+        "value": 1
+      },
+      "linearOuter": {
+        "func": "attr@linearOuter"
+      },
+      "linearInner": {
+        "func": "attr@linearInner"
+      },
+      "fontScale": {
+        "func": "attr@fontScale"
+      },
+      "showOrigin": {
+        "func": "attr@showOrigin"
+      },
+      "progressLineCap": {
+        "func": "attr@progressLineCap"
+      }
+    }
+  ]
+}

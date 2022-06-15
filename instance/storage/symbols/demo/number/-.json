@@ -1,0 +1,36 @@
+{
+  "background": "rgb(138,138,138)",
+  "width": 11,
+  "height": 16,
+  "boundExtend": 12,
+  "comps": [
+    {
+      "type": "shape",
+      "background": "rgb(255,255,255)",
+      "shadow": true,
+      "shadowColor": "rgb(255,255,255)",
+      "shadowBlur": 12,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "displayName": "不规则图形",
+      "points": [
+        8.076,
+        7.229,
+        9.124,
+        8.364,
+        7.88,
+        9.498,
+        3.036,
+        9.498,
+        2.011,
+        8.364,
+        3.233,
+        7.229,
+        8.076,
+        7.229,
+        8.076,
+        7.229
+      ]
+    }
+  ]
+}

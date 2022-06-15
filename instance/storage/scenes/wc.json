@@ -1,0 +1,2441 @@
+{
+  "v": "6.2.5",
+  "p": {
+    "background": "rgb(17,18,40)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 5930,
+      "p": {
+        "displayName": "地面",
+        "position": {
+          "x": -119.04802,
+          "y": 88.65265
+        },
+        "anchorElevation": 0,
+        "width": 1554.17162,
+        "height": 1182.52189,
+        "tall": 2,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(0,15,41,0.77)",
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5931,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": 280.54475,
+          "y": 236.7655
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5932,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": 280.54475,
+          "y": 292.59517
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5933,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": 280.54475,
+          "y": 346.72259
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5934,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 267.17185,
+          "y": 296.40646
+        },
+        "anchorElevation": 0,
+        "width": 60.09336,
+        "height": 203.01812,
+        "tall": 4,
+        "elevation": 45.09244
+      },
+      "s": {
+        "all.color": "rgba(51,153,255,0.58)",
+        "all.transparent": true,
+        "all.reverse.color": "rgba(51,153,255,0.58)",
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5935,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 346.72259
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5936,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 346.72259
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5937,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 291.70124
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5938,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 291.70124
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5939,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 236.72169
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5940,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 236.72169
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5941,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 356.09122
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5942,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 356.09122
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5943,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 301.11167
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5944,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 301.11167
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5945,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 246.09032
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5946,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -466.59174,
+          "y": 246.09032
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5947,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -468.73503,
+          "y": 296.40646
+        },
+        "anchorElevation": 0,
+        "width": 60.09336,
+        "height": 203.01812,
+        "tall": 4,
+        "elevation": 45.09244
+      },
+      "s": {
+        "all.color": "rgba(51,153,255,0.58)",
+        "all.transparent": true,
+        "all.reverse.color": "rgba(51,153,255,0.58)",
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5948,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -482.10793,
+          "y": 246.09032
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5949,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -482.10793,
+          "y": 300.21775
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5950,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -482.10793,
+          "y": 356.04741
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5951,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -461.71712,
+          "y": 47.99204
+        },
+        "anchorElevation": 0,
+        "width": 132.70831,
+        "height": 909.56336,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/fxty.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5952,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -188.84257,
+          "y": -46.14441
+        },
+        "anchorElevation": 0,
+        "width": 132.70831,
+        "height": 723.08923,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/fxty.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5953,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -46.69386,
+          "y": -46.14441
+        },
+        "anchorElevation": 0,
+        "width": 132.70831,
+        "height": 723.08923,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/fxty.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5954,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 264.20975,
+          "y": 47.99204
+        },
+        "anchorElevation": 0,
+        "width": 132.70831,
+        "height": 909.56336,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/fxty.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5955,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -297.9519,
+          "y": 284.81086
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 155.59847,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.20)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "right.visible": true,
+        "back.visible": false,
+        "front.visible": false,
+        "left.visible": true,
+        "top.visible": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5956,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -142.76788,
+          "y": 244.87392
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5957,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -142.70317,
+          "y": 229.35773
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5958,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": -142.74698,
+          "y": 244.87392
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5959,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": -142.74698,
+          "y": 244.87392
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5960,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -188.22463,
+          "y": 242.57549
+        },
+        "anchorElevation": 0,
+        "width": 179.90358,
+        "height": 55.46815,
+        "tall": 4,
+        "elevation": 45.09244
+      },
+      "s": {
+        "all.color": "rgba(51,153,255,0.58)",
+        "all.transparent": true,
+        "all.reverse.color": "rgba(51,153,255,0.58)",
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5961,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -234.52891,
+          "y": 368.6101
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 138.84599,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5962,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -45.98556,
+          "y": 284.81086
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 155.59847,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.20)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "right.visible": true,
+        "back.visible": false,
+        "front.visible": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5963,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -25.06929,
+          "y": 368.6101
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 109.01345,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5964,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -4.23122,
+          "y": 283.15259
+        },
+        "anchorElevation": 0,
+        "width": 146.66688,
+        "height": 55.46815,
+        "tall": 4,
+        "elevation": 45.09244
+      },
+      "s": {
+        "all.color": "rgba(51,153,255,0.58)",
+        "all.transparent": true,
+        "all.reverse.color": "rgba(51,153,255,0.58)",
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5965,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -1.93278,
+          "y": 318.78854
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5966,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -1.93278,
+          "y": 318.78854
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5967,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -17.44897,
+          "y": 318.74473
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5968,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -1.93278,
+          "y": 318.80943
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5969,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -1.93278,
+          "y": 251.50667
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgb(83,110,245)",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5970,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -17.44897,
+          "y": 251.44197
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 3,
+          "y": 3
+        },
+        "scaleTall": 3,
+        "width": 10.89,
+        "height": 2.53,
+        "tall": 5.66,
+        "elevation": 77.29742
+      },
+      "s": {
+        "shape3d": "models/washroom/faucet.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5971,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -1.93278,
+          "y": 251.48578
+        },
+        "anchorElevation": 0,
+        "width": 33.00878,
+        "height": 47.39793,
+        "tall": 13.53638,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "rgba(212,248,255,0.78)",
+        "top.visible": false,
+        "all.reverse.flip": true,
+        "all.transparent": true,
+        "all.reverse.color": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5972,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -1.93278,
+          "y": 251.48578
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5973,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -166.12947,
+          "y": -17.85212
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/washroom/urinal.json",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5974,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -166.12947,
+          "y": 43.3144
+        },
+        "anchorElevation": 0,
+        "width": 28.63,
+        "height": 37.4,
+        "tall": 91.76
+      },
+      "s": {
+        "shape3d": "models/washroom/urinal.json",
+        "shape3d.blend": "rgb(255,255,255)",
+        "shape3d.color": "#60ACFC",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5975,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -166.12947,
+          "y": 165.64743
+        },
+        "anchorElevation": 0,
+        "width": 28.63,
+        "height": 37.4,
+        "tall": 91.76
+      },
+      "s": {
+        "shape3d": "models/washroom/urinal.json",
+        "shape3d.color": "#60ACFC",
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5976,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -166.12947,
+          "y": 104.48091
+        },
+        "anchorElevation": 0,
+        "width": 28.63,
+        "height": 37.4,
+        "tall": 91.76
+      },
+      "s": {
+        "shape3d": "models/washroom/urinal.json",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5977,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -378.00793,
+          "y": 499.4242
+        },
+        "anchorElevation": 0,
+        "width": 103.70115,
+        "height": 203.01737,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/标识-男性.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5978,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": 160.42821,
+          "y": 499.4242
+        },
+        "anchorElevation": 0,
+        "width": 104.76528,
+        "height": 203.01737,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/标识-女性.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5979,
+      "p": {
+        "parent": {
+          "__i": 5930
+        },
+        "host": {
+          "__i": 5930
+        },
+        "position": {
+          "x": -125.765,
+          "y": 499.4242
+        },
+        "anchorElevation": 0,
+        "width": 170.11782,
+        "height": 203.01737,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "top.image": "assets/wc/标识-特殊.png",
+        "bottom.visible": false,
+        "right.visible": false,
+        "left.visible": false,
+        "back.visible": false,
+        "front.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5980,
+      "p": {
+        "displayName": "墙",
+        "position": {
+          "x": -466.59174,
+          "y": 246.11122
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5981,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": -466.59174,
+          "y": 301.09077
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5982,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": -466.59174,
+          "y": 356.11212
+        },
+        "anchorElevation": 0,
+        "width": 27.61743,
+        "height": 42.82763,
+        "tall": 7.39645,
+        "elevation": 50.705
+      },
+      "s": {
+        "all.color": "#60ACFC",
+        "top.visible": false,
+        "all.transparent": true,
+        "all.reverse.color": "rgba(83,110,245,0.77)",
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5983,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": -113.04802,
+          "y": -74.1218
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 538.03839,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.20)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "left.visible": true,
+        "front.visible": false,
+        "back.visible": false,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5984,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -135.94416,
+          "y": 200.8974
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 336.0155,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5985,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": -534.23692,
+          "y": 36.87181
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 784.02562,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "left.visible": true,
+        "front.visible": true,
+        "back.visible": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5986,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": 324.89511,
+          "y": 36.87181
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 784.02562,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "left.visible": true,
+        "front.visible": true,
+        "back.visible": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5987,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "rotation": 1.5708,
+        "position": {
+          "x": -104.63548,
+          "y": -349.14099
+        },
+        "anchorElevation": 0,
+        "width": 12,
+        "height": 846.87158,
+        "tall": 188.47047,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(255,255,255,0.10)",
+        "all.reverse.color": null,
+        "all.transparent": true,
+        "bottom.visible": false,
+        "all.reverse.cull": true,
+        "front.visible": false,
+        "back.visible": false,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5988,
+      "p": {
+        "parent": {
+          "__i": 5980
+        },
+        "host": {
+          "__i": 5980
+        },
+        "position": {
+          "x": -119.04802,
+          "y": 88.65265
+        },
+        "anchorElevation": 0,
+        "width": 1554.17162,
+        "height": 1182.52189,
+        "tall": 1,
+        "elevation": -2
+      },
+      "s": {
+        "all.color": "rgba(0,15,41,0.77)",
+        "all.reverse.color": null,
+        "all.reverse.cull": true,
+        "all.visible": false,
+        "top.visible": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5989,
+      "p": {
+        "position": {
+          "x": 264.20975,
+          "y": 67.87265
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5990,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -243.33142,
+          "y": 313.9183
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5991,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": 264.20975,
+          "y": -9.12212
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5992,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": 264.20975,
+          "y": -86.11689
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5993,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": 264.20975,
+          "y": -163.11166
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5994,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": 264.20975,
+          "y": -240.10643
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5995,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": 265.02856,
+          "y": 144.86743
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5996,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -40.80437,
+          "y": -240.10643
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5997,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -39.98556,
+          "y": 144.86743
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5998,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -39.98556,
+          "y": 67.87265
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5999,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -39.98556,
+          "y": -9.12212
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6000,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -39.98556,
+          "y": -86.11689
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6001,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -39.98556,
+          "y": -163.11166
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6002,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -463.93671,
+          "y": -163.11166
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "shape3d.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6003,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -463.93671,
+          "y": -86.11689
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6004,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -463.93671,
+          "y": -9.12212
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6005,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -463.93671,
+          "y": 67.87265
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6006,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -463.93671,
+          "y": 144.86743
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6007,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "rotation": 3.14159,
+        "position": {
+          "x": -464.75552,
+          "y": -240.10643
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "#60ACFC",
+        "shape3d.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6008,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": -188.84257,
+          "y": -240.10643
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6009,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": -188.84257,
+          "y": -163.11166
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6010,
+      "p": {
+        "parent": {
+          "__i": 5989
+        },
+        "host": {
+          "__i": 5989
+        },
+        "position": {
+          "x": -188.84257,
+          "y": -86.11689
+        },
+        "anchorElevation": 0,
+        "width": 69.69,
+        "height": 41.56,
+        "tall": 74.63
+      },
+      "s": {
+        "shape3d": "models/washroom/closestool.json",
+        "shape3d.opacity": 0.5,
+        "shape3d.blend": "rgb(255,255,255)",
+        "shape3d.color": null,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -911.09105,
+      502.03709,
+      988.21148
+    ],
+    "center": [
+      -104.61857,
+      -5.23249,
+      56.66714
+    ],
+    "near": 10,
+    "far": 100000,
+    "background": "rgb(17,18,40)",
+    "gridSize": 97,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ]
+  }
+}

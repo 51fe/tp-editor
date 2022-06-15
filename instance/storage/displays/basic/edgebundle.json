@@ -1,0 +1,1296 @@
+{
+  "v": "6.0.7",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": false
+  },
+  "a": {},
+  "d": [
+    {
+      "c": "ht.Edge",
+      "i": 910,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 914
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "#F26C00",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 911,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 914
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "#F26C00",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 912,
+      "p": {
+        "source": {
+          "__i": 914
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "black",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 913,
+      "p": {
+        "source": {
+          "__i": 914
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "black",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 914,
+      "p": {
+        "name": "n1",
+        "position": {
+          "x": 80,
+          "y": 80
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 915,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 919
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "yellow",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 916,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 919
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "yellow",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 917,
+      "p": {
+        "source": {
+          "__i": 919
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "blue",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 918,
+      "p": {
+        "source": {
+          "__i": 919
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "blue",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 919,
+      "p": {
+        "name": "n2",
+        "position": {
+          "x": 500,
+          "y": 100
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 920,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 939
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "#F26C00",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 921,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 939
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "#F26C00",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 922,
+      "p": {
+        "source": {
+          "__i": 939
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "black",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 923,
+      "p": {
+        "source": {
+          "__i": 939
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "black",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 924,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "yellow",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 925,
+      "p": {
+        "source": {
+          "__i": 928
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "yellow",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 926,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "blue",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 927,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 928
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.group": "g",
+        "edge.color": "blue",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 928,
+      "p": {
+        "name": "n0",
+        "position": {
+          "x": 300,
+          "y": 300
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 929,
+      "p": {
+        "source": {
+          "__i": 933
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "red",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 930,
+      "p": {
+        "source": {
+          "__i": 933
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "red",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 931,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 933
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "green",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 932,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 933
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "green",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 933,
+      "p": {
+        "name": "n5",
+        "position": {
+          "x": 620,
+          "y": 200
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 934,
+      "p": {
+        "source": {
+          "__i": 939
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "red",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 935,
+      "p": {
+        "source": {
+          "__i": 939
+        },
+        "target": {
+          "__i": 938
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "red",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 936,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 939
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "green",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 937,
+      "p": {
+        "source": {
+          "__i": 938
+        },
+        "target": {
+          "__i": 939
+        }
+      },
+      "s": {
+        "edge.type": "v.h2",
+        "edge.color": "green",
+        "icons": {
+          "symbols/basic/fromArrow2.json": {
+            "position": 15,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/fromArrow2.json"
+            ]
+          },
+          "symbols/basic/toArrow2.json": {
+            "position": 19,
+            "keepOrien": true,
+            "names": [
+              "symbols/basic/toArrow2.json"
+            ]
+          }
+        },
+        "edge.extend": 70.69,
+        "edge.flex": 88.79,
+        "edge.ortho": 0.74,
+        "edge.corner.radius": 13,
+        "edge.gap": 13.79
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 938,
+      "p": {
+        "name": "n4",
+        "position": {
+          "x": 20,
+          "y": 400
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 939,
+      "p": {
+        "name": "n3",
+        "position": {
+          "x": 550,
+          "y": 520
+        },
+        "width": 80,
+        "height": 80
+      },
+      "s": {
+        "shape": "rect",
+        "opacity": 0.5,
+        "label.position": 17
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 3276,
+      "p": {
+        "source": {
+          "__i": 3277
+        },
+        "target": {
+          "__i": 3281
+        }
+      },
+      "s": {
+        "label.position": 17,
+        "label.offset.y": -6,
+        "edge.center": true,
+        "edge.gap": 21,
+        "edge.3d": true,
+        "edge.width": 6,
+        "edge.dash": true,
+        "edge.dash.color": "yellow",
+        "edge.dash.width": 4,
+        "edge.dash.pattern": [
+          8
+        ],
+        "edge.type": "points",
+        "edge.points": {
+          "__a": [
+            {
+              "x": 55,
+              "y": -119.77151
+            },
+            {
+              "x": 80,
+              "y": -119.77151
+            },
+            {
+              "x": 80,
+              "y": -94.77151
+            },
+            {
+              "x": 105,
+              "y": -94.77151
+            },
+            {
+              "x": 105,
+              "y": -69.77151
+            },
+            {
+              "x": 130,
+              "y": -69.77151
+            },
+            {
+              "x": 130,
+              "y": -44.77151
+            }
+          ]
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3277,
+      "p": {
+        "name": "A",
+        "position": {
+          "x": 55,
+          "y": -144.77151
+        }
+      },
+      "s": {
+        "label.font": "20px sans-serif",
+        "label.position": 17,
+        "label.color": "#40A3FC",
+        "shape": "circle",
+        "select.type": "circle",
+        "shape.background": "white",
+        "shape.border.width": 1
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 3278,
+      "p": {
+        "source": {
+          "__i": 3281
+        },
+        "target": {
+          "__i": 3282
+        }
+      },
+      "s": {
+        "label.position": 17,
+        "label.offset.y": -6,
+        "edge.center": true,
+        "edge.gap": 21,
+        "edge.color": "red",
+        "edge.group": 1,
+        "edge.pattern": [
+          5
+        ]
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 3279,
+      "p": {
+        "source": {
+          "__i": 3281
+        },
+        "target": {
+          "__i": 3282
+        }
+      },
+      "s": {
+        "label.position": 17,
+        "label.offset.y": -6,
+        "edge.center": true,
+        "edge.gap": 21,
+        "edge.color": "red",
+        "edge.group": 1,
+        "edge.pattern": [
+          5
+        ]
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 3280,
+      "p": {
+        "source": {
+          "__i": 3281
+        },
+        "target": {
+          "__i": 3282
+        }
+      },
+      "s": {
+        "edge.expanded": false,
+        "label.position": 17,
+        "label.offset.y": -6,
+        "edge.center": true,
+        "edge.gap": 21,
+        "edge.color": "#40A3FC",
+        "edge.group": 2
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3281,
+      "p": {
+        "name": "B",
+        "position": {
+          "x": 155,
+          "y": -44.77151
+        }
+      },
+      "s": {
+        "label.font": "20px sans-serif",
+        "label.position": 17,
+        "label.color": "#40A3FC",
+        "shape": "circle",
+        "select.type": "circle",
+        "shape.background": "white",
+        "shape.border.width": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3282,
+      "p": {
+        "name": "C",
+        "position": {
+          "x": 255,
+          "y": -144.77151
+        }
+      },
+      "s": {
+        "label.font": "20px sans-serif",
+        "label.position": 17,
+        "label.color": "#40A3FC",
+        "shape": "circle",
+        "select.type": "circle",
+        "shape.background": "white",
+        "shape.border.width": 1
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 3283,
+      "p": {
+        "source": {
+          "__i": 3284
+        },
+        "target": {
+          "__i": 3285
+        }
+      },
+      "s": {
+        "label.position": 17,
+        "label.offset.y": -6,
+        "edge.gap": 21,
+        "edge.dash": true,
+        "edge.dash.width": 8,
+        "edge.dash.pattern": [
+          16,
+          5,
+          3,
+          3
+        ],
+        "edge.dash.3d": true,
+        "edge.dash.color": "green",
+        "edge.dash.3d.color": "yellow",
+        "edge.offset": 0,
+        "edge.type": "points",
+        "edge.points": {
+          "__a": [
+            {
+              "x": 455,
+              "y": -144.77151
+            }
+          ]
+        },
+        "icons": {
+          "fromArrow": {
+            "position": 15,
+            "keepOrien": true,
+            "width": 40,
+            "height": 20,
+            "names": [
+              "symbols/basic/fromArrow.json"
+            ]
+          },
+          "toArrow": {
+            "position": 19,
+            "keepOrien": true,
+            "width": 40,
+            "height": 20,
+            "names": [
+              "symbols/basic/toArrow.json"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3284,
+      "p": {
+        "name": "D",
+        "position": {
+          "x": 355,
+          "y": -144.77151
+        }
+      },
+      "s": {
+        "label.font": "20px sans-serif",
+        "label.position": 17,
+        "label.color": "#40A3FC",
+        "shape": "rect",
+        "shape.background": "rgba(155, 255, 255, 0.5)",
+        "shape.border.width": 1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3285,
+      "p": {
+        "name": "E",
+        "position": {
+          "x": 555,
+          "y": -44.77151
+        }
+      },
+      "s": {
+        "label.font": "20px sans-serif",
+        "label.position": 17,
+        "label.color": "#40A3FC",
+        "shape": "rect",
+        "shape.background": "rgba(155, 255, 255, 0.5)",
+        "shape.border.width": 1
+      }
+    }
+  ]
+}

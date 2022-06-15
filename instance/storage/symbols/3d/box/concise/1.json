@@ -1,0 +1,417 @@
+{
+  "modified": "Thu Sep 19 2019 22:38:47 GMT+0800 (中国标准时间)",
+  "width": 291,
+  "height": 179,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(36,36,36,0.20)",
+      "borderColor": "#979797",
+      "rect": [
+        6.53257,
+        4.5,
+        278.76046,
+        170
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        16.92515,
+        147.75422,
+        83.23495,
+        16.43272
+      ]
+    },
+    {
+      "type": "text",
+      "text": "℃",
+      "color": "rgb(255,255,255)",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        212.62925,
+        43.81268,
+        33.89652,
+        19.58915
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rect": [
+        3.16557,
+        1.71303,
+        6.734,
+        26.20006
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": 1.5708,
+      "rect": [
+        12.68337,
+        -7.80477,
+        6.82293,
+        25.85854
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value1",
+        "value": "31.42"
+      },
+      "color": "rgb(255,255,255)",
+      "font": "bold 14px Arial",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        145.10781,
+        43.8119,
+        67.74205,
+        19.58915
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value2",
+        "value": "70.00"
+      },
+      "color": "rgb(255,255,255)",
+      "font": "bold 14px Arial",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        145.10781,
+        82.99019,
+        67.74205,
+        19.58915
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value3",
+        "value": "32.13"
+      },
+      "color": "rgb(255,255,255)",
+      "font": "bold 14px Arial",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        145.10781,
+        122.16848,
+        67.74205,
+        19.58915
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": -1.5708,
+      "rect": [
+        12.68337,
+        160.94623,
+        6.82293,
+        25.85854
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rect": [
+        3.16557,
+        151.08691,
+        6.734,
+        26.20006
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        281.92602,
+        151.08691,
+        6.734,
+        26.20006
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": -1.5708,
+      "rect": [
+        272.31928,
+        160.94623,
+        6.82293,
+        25.85854
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": 1.5708,
+      "rect": [
+        272.31928,
+        -7.80477,
+        6.82293,
+        25.85854
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        281.92602,
+        1.71303,
+        6.734,
+        26.20006
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(184,191,194)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        283.19019,
+        58.92841,
+        2.10276,
+        51.80064
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(184,191,194)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        6.53264,
+        58.92841,
+        2.10276,
+        51.80064
+      ]
+    },
+    {
+      "type": "circle",
+      "background": "rgba(124,146,156,0.5)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        39.91956,
+        11.70648,
+        7.78558,
+        9.92952
+      ]
+    },
+    {
+      "type": "circle",
+      "background": "rgba(124,146,156,0.5)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        50.75703,
+        11.70648,
+        7.78558,
+        9.92952
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "rotation": 4.71239,
+      "rect": [
+        147.57572,
+        31.40583,
+        2.13053,
+        263.43168
+      ]
+    },
+    {
+      "type": "circle",
+      "background": "rgba(124,146,156,0.5)",
+      "borderColor": "#979797",
+      "rotation": 3.14159,
+      "rect": [
+        262.80148,
+        43.67695,
+        7.78558,
+        9.92952
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        43.81235,
+        149.893,
+        222.88195,
+        1.65919
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        43.81235,
+        110.71471,
+        222.88195,
+        1.65919
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        43.81235,
+        71.53642,
+        222.88195,
+        1.65919
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        243.64609,
+        104.29654,
+        23.04818,
+        21.17592
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        243.64609,
+        104.29654,
+        23.04818,
+        21.17592
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        243.64609,
+        130.51527,
+        23.04818,
+        21.17592
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(240,240,240)",
+      "borderColor": "#979797",
+      "opacity": 0.16,
+      "rotation": 3.14159,
+      "rect": [
+        243.64609,
+        130.51527,
+        23.04818,
+        21.17592
+      ]
+    },
+    {
+      "type": "text",
+      "text": "MPa",
+      "color": "rgb(255,255,255)",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        216.1679,
+        82.16043,
+        31.53742,
+        19.58915
+      ]
+    },
+    {
+      "type": "text",
+      "text": "m³/s",
+      "color": "rgb(255,255,255)",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        215.42292,
+        122.30735,
+        32.03407,
+        19.58915
+      ]
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "进度条",
+      "rect": [
+        28.25882,
+        22.71573,
+        62,
+        132
+      ],
+      "direction": "v",
+      "valueVisible": false,
+      "foreColor": "rgb(247,247,247)",
+      "background": "rgba(124,146,156,0.5)"
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@value1",
+        "value": "80%"
+      },
+      "color": "rgb(255,255,255)",
+      "font": "bold 14px Arial",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rotation": 6.28319,
+      "rect": [
+        62.18585,
+        32.4467,
+        67.74205,
+        19.58915
+      ]
+    }
+  ]
+}

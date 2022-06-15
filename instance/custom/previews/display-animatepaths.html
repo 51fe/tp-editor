@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animate Paths</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-flow.js'></script>
+  <script src='libs/plugin/ht-form.js'></script>
+
+  <script>
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+      window.addEventListener('resize', function (e) { graphView.fitContent(); }, false);
+
+      createFormPane();
+      adjustPosition();
+
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        dataModel.deserialize(text);
+        graphView.fitContent(true);
+      });
+    }
+
+    function adjustPosition() {
+      dataModel.addDataPropertyChangeListener(function (e) {
+        if (e.property === 'a:pathPercent') {
+          var data = e.data;
+          var percent = e.newValue || 0;
+          var animatePaths = data.a('animatePaths');
+          if (!animatePaths) return;
+          if (!data.startPosition) {
+            data.startPosition = ht.Default.clone(data.p());
+          }
+          var offsetX = 0;
+          var offsetY = 0;
+          for (var tag in animatePaths) {
+            var shape = dataModel.getDataByTag(tag);
+            if (shape instanceof ht.Shape) {
+              var points = shape.getPoints();
+              if (points && points.size() > 0) {
+                var p = graphView.getPercentPosition(shape, percent);
+                offsetX += p.x - points.get(0).x;
+                offsetY += p.y - points.get(0).y;
+              }
+            }
+          }
+          data.p(data.startPosition.x + offsetX, data.startPosition.y + offsetY);
+        }
+      });
+    }
+
+    function createFormPane() {
+      formPane = new ht.widget.FormPane();
+      formPane.setWidth(230);
+      formPane.setHeight(40);
+      var view = formPane.getView();
+      view.style.top = '10px';
+      view.style.right = '10px';
+      view.style.background = '#F3F3F3';
+      document.body.appendChild(view);
+
+      formPane.addRow(['Percent',
+        {
+          slider: {
+            min: 0,
+            max: 100,
+            step: 0.1,
+            value: 0,
+            getToolTip: function () {
+              return parseFloat(this.getValue().toFixed(1));
+            },
+            onValueChanged: function () {
+              var value = this.getValue();
+              dataModel.each(function (data) {
+                if (data.a('animatePaths')) data.a('pathPercent', value);
+              });
+            }
+          }
+        }
+      ], [50, 0.1]);
+    }
+
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
+</html>

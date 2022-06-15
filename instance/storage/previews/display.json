@@ -1,0 +1,95 @@
+{
+  "v": "7.2.8",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {},
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 3111,
+      "p": {
+        "displayName": "hex",
+        "position": {
+          "x": 227.75223,
+          "y": 344.29116
+        },
+        "width": 220.29913,
+        "height": 178.96052
+      },
+      "s": {
+        "shape": "polygon",
+        "shape.background": "rgb(240,225,19)",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(212,0,0)",
+        "shape.foreground.clip.percentage": 0.55,
+        "shape.foreground": "#FF7C7C",
+        "shape.foreground.clip.direction": "right"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3112,
+      "p": {
+        "displayName": "rect",
+        "position": {
+          "x": 458.54875,
+          "y": 350.17984
+        },
+        "width": 196.19388,
+        "height": 167.18316
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "rgb(0,199,7)",
+        "shape.border.width": 1,
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3113,
+      "p": {
+        "displayName": "circle",
+        "position": {
+          "x": 212.51442,
+          "y": 131.47508
+        },
+        "width": 130,
+        "height": 121
+      },
+      "s": {
+        "shape": "oval",
+        "shape.background": "#FF7C7C",
+        "shape.border.width": 1,
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3114,
+      "p": {
+        "displayName": "text",
+        "position": {
+          "x": 445.81874,
+          "y": 131.47508
+        }
+      },
+      "s": {
+        "text": "文本",
+        "text.font": "bold 19px sans-serif, Arial",
+        "text.color": "rgb(242,83,75)",
+        "text.shadow.color": "rgb(61,61,61)",
+        "text.shadow": true
+      }
+    }
+  ],
+  "modified": "Wed Jun 15 2022 01:19:06 GMT+0800 (中国标准时间)",
+  "contentRect": {
+    "x": 116.10267,
+    "y": 69.47508,
+    "width": 442.04302,
+    "height": 365.79634
+  }
+}

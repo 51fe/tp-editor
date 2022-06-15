@@ -1,0 +1,42 @@
+{
+  "modified": "Fri Apr 12 2019 17:56:26 GMT+0800 (中国标准时间)",
+  "width": 100,
+  "height": 100,
+  "snapshotURL": "",
+  "func": "__ht__function(g, rect, comp, data, view) {\nvar x = rect.x;\r\nvar y = rect.y;\r\nvar rectWidth = rect.width;\r\nvar rectHeight = rect.height;\r\nvar startX = x;\r\nvar waveWidth = comp.getValue('waveWidth'); // 波浪宽度,数越小越宽\r\nvar waveHeight = comp.getValue('waveHeight'); // 波浪高度,数越大越高\r\nvar waveForeground = addCreateLinear(comp.getValue('waveForeground')); // 前波浪颜色\r\nvar waveBackground = comp.getColor('waveBackground'); // 后波浪颜色\r\nvar wareXOffset = comp.getValue('wareXOffset'); // 水平位移\r\nvar waveRange = comp.getValue('waveRange'); // 水位\r\n\r\nvar points = [];\r\n\r\n// 创建渐变背景色\r\nfunction addCreateLinear(colorsArr) {\r\n    var linear = g.createLinearGradient(x, y, x, y + rectHeight);\r\n    var len = colorsArr.length;\r\n    colorsArr.forEach(function(item, index) {\r\n        linear.addColorStop((index + 1) / len, item);\r\n    });\r\n    return linear;\r\n}\r\n\r\n// 绘制波浪函数\r\nfunction drawWave(xOffset, fillStyle, direction) {\r\n    g.beginPath();\r\n    for (var x = startX; x < startX + rectWidth; x += 20 / rectWidth) {\r\n        var y =\r\n            waveHeight *\r\n            Math.sin((startX + x) * waveWidth + xOffset * direction) + rect.y;\r\n        points.push([x, rectHeight * (1 - waveRange) + y]);\r\n        g.lineTo(x, rectHeight * (1 - waveRange) + y);\r\n    }\r\n    g.lineTo(x + rectWidth, y + rectHeight);\r\n    g.lineTo(startX, y + rectHeight);\r\n    g.lineTo(points[0][0], points[0][1]);\r\n    g.fillStyle = fillStyle;\r\n    g.fill();\r\n}\r\n\r\n// save\r\ng.save();\r\n\r\n// 背景裁切\r\ng.beginPath();\r\ng.rect(x, y, rectWidth, rectHeight);\r\ng.clip();\r\n\r\nif (waveRange === 1) {\r\n    // 绘制矩形\r\n    g.beginPath();\r\n    g.fillStyle = waveForeground;\r\n    g.fillRect(x, y, rectWidth, rectHeight);\r\n} else {\r\n    // 绘制波浪\r\n    drawWave(wareXOffset + 0.75, waveBackground, 1);\r\n    drawWave(wareXOffset, waveForeground, 1);\r\n}\r\n\r\n// restore\r\ng.restore();\n}",
+  "properties": {
+    "waveWidth": {
+      "valueType": "Number",
+      "defaultValue": 0.15,
+      "name": "波浪宽度"
+    },
+    "waveHeight": {
+      "valueType": "Number",
+      "defaultValue": 1.25,
+      "name": "波浪高度"
+    },
+    "wareXOffset": {
+      "valueType": "Number",
+      "defaultValue": 0,
+      "name": "波浪位移"
+    },
+    "waveForeground": {
+      "valueType": "ColorArray",
+      "defaultValue": [
+        "#F39C6A",
+        "#FF7C7C"
+      ],
+      "name": "波浪前景色"
+    },
+    "waveBackground": {
+      "valueType": "Color",
+      "defaultValue": "#F8CDB5",
+      "name": "波浪背景色"
+    },
+    "waveRange": {
+      "valueType": "Percentage",
+      "defaultValue": 0.5,
+      "name": "波浪水位"
+    }
+  }
+}

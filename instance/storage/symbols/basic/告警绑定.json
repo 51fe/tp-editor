@@ -1,0 +1,202 @@
+{
+  "dataBindings": [
+    {
+      "attr": "alarmInfo",
+      "valueType": "Object",
+      "defaultValue": {
+        "severity": 0,
+        "count": 0
+      },
+      "name": "告警信息"
+    }
+  ],
+  "width": 100,
+  "height": 100,
+  "comps": [
+    {
+      "type": "shape",
+      "background": {
+        "func": "__ht__function(data, view) {\nvar alarmInfo = data.a('alarmInfo');\nif (alarmInfo) {\n    if (alarmInfo.severity === 1) {\n         return 'red';\n    }\n    if (alarmInfo.severity === 2) {\n         return 'yellow';\n    }\n    if (alarmInfo.severity === 3) {\n         return 'blue';\n    }\n}\nreturn 'green';\n}",
+        "value": "rgb(242,83,75)"
+      },
+      "gradient": "radial.south",
+      "gradientColor": "rgb(133,12,12)",
+      "rotation": 5.49779,
+      "points": [
+        10.41361,
+        40.81926,
+        10.41361,
+        18.9476,
+        28.18162,
+        1.21689,
+        50,
+        1.21689,
+        50,
+        1.21689,
+        71.86253,
+        1.21689,
+        89.58639,
+        18.9849,
+        89.58639,
+        40.80328,
+        89.58639,
+        40.80328,
+        89.58639,
+        62.6658,
+        71.81838,
+        80.38967,
+        50,
+        80.38967,
+        10.41361,
+        80.38967,
+        10.41361,
+        40.84743
+      ],
+      "segments": [
+        1,
+        4,
+        2,
+        4,
+        2,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "circle",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "rect": [
+        22.74863,
+        12.59725,
+        54.50273,
+        56.41206
+      ]
+    },
+    {
+      "type": "circle",
+      "background": "rgb(255,209,209)",
+      "borderWidth": 1,
+      "borderColor": "rgb(112,59,59)",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(255,255,255)",
+      "shadow": true,
+      "shadowColor": "rgb(242,83,75)",
+      "shadowBlur": 18,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        18.92954,
+        6.08315,
+        62.14092,
+        69.44027
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(255,255,255,0.74)",
+      "borderColor": "#979797",
+      "gradient": "linear.east",
+      "gradientColor": "rgba(255,255,255,0.10)",
+      "rotation": 0.2618,
+      "points": [
+        45.56119,
+        23.6037,
+        45.56119,
+        23.6037,
+        42.46668,
+        20.93652,
+        44.42664,
+        19.3695,
+        46.3866,
+        17.80249,
+        50.90976,
+        16.1044,
+        53.53544,
+        17.08233,
+        56.16111,
+        18.06025,
+        56.8893,
+        21.7142,
+        54.92934,
+        23.28121,
+        52.96938,
+        24.84823,
+        49.0939,
+        21.96982,
+        45.56119,
+        23.6037,
+        53.90563,
+        25.98159,
+        43.99263,
+        31.98101,
+        51.51853,
+        24.2979,
+        53.90563,
+        25.98159,
+        59.7463,
+        24.93646,
+        63.50749,
+        25.5482,
+        67.19038,
+        26.70526,
+        73.63504,
+        30.7719,
+        80.0797,
+        34.83854,
+        81.89678,
+        48.95991,
+        81.89678,
+        48.95991,
+        81.89678,
+        48.95991,
+        82.26553,
+        34.8341,
+        76.20582,
+        27.45509,
+        70.14612,
+        20.07609,
+        63.91129,
+        19.44389,
+        59.81311,
+        19.44389,
+        55.71493,
+        19.44389,
+        55.85106,
+        24.8042,
+        59.7463,
+        24.93646
+      ],
+      "segments": [
+        1,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "__ht__function(data, view) {\nvar alarmInfo = data.a('alarmInfo');\nif (alarmInfo) {\n    return '告警：' + alarmInfo.count\n}\nreturn '无告警';\n}",
+        "value": "文本"
+      },
+      "align": "center",
+      "rect": [
+        25,
+        15.80328,
+        50,
+        50
+      ]
+    }
+  ]
+}

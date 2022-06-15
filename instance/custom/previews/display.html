@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Preview Display</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='custom/libs/echarts.js'></script>
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+  <script src="libs/plugin/ht-obj.js"></script>
+  <script src='libs/plugin/ht-form.js'></script>
+  <script>
+    function init() {
+      graphView = new ht.graph.GraphView();
+      graphView.addToDOM();
+      graphView.deserialize('previews/display.json', function (json, dm, gv, datas) {
+        if (json.title) document.title = json.title;
+        if (json.a['json.background']) {
+          var bgJSON = json.a['json.background'];
+          if (bgJSON.indexOf('displays') === 0) {
+            var bgGv = new ht.graph.GraphView();
+            bgGv.deserialize(bgJSON);
+            bgGv.addToDOM();
+            graphView.addToDOM(bgGv.getView());
+          }
+          else if (bgJSON.indexOf('scenes') === 0) {
+            var bgG3d = new ht.graph3d.Graph3dView();
+            bgG3d.deserialize(bgJSON);
+            bgG3d.addToDOM();
+            graphView.addToDOM(bgG3d.getView());
+          }
+          graphView.handleScroll = function () { };
+        }
+      });
+    }
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
+</html>

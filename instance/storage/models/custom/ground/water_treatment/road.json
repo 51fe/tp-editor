@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/custom/ground/water_treatment/road.obj",
+  "mtl": "assets/objs/custom/ground/water_treatment/road.mtl",
+  "image": "",
+  "prefix": "assets/objs/custom/ground/water_treatment/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    1,
+    1,
+    1
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

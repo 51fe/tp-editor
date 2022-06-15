@@ -1,0 +1,122 @@
+{
+  "modified": "Sun Jul 14 2019 11:31:47 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "legendData1",
+      "valueType": "String",
+      "defaultValue": "观日路",
+      "name": "数据名称1"
+    },
+    {
+      "attr": "legendData2",
+      "valueType": "String",
+      "defaultValue": "望海路",
+      "name": "数据名称2"
+    },
+    {
+      "attr": "chartBackground",
+      "valueType": "Color",
+      "defaultValue": "#030C20",
+      "name": "背景颜色"
+    },
+    {
+      "attr": "lineSmooth",
+      "valueType": "Boolean",
+      "defaultValue": true,
+      "name": "线条平滑"
+    },
+    {
+      "attr": "lineColor1",
+      "valueType": "Color",
+      "defaultValue": "rgb(47,112,250)",
+      "name": "线条颜色1"
+    },
+    {
+      "attr": "lineColor2",
+      "valueType": "Color",
+      "defaultValue": "rgb(224,118,25)",
+      "name": "线条颜色2"
+    },
+    {
+      "attr": "textColor",
+      "valueType": "Color",
+      "defaultValue": "rgb(124,145,155)",
+      "name": "文字颜色"
+    },
+    {
+      "attr": "lineData1",
+      "valueType": "NumberArray",
+      "name": "线条数据1",
+      "defaultValue": [
+        120,
+        132,
+        101,
+        134,
+        90,
+        230,
+        210,
+        399,
+        499,
+        599
+      ]
+    },
+    {
+      "attr": "lineData2",
+      "valueType": "NumberArray",
+      "name": "线条数据2",
+      "defaultValue": [
+        220,
+        182,
+        191,
+        234,
+        290,
+        330,
+        310,
+        200,
+        540,
+        100
+      ]
+    },
+    {
+      "attr": "xAxisData",
+      "valueType": "StringArray",
+      "defaultValue": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": "横轴数据"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_chart.json",
+  "renderHTML": "__ht__function(data, gv, cache) {var option = {\n        animation: true,\n        tooltip : {\n            trigger: 'axis',\n            axisPointer: {\n                type: 'line',\n                label: {\n                    backgroundColor: '#6a7985'\n                }\n            }\n        },\n        legend: {\n            show: true,\n            left: '80%',\n            right: 0,\n            top: '30%',\n            orient: 'vertical'\n        },\n        grid: {\n            left: '3%',\n            right: '20%',\n            bottom: 0,\n            top: '5%',\n            containLabel: true\n        },\n        xAxis : [\n            {\n                type : 'category',\n                boundaryGap : false,\n                axisLine: {show: false},\n                splitLine: {show: false},\n                axisLabel: {}\n            }\n        ],\n        yAxis : [\n            {\n                type : 'value',\n                axisLine: {show: false},\n                splitLine: {show: false},\n                axisLabel: {}\n            }\n        ],\n        series : [\n            {\n                type:'line',\n                areaStyle: {\n                    normal: {\n                        color: 'rgba(27,85,245,0.40)'\n                    }\n                }\n            },\n            {\n                type:'line',\n                areaStyle: {\n                    normal: {\n                        color: 'rgba(252,209,134,0.40)'\n                    }\n                }\n            },\n        ]\n    };\n\n    if (!cache.htmlView) {\n        cache.htmlView = document.createElement('div');\n        cache.htmlView.style.position = 'absolute';\n        cache.htmlChart = echarts.init(cache.htmlView);\n\n        // layoutHTML will be called when the data needs to be drawing\n        cache.htmlView.layoutHTML = function() {\n            gv.layoutHTML(data, cache.htmlView, false);\n            cache.htmlChart.resize();\n        };\n    }\n\n    // update data\n    option.color = [data.a('lineColor1'), data.a('lineColor2')];\n    option.legend.data = [data.a('legendData1'), data.a('legendData2') ];\n    option.series[0].name = data.a('legendData1');\n    option.series[1].name = data.a('legendData2');\n    option.series[0].data = data.a('lineData1');\n    option.series[1].data = data.a('lineData2');\n    option.series[0].smooth = data.a('lineSmooth');\n    option.series[1].smooth = data.a('lineSmooth');\n    option.textStyle = { color: data.a('textColor') };\n    option.legend.textStyle = { color: data.a('textColor') };\n    option.xAxis[0].data = data.a('xAxisData');\n    cache.htmlChart.setOption(option);\n\n    // html for showing\n    return cache.htmlView;}",
+  "width": 200,
+  "height": 120,
+  "fitSize": true,
+  "pixelPerfect": false,
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": {
+        "func": "attr@chartBackground",
+        "value": "#030C20"
+      },
+      "borderColor": "#979797",
+      "cornerRadius": 4,
+      "visible": false,
+      "rect": [
+        0,
+        0,
+        200,
+        120
+      ]
+    }
+  ]
+}

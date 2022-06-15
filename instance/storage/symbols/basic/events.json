@@ -1,0 +1,48 @@
+{
+  "width": 100,
+  "height": 100,
+  "comps": [
+    {
+      "type": "oval",
+      "background": {
+        "func": "attr@roundBackground",
+        "value": "#D8D8D8"
+      },
+      "borderWidth": 1,
+      "borderColor": "#979797",
+      "pixelPerfect": true,
+      "displayName": "round",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ]
+    },
+    {
+      "type": "star",
+      "background": {
+        "func": "attr@starBackground",
+        "value": "rgb(247,247,247)"
+      },
+      "borderWidth": 1,
+      "borderColor": "#38373B",
+      "pixelPerfect": true,
+      "displayName": "star",
+      "scaleX": {
+        "func": "attr@starScale",
+        "value": 1
+      },
+      "scaleY": {
+        "func": "attr@starScale",
+        "value": 1
+      },
+      "rect": [
+        25,
+        25,
+        50,
+        50
+      ]
+    }
+  ]
+}

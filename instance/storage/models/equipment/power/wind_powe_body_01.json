@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/equipment/power/wind_power_body_01.obj",
+  "mtl": "assets/objs/equipment/power/wind_power_body_01.mtl",
+  "image": "",
+  "prefix": "assets/objs/equipment/power/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    3,
+    3,
+    3
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

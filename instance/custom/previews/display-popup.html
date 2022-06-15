@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Popup</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='libs/core/ht.js'></script>
+  <script src='custom/libs/echarts.js'></script>
+
+  <script>
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+
+      popupGV = new ht.graph.GraphView();
+      popupGV.setInteractors(null);
+      popupNode = new ht.Node();
+      popupNode.setImage('symbols/basic/节点信息.json');
+      popupNode.setAnchor(0, 0.5);
+      popupNode.s('2d.visible', false);
+      popupGV.dm().add(popupNode);
+
+      graphView.getView().appendChild(popupGV.getView());
+      graphView.getView().addEventListener('mousemove', function (e) {
+        var data = graphView.getDataAt(e);
+        if (data instanceof ht.Node) {
+          popupNode.s('2d.visible', true);
+          var zoom = graphView.getZoom();
+          var rect = graphView.getDataUIBounds(data);
+          var x = graphView.tx() + (rect.x + rect.width) * zoom + 5;
+          var y = graphView.ty() + (rect.y + rect.height / 2) * zoom;
+          popupNode.p(x, y);
+          popupNode.a({
+            'node.name': graphView.getLabel(data) || ('ID: ' + data.getId()),
+            'node.position': 'X: ' + data.getX() + ' Y: ' + data.getY(),
+            'node.size': 'Width: ' + data.getWidth() + ' Height: ' + data.getHeight()
+          });
+        }
+        else {
+          popupNode.s('2d.visible', false);
+        }
+      }, false);
+      graphView.addViewListener(function (e) {
+        if (e.kind === 'validate') {
+          ht.Default.layout(popupGV, 0, 0, graphView.getWidth(), graphView.getHeight());
+        }
+      });
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+        graphView.fitContent(true);
+      });
+    }
+
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
+</html>

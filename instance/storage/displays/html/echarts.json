@@ -1,0 +1,91 @@
+{
+  "v": "6.2.3",
+  "p": {
+    "background": "#282923",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "previewURL": "display-echarts.html"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 21878,
+      "p": {
+        "displayName": "lineChart2",
+        "tag": "chart2",
+        "image": "symbols/html/echarts.json",
+        "position": {
+          "x": 324.27159,
+          "y": 545.64775
+        },
+        "width": 486.28815,
+        "height": 229.15176
+      },
+      "a": {
+        "lineData2": [
+          220,
+          182,
+          191,
+          234,
+          290,
+          330,
+          310,
+          200,
+          240,
+          100
+        ],
+        "lineData1": [
+          120,
+          132,
+          101,
+          134,
+          90,
+          330,
+          210,
+          399,
+          409,
+          499
+        ],
+        "lineSmooth": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 21879,
+      "p": {
+        "displayName": "lineChart2",
+        "tag": "chart1",
+        "image": "symbols/html/echarts.json",
+        "position": {
+          "x": 324.27159,
+          "y": 236.23275
+        },
+        "width": 486.28815,
+        "height": 229.15176
+      },
+      "a": {
+        "chartBackground": "rgb(26,82,112)",
+        "lineColor1": "rgb(48,242,120)",
+        "lineColor2": "rgb(226,250,87)",
+        "legendData1": "上海",
+        "legendData2": "北京",
+        "textColor": "#32D3EB",
+        "lineData1": [
+          120,
+          232,
+          101,
+          134,
+          90,
+          230,
+          210,
+          399,
+          499,
+          699
+        ],
+        "lineSmooth": false
+      }
+    }
+  ]
+}

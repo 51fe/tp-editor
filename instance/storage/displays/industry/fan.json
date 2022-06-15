@@ -1,0 +1,588 @@
+{
+  "v": "6.1.3",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "previewURL": "display-fan.html"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 1377,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1825,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1828,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1832,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1837,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1843,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 85.55,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1850,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1858,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1907,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1908,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1909,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1910,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 201.65,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1911,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1912,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1913,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1914,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1931,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1932,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 317.75,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1933,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1934,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1935,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1936,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1937,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1938,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 433.85,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1963,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1964,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1965,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1966,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1967,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1968,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 549.95,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1969,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1970,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2003,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2004,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2005,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2006,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 666.05,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2007,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2008,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2009,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2010,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2051,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2052,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 782.15,
+          "y": 799.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2053,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 97.7
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2054,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 238.1
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2055,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 378.5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2056,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 518.9
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2057,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 659.3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2058,
+      "p": {
+        "displayName": "风扇",
+        "image": "symbols/demo/fan/风扇.json",
+        "position": {
+          "x": 898.25,
+          "y": 799.7
+        }
+      }
+    }
+  ]
+}

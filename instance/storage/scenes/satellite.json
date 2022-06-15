@@ -1,0 +1,2295 @@
+{
+  "v": "7.0.1-dev23",
+  "p": {
+    "background": "rgb(0,25,79)",
+    "envmap": "assets/map/environment/stars_01.jpg",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "bloom": {
+        "enable": true,
+        "strength": 0.48,
+        "threshold": 0.11,
+        "radius": 0.4,
+        "overrideAlpha": false
+      },
+      "dof": {
+        "enable": true,
+        "aperture": 0.006,
+        "maxblur": 1,
+        "image": "assets/vague/Depth_01.png"
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 5991,
+      "p": {
+        "displayName": "光晕",
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "scaleTall": 2,
+        "width": 762,
+        "height": 190.98912,
+        "tall": 711
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/planet/light_01.png",
+        "shape3d.transparent": true,
+        "shape3d.autorotate": true,
+        "envmap": 0,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.alwaysOnTop": true,
+        "shape3d.vector.dynamic": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5992,
+      "p": {
+        "displayName": "地球",
+        "width": 800,
+        "height": 800,
+        "tall": 800
+      },
+      "s": {
+        "shape3d.side": 50,
+        "shape3d.side.from": 0,
+        "shape3d.side.to": 50,
+        "shape3d.resolution": 450,
+        "shape3d": "sphere",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.image": "assets/map/planet/earth_night.jpg",
+        "envmap": 0.1,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.reverse.color": null,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5993,
+      "p": {
+        "displayName": "月球",
+        "parent": {
+          "__i": 5992
+        },
+        "host": {
+          "__i": 5992
+        },
+        "rotation": 0.00001,
+        "position": {
+          "x": -607.19331,
+          "y": -1442.702
+        },
+        "width": 100,
+        "height": 100,
+        "tall": 100,
+        "elevation": 476.71405
+      },
+      "s": {
+        "shape3d.side": 900,
+        "shape3d.side.from": 0,
+        "shape3d.side.to": 900,
+        "shape3d.resolution": 450,
+        "shape3d": "sphere",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.image": "assets/map/planet/moon_01.jpg",
+        "envmap": 0.1,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.blend": "rgb(158,158,158)",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5994,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5993
+        },
+        "host": {
+          "__i": 5993
+        },
+        "rotation": 2.82744,
+        "rotationX": 1.16937,
+        "position": {
+          "x": -648.49341,
+          "y": -1531.57393
+        },
+        "anchorElevation": 0,
+        "width": 190.6592,
+        "height": 102.85403,
+        "tall": 1,
+        "elevation": 439.14615
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5995,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5993
+        },
+        "host": {
+          "__i": 5993
+        },
+        "rotation": -2.57159,
+        "rotationX": 1.15192,
+        "position": {
+          "x": -501.49566,
+          "y": -1492.70333
+        },
+        "anchorElevation": 0,
+        "width": 129.75845,
+        "height": 70.00019,
+        "tall": 1,
+        "elevation": 483.63992
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/satellite/5.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5996,
+      "p": {
+        "parent": {
+          "__i": 5993
+        },
+        "host": {
+          "__i": 5993
+        },
+        "rotation": 0.00001,
+        "rotationZ": -0.32353,
+        "position": {
+          "x": -608.50044,
+          "y": -1440.78211
+        },
+        "anchorElevation": 0,
+        "width": 406,
+        "height": 406,
+        "tall": 1,
+        "elevation": 476.71405
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.vector.dynamic": false,
+        "envmap": 0.37,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5997,
+      "p": {
+        "parent": {
+          "__i": 5992
+        },
+        "host": {
+          "__i": 5992
+        },
+        "rotation": 3.64774,
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2,
+          "y": 2
+        },
+        "width": 1854,
+        "height": 1854,
+        "tall": 1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/decorate/circular_04.png",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.vector.dynamic": false,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5998,
+      "p": {
+        "displayName": "异常",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": 13.06905,
+        "position": {
+          "x": -599.34997,
+          "y": 1312.57729
+        },
+        "anchorElevation": 0,
+        "width": 411.41229,
+        "height": 706.9671,
+        "tall": 50
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/satellite/6.json",
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 5999,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": -0.24435,
+        "rotationX": -0.00742,
+        "rotationZ": 0.27925,
+        "position": {
+          "x": -978.78151,
+          "y": 362.92669
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": -294.94757
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6000,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": 0.71476,
+        "rotationX": -0.25691,
+        "rotationZ": 0.04021,
+        "position": {
+          "x": -1083.6556,
+          "y": 163.75675
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": -348.17605
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6001,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": 0.82418,
+        "rotationX": -0.03497,
+        "rotationZ": 0.00389,
+        "position": {
+          "x": -1060.61047,
+          "y": 203.88413
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": -215.47985
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6002,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": 2.00474,
+        "rotationX": -0.25972,
+        "rotationZ": -0.04393,
+        "position": {
+          "x": -1013.64692,
+          "y": 565.78169
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": -359.31486
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6003,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": 2.00474,
+        "rotationX": -0.12462,
+        "rotationZ": -0.04393,
+        "position": {
+          "x": -1022.84306,
+          "y": 541.94572
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": -222.01086
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6004,
+      "p": {
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": -0.2427,
+        "rotationX": -0.00715,
+        "rotationZ": 0.05711,
+        "position": {
+          "x": -978.3099,
+          "y": 362.89507
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": -306.51699
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6005,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 5999
+        },
+        "host": {
+          "__i": 5999
+        },
+        "rotation": -0.24435,
+        "rotationX": -0.00742,
+        "rotationZ": 0.27925,
+        "position": {
+          "x": -982.92978,
+          "y": 363.92307
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": -291.01456
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6006,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": -1.63888,
+        "rotationX": -0.19942,
+        "rotationZ": -0.05344,
+        "position": {
+          "x": 506.42909,
+          "y": 1001.54157
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 106.06256
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6007,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": -1.28693,
+        "rotationX": -0.58177,
+        "rotationZ": -0.18623,
+        "position": {
+          "x": 343.98917,
+          "y": 1195.45057
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 69.27474
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6008,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": -1.28693,
+        "rotationX": -0.05817,
+        "rotationZ": -0.18623,
+        "position": {
+          "x": 337.9009,
+          "y": 1118.65946
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 186.81457
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6009,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": 0.33096,
+        "rotationX": -0.48085,
+        "rotationZ": 0.28001,
+        "position": {
+          "x": 684.16699,
+          "y": 973.41181
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 75.36612
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6010,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": 0.33096,
+        "rotationX": -0.18414,
+        "rotationZ": 0.28001,
+        "position": {
+          "x": 630.62419,
+          "y": 942.32916
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 200.55461
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6011,
+      "p": {
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": -2.22848,
+        "rotationX": -0.01852,
+        "rotationZ": -0.33739,
+        "position": {
+          "x": 474.83447,
+          "y": 1008.65942
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 88.89914
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6012,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6006
+        },
+        "host": {
+          "__i": 6006
+        },
+        "rotation": -2.23259,
+        "rotationX": -0.01759,
+        "rotationZ": -0.11528,
+        "position": {
+          "x": 473.63206,
+          "y": 1007.57969
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 105.02716
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6013,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": -1.98801,
+        "rotationX": -0.00742,
+        "rotationZ": 0.20931,
+        "position": {
+          "x": 1428.06098,
+          "y": 424.75817
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 136.12309
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6014,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -2.07844,
+        "rotationX": -0.31416,
+        "position": {
+          "x": 1399.6861,
+          "y": 686.75559
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 86.76918
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6015,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -2.07844,
+        "rotationX": -0.22689,
+        "position": {
+          "x": 1382.58621,
+          "y": 640.1921
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 218.25627
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6016,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -0.41993,
+        "rotationX": -0.31416,
+        "position": {
+          "x": 1509.30429,
+          "y": 296.04571
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 77.70792
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6017,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -0.41993,
+        "rotationX": -0.01745,
+        "position": {
+          "x": 1492.04784,
+          "y": 315.70616
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 214.89641
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6018,
+      "p": {
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -2.94384,
+        "rotationX": -0.00726,
+        "rotationZ": -0.01283,
+        "position": {
+          "x": 1384.42305,
+          "y": 461.84788
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 124.54948
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6019,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6013
+        },
+        "host": {
+          "__i": 6013
+        },
+        "rotation": -2.94548,
+        "rotationX": -0.00742,
+        "rotationZ": 0.20931,
+        "position": {
+          "x": 1387.96638,
+          "y": 462.67437
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 140.34464
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6020,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": 3.00197,
+        "rotationX": -0.00742,
+        "rotationZ": -0.17453,
+        "position": {
+          "x": 934.96085,
+          "y": -157.93954
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 243.56996
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6021,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": -2.64144,
+        "rotationX": -0.53965,
+        "rotationZ": -0.31332,
+        "position": {
+          "x": 1082.95892,
+          "y": 26.61761
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 239.15923
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6022,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": -2.64144,
+        "rotationX": -0.01605,
+        "rotationZ": -0.31332,
+        "position": {
+          "x": 996.41962,
+          "y": 4.28082
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 347.61046
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6023,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": -1.10724,
+        "rotationX": -0.62767,
+        "rotationZ": 0.22522,
+        "position": {
+          "x": 962.87007,
+          "y": -359.67792
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 203.07161
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6024,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": -1.10724,
+        "rotationX": -0.33096,
+        "rotationZ": 0.22522,
+        "position": {
+          "x": 910.58525,
+          "y": -326.48496
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 328.25012
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6025,
+      "p": {
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": 2.72439,
+        "rotationX": 0.09555,
+        "rotationZ": -0.38338,
+        "position": {
+          "x": 938.40782,
+          "y": -150.25597
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 232.03477
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6026,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6020
+        },
+        "host": {
+          "__i": 6020
+        },
+        "rotation": 2.74568,
+        "rotationX": 0.08978,
+        "rotationZ": -0.16218,
+        "position": {
+          "x": 935.69317,
+          "y": -150.69625
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 248.00856
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6027,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": 1.89922,
+        "rotationX": -0.00742,
+        "rotationZ": -0.15708,
+        "position": {
+          "x": 35.13179,
+          "y": -833.30728
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 354.33658
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6028,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": 2.60239,
+        "rotationX": -0.54794,
+        "rotationZ": -0.28474,
+        "position": {
+          "x": 267.30854,
+          "y": -880.6449
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 347.40264
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6029,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": 2.60239,
+        "rotationX": -0.02434,
+        "rotationZ": -0.28474,
+        "position": {
+          "x": 207.48497,
+          "y": -818.07256
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 458.10706
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6030,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": -2.34192,
+        "rotationX": -0.63904,
+        "rotationZ": 0.17247,
+        "position": {
+          "x": -133.32991,
+          "y": -947.03949
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 312.22611
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6031,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": -2.34192,
+        "rotationX": -0.34233,
+        "rotationZ": 0.17247,
+        "position": {
+          "x": -125.0245,
+          "y": -890.50451
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 439.66209
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6032,
+      "p": {
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": 1.62351,
+        "rotationX": 0.09043,
+        "rotationZ": -0.36659,
+        "position": {
+          "x": 43.47901,
+          "y": -832.72618
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 342.76223
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6033,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6027
+        },
+        "host": {
+          "__i": 6027
+        },
+        "rotation": 1.64362,
+        "rotationX": 0.08531,
+        "rotationZ": -0.14529,
+        "position": {
+          "x": 41.95144,
+          "y": -830.76638
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 358.77944
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6034,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": 1.6008,
+        "rotationX": -0.34907,
+        "rotationZ": -0.06981,
+        "position": {
+          "x": -632.56491,
+          "y": -558.52875
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 50.06785
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6035,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": 2.04917,
+        "rotationX": -0.73997,
+        "rotationZ": -0.11296,
+        "position": {
+          "x": -448.79496,
+          "y": -733.71585
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": -14.88974
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6036,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": 2.04917,
+        "rotationX": -0.21637,
+        "rotationZ": -0.11296,
+        "position": {
+          "x": -435.59015,
+          "y": -656.41134
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 101.72607
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6037,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": -2.7508,
+        "rotationX": -0.453,
+        "rotationZ": 0.41852,
+        "position": {
+          "x": -794.7685,
+          "y": -602.43216
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 56.4175
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6038,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": -2.7508,
+        "rotationX": -0.15629,
+        "rotationZ": 0.41852,
+        "position": {
+          "x": -726.17548,
+          "y": -565.33254
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 172.27889
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6039,
+      "p": {
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": 1.10515,
+        "rotationX": -0.16708,
+        "rotationZ": -0.42435,
+        "position": {
+          "x": -599.4877,
+          "y": -566.59586
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 28.10926
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6040,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6034
+        },
+        "host": {
+          "__i": 6034
+        },
+        "rotation": 1.0677,
+        "rotationX": -0.15542,
+        "rotationZ": -0.20506,
+        "position": {
+          "x": -595.84775,
+          "y": -565.18495
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 43.84096
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6041,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": 1.37881,
+        "rotationX": -0.28559,
+        "rotationZ": 0.03745,
+        "position": {
+          "x": -745.97289,
+          "y": -153.93937
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 513.12913
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6042,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 1.31368,
+        "rotationX": -0.57389,
+        "rotationZ": -0.1974,
+        "position": {
+          "x": -663.16172,
+          "y": -421.70227
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 468.47651
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6043,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 1.31368,
+        "rotationX": -0.05029,
+        "rotationZ": -0.1974,
+        "position": {
+          "x": -619.03675,
+          "y": -357.44848
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 585.41229
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6044,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 2.79695,
+        "rotationX": -0.52703,
+        "rotationZ": 0.2473,
+        "position": {
+          "x": -854.65004,
+          "y": -63.10474
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 474.18859
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6045,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 2.79695,
+        "rotationX": -0.23032,
+        "rotationZ": 0.2473,
+        "position": {
+          "x": -795.34293,
+          "y": -64.93742
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 600.61805
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6046,
+      "p": {
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 0.4188,
+        "rotationX": -0.02006,
+        "rotationZ": -0.33746,
+        "position": {
+          "x": -688.48421,
+          "y": -195.34807
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 488.0824
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": null,
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6047,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6041
+        },
+        "host": {
+          "__i": 6041
+        },
+        "rotation": 0.41435,
+        "rotationX": -0.01906,
+        "rotationZ": -0.11535,
+        "position": {
+          "x": -686.90277,
+          "y": -194.98986
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 504.20988
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6048,
+      "p": {
+        "displayName": "卫星",
+        "parent": {
+          "__i": 5997
+        },
+        "host": {
+          "__i": 5997
+        },
+        "rotation": -1.4187,
+        "rotationX": 0.08527,
+        "rotationZ": -0.11166,
+        "position": {
+          "x": -597.71583,
+          "y": 1332.32761
+        },
+        "width": 105.68976,
+        "height": 156.672,
+        "tall": 48.68484,
+        "elevation": 536.94002
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6049,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": -0.7504,
+        "rotationX": -0.43862,
+        "rotationZ": -0.3107,
+        "position": {
+          "x": -818.84071,
+          "y": 1417.22151
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 543.56426
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/3.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6050,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": -0.7504,
+        "rotationX": 0.08498,
+        "rotationZ": -0.3107,
+        "position": {
+          "x": -761.25266,
+          "y": 1351.64776
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 653.71564
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/4.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6051,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": 0.58098,
+        "rotationX": -0.64426,
+        "rotationZ": 0.05146,
+        "position": {
+          "x": -417.19754,
+          "y": 1413.24689
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 474.38431
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/2red.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6052,
+      "p": {
+        "displayName": "信息面板",
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": 0.58098,
+        "rotationX": -0.34755,
+        "rotationZ": 0.05146,
+        "position": {
+          "x": -424.0378,
+          "y": 1367.91298
+        },
+        "width": 190,
+        "height": 102,
+        "tall": 102,
+        "elevation": 606.30513
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/3d/box/satellite/1.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6053,
+      "p": {
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": -1.70805,
+        "rotationX": 0.17034,
+        "rotationZ": -0.29735,
+        "position": {
+          "x": -606.98439,
+          "y": 1332.45028
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.7,
+          "y": 0.7
+        },
+        "scaleTall": 0.7,
+        "width": 342.437,
+        "height": 80.81,
+        "tall": 82.955,
+        "elevation": 526.07453
+      },
+      "s": {
+        "shape3d": "models/traffic/sky/satellite_01.json",
+        "shape3d.blend": "rgb(212,0,0)",
+        "envmap": 0.58,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6054,
+      "p": {
+        "displayName": "光圈",
+        "parent": {
+          "__i": 6048
+        },
+        "host": {
+          "__i": 6048
+        },
+        "rotation": -1.67058,
+        "rotationX": 0.16331,
+        "rotationZ": -0.07826,
+        "position": {
+          "x": -604.4597,
+          "y": 1331.21662
+        },
+        "width": 200,
+        "height": 133.84006,
+        "tall": 200,
+        "elevation": 542.0379
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "billboard",
+        "shape3d.image": "assets/map/decorate/circular_02.png",
+        "shape3d.transparent": true,
+        "envmap": 0.33,
+        "shape3d.vector.dynamic": false,
+        "shape3d.fixSizeOnScreen": false,
+        "shape3d.reverse.flip": true,
+        "shape3d.autorotate": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.image.cache": true
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -2173.4063,
+      1012.3601,
+      1387.45082
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "near": 10,
+    "far": 10000,
+    "background": "rgb(0,25,79)",
+    "gridVisible": false,
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ],
+    "editHelperDisabled": false
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "v": "6.0.8",
+  "p": {
+    "background": "#292028",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": false
+  },
+  "a": {
+    "previewURL": "display-pv.html"
+  },
+  "d": [
+    {
+      "c": "ht.Text",
+      "i": 1325,
+      "p": {
+        "position": {
+          "x": 513.50029,
+          "y": 81.76756
+        },
+        "width": 47.66876,
+        "height": 33.64649
+      },
+      "s": {
+        "text": "组串",
+        "text.color": "white",
+        "text.align": "right",
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 1326,
+      "p": {
+        "position": {
+          "x": 513.50029,
+          "y": 29.43632
+        },
+        "width": 47.66876,
+        "height": 33.64649
+      },
+      "s": {
+        "text": "汇流箱",
+        "text.color": "white",
+        "text.align": "right",
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1327,
+      "p": {
+        "tag": "zc_state_2",
+        "position": {
+          "x": 641.85008,
+          "y": 81.05867
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#FF6A01",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "50",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1328,
+      "p": {
+        "tag": "zc_state_3",
+        "position": {
+          "x": 706.86202,
+          "y": 81.05867
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#FF2D0D",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "10",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1329,
+      "p": {
+        "tag": "hlx_state_0",
+        "position": {
+          "x": 771.69164,
+          "y": 29.99814
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#6F7082",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "2",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1330,
+      "p": {
+        "tag": "hlx_state_1",
+        "position": {
+          "x": 576.65581,
+          "y": 29.99814
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#76E33E",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "200",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1331,
+      "p": {
+        "tag": "hlx_state_2",
+        "position": {
+          "x": 641.66775,
+          "y": 29.99814
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#FF6A01",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "50",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1332,
+      "p": {
+        "tag": "zc_state_1",
+        "position": {
+          "x": 576.83814,
+          "y": 81.05867
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#76E33E",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "2330",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1333,
+      "p": {
+        "tag": "hlx_state_3",
+        "position": {
+          "x": 706.67969,
+          "y": 29.99814
+        },
+        "width": 54.78427,
+        "height": 29.43632
+      },
+      "s": {
+        "shape": "roundRect",
+        "shape.background": "#FF2D0D",
+        "shape.border.width": 1,
+        "shape.border.color": "rgb(150,150,150)",
+        "label": "10",
+        "label.position": 17,
+        "label.offset.y": 0,
+        "shape.corner.radius": 4,
+        "label.color": "white",
+        "2d.movable": false,
+        "select.type": "shadow",
+        "select.color": "white",
+        "select.width": 2,
+        "shadow.offset.x": 0,
+        "shadow.offset.y": 0,
+        "shadow.blur": 15
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1334,
+      "p": {
+        "tag": "sum",
+        "image": "symbols/demo/pv/pv-sum.json",
+        "position": {
+          "x": 244.71345,
+          "y": 55.63154
+        }
+      },
+      "s": {
+        "2d.movable": false
+      }
+    }
+  ]
+}

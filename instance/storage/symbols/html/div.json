@@ -1,0 +1,40 @@
+{
+  "dataBindings": [
+    {
+      "attr": "div.content",
+      "valueType": "Multiline",
+      "defaultValue": "<h2> HT for Web</h2>\n<hr>\n<p>图扑软件 www.hightopo.com</p>",
+      "name": "文本内容"
+    },
+    {
+      "attr": "div.color",
+      "valueType": "Color",
+      "defaultValue": "#32D3EB",
+      "name": "文本颜色"
+    },
+    {
+      "attr": "div.background",
+      "valueType": "Color",
+      "defaultValue": "rgb(61,61,61)",
+      "name": "背景颜色"
+    },
+    {
+      "attr": "div.padding",
+      "valueType": "Number",
+      "defaultValue": 10,
+      "name": "边距"
+    },
+    {
+      "attr": "div.debug",
+      "valueType": "Boolean",
+      "defaultValue": false,
+      "name": "调试"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_div.json",
+  "renderHTML": "__ht__function(data, gv, cache) {\n    if (!cache.htmlView) {\n        var div = cache.htmlView = document.createElement('div');\n        div.style.position = 'absolute';\n        div.style.overflow = 'hidden';\n        div.style.setProperty(\"box-sizing\", \"border-box\", null);\n        div.style.setProperty(\"-moz-box-sizing\", \"border-box\", null);\n        data.div = div;\n        div.addEventListener('mousedown', function(e){e.preventDefault();}, false);\n        div.layoutHTML = function() {\n            gv.layoutHTML(data, div);\n            if(data.a('div.debug')) console.log('Div is layout');\n        };\n        div.onHTMLAdded = function() {\n            if(data.a('div.debug')) console.log('Div is added');\n        };\n        div.onHTMLRemoved = function() {\n            if(data.a('div.debug')) console.log('Div is removed');\n        };\n    }\n    cache.htmlView.innerHTML = data.a('div.content');\n    cache.htmlView.style.color = data.a('div.color');\n    cache.htmlView.style.padding = data.a('div.padding') + 'px';\n    cache.htmlView.style.background = data.a('div.background');\n    return cache.htmlView;\n}",
+  "width": 300,
+  "height": 150,
+  "pixelPerfect": false,
+  "comps": []
+}

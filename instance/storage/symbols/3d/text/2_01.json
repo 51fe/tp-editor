@@ -1,0 +1,172 @@
+{
+  "modified": "Wed Sep 11 2019 17:23:55 GMT+0800 (中国标准时间)",
+  "background": "rgb(61,61,61)",
+  "dataBindings": [
+    {
+      "attr": "name",
+      "valueType": "String",
+      "defaultValue": "文本"
+    },
+    {
+      "attr": "t1",
+      "valueType": "String"
+    },
+    {
+      "attr": "t2",
+      "valueType": "String"
+    },
+    {
+      "attr": "unit",
+      "valueType": "String"
+    }
+  ],
+  "width": 563,
+  "height": 81,
+  "pixelPerfect": false,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(0,0,0,0.4)",
+      "borderColor": "#979797",
+      "visible": false,
+      "rect": [
+        0,
+        0,
+        563,
+        81
+      ]
+    },
+    {
+      "type": "shape",
+      "background": {
+        "func": "attr@ht.color",
+        "value": null
+      },
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "points": [
+        43.33656,
+        4.60845,
+        237.21066,
+        4.60845,
+        237.21066,
+        76.2692,
+        43.33656,
+        76.2692,
+        43.33656,
+        4.60845
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "opacity": 0.3,
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        34.5,
+        3.99812,
+        46.5,
+        15.99812,
+        46.5
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@name",
+        "value": "46.3"
+      },
+      "align": "center",
+      "color": "rgb(124,145,155)",
+      "font": "bold 52px sans-serif, Arial",
+      "rect": [
+        54.57607,
+        4.60845,
+        170.41757,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@unit",
+        "value": "%"
+      },
+      "align": "center",
+      "color": "rgb(124,145,155)",
+      "font": "40px PingFangSC-Thin",
+      "rect": [
+        182.68508,
+        4.60845,
+        69.87713,
+        71.66075
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@t1",
+        "value": "Tunnel Excavation"
+      },
+      "color": "rgb(124,145,155)",
+      "font": "32px PingFangSC-Thin",
+      "rect": [
+        262.0003,
+        4.60845,
+        211.06191,
+        32.65584
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@t2",
+        "value": "Reference equipment"
+      },
+      "color": "rgb(124,145,155)",
+      "font": "24px PingFangSC-Thin",
+      "rect": [
+        262.0003,
+        37.26429,
+        211.06191,
+        32.65584
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "opacity": 0.6,
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        47.59221,
+        3.99812,
+        59.59221,
+        15.99812,
+        59.59221
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 2,
+      "borderColor": "rgb(124,145,155)",
+      "borderJoin": "bevel",
+      "rotation": 5.49779,
+      "points": [
+        3.99812,
+        60.1752,
+        3.99812,
+        72.1752,
+        15.99812,
+        72.1752
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "v": "6.2.6",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "connectActionType": null,
+    "rotateAsClock": false,
+    "width": 800,
+    "height": 660,
+    "onPostDeserialize": "__ht__function(json, dm, gv, datas) {\n    ht.Default.startAnim({\n        duration: 1000,\n        action: function(v, t){\n            dm.getDataByTag(\"wave1\").a('waveRange', 0.1 + v * 0.5);\n            dm.getDataByTag(\"wave2\").a('waveRange', 0.1 + v * 0.6);\n            dm.getDataByTag(\"wave3\").a('waveRange', 0.1 + v * 0.7);\n            dm.getDataByTag(\"wave4\").a('waveRange', 0.9 - v * 0.5);\n            dm.getDataByTag(\"wave5\").a('waveRange', 0.9 - v * 0.6);\n            dm.getDataByTag(\"wave6\").a('waveRange', 0.9 - v * 0.7);\n        },\n        finishFunc: function() {\n            dm.addScheduleTask({\n                interval: 50,\n                action: function(data){\n                    data.a('wareXOffset', (data.a('wareXOffset') || 0) + 0.5);\n                }\n            });\n        }\n    });\n}"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 3616,
+      "p": {
+        "anchor": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 800,
+        "height": 660
+      },
+      "s": {
+        "shape": "rect",
+        "shape.background": "rgb(61,61,61)",
+        "shape.border.color": "rgb(135,144,204)",
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 3617,
+      "p": {
+        "position": {
+          "x": 400,
+          "y": 105
+        },
+        "width": 800
+      },
+      "s": {
+        "text": "Wave Demo",
+        "text.align": "center",
+        "text.color": "rgb(124,145,155)",
+        "text.font": "bold 32px arial, sans-serif",
+        "2d.movable": false,
+        "2d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3618,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave1",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 140,
+          "y": 280
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.type": "circle",
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveHeight": 1.5,
+        "waveWidth": 0.15,
+        "waveCircle": true,
+        "waveRange": 0.1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3619,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave2",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 400,
+          "y": 280
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.type": "circle",
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveForeground": [
+          "#36D1DC",
+          "#5B86E5"
+        ],
+        "waveBackground": "#83D3C7",
+        "waveHeight": 1.5,
+        "waveCircle": true,
+        "waveRange": 0.1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3620,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave3",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 660,
+          "y": 280
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.type": "circle",
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveForeground": [
+          "#B87DD7",
+          "#865F94"
+        ],
+        "waveBackground": "#FFA9DE",
+        "waveHeight": 1.5,
+        "waveCircle": true,
+        "waveRange": 0.1
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3621,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave4",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 140,
+          "y": 516.39287
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveHeight": 1.5,
+        "waveWidth": 0.15,
+        "waveRange": 0.9
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3622,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave5",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 400,
+          "y": 516.39287
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveForeground": [
+          "#36D1DC",
+          "#5B86E5"
+        ],
+        "waveBackground": "#83D3C7",
+        "waveHeight": 1.5,
+        "waveRange": 0.9
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3623,
+      "p": {
+        "displayName": "wave",
+        "tag": "wave6",
+        "image": "symbols/basic/wave.json",
+        "position": {
+          "x": 660,
+          "y": 516.39287
+        },
+        "width": 200,
+        "height": 200
+      },
+      "s": {
+        "2d.movable": false,
+        "select.color": "rgb(247,247,247)"
+      },
+      "a": {
+        "waveForeground": [
+          "#B87DD7",
+          "#865F94"
+        ],
+        "waveBackground": "#FFA9DE",
+        "waveHeight": 1.5,
+        "waveRange": 0.9
+      }
+    }
+  ],
+  "modified": "Fri Oct 12 2018 23:14:02 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 660
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Circle Progressbar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-animation.js'></script>
+
+  <script>
+    var circlesData = ['p1', 'p2', 'p3', 'p4', 'p5'];
+    // * 初始化进度环的相关变量
+    function initCircles(dataModel, circlesData) {
+      return circlesData.map(function (item) {
+        var data = dataModel.getDataByTag(item);
+        return {
+          data: data,
+          targetPer: data.getAttr('progressPercentage'),
+          isAnimate: data.getAttr('isAnimate')
+        };
+      });
+    }
+    // * 增加数值
+    function increasePer(data, targetPer, isAnimate) {
+      if (isAnimate) {
+        data.setAnimation({
+          show: {
+            from: 0,
+            to: targetPer,
+            easing: 'Circ.easeInOut',
+            onUpdate: function (v) {
+              v = parseFloat(v).toFixed(2);
+              this.setAttr('progressPercentage', v);
+            }
+          },
+          start: ['show']
+        });
+      } else {
+        data.setAttr('progressPercentage', targetPer);
+      }
+    }
+    // * 执行动画
+    function play(circles) {
+      circles.forEach(function (item, index) {
+        increasePer(item.data, item.targetPer, item.isAnimate);
+      });
+      dataModel.enableAnimation();
+    }
+    // * 获取数据
+    function loadData(dataModel, graphView) {
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+        graphView.fitContent(true, 0);
+        circles = initCircles(dataModel, circlesData);
+        dataModel.setAttr('circles', circles)
+        play(circles);
+      });
+    }
+    // * 初始化
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+      window.addEventListener('resize', function (e) { graphView.fitContent(false, 0); }, false);
+      loadData(dataModel, graphView);
+    }
+  </script>
+</head>
+
+<body onload="init()">
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+{
+  "modified": "Wed Mar 20 2019 18:18:23 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "sceneURL",
+      "valueType": "URL",
+      "defaultValue": "scenes/HT展厅.json"
+    },
+    {
+      "attr": "center",
+      "valueType": "NumberArray",
+      "defaultValue": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "attr": "eye",
+      "valueType": "NumberArray",
+      "defaultValue": [
+        0,
+        500,
+        1000
+      ]
+    },
+    {
+      "attr": "far",
+      "valueType": "Number",
+      "defaultValue": 10000
+    },
+    {
+      "attr": "near",
+      "valueType": "Number",
+      "defaultValue": 10
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_scene.json",
+  "renderHTML": "__ht__function(data, gv, cache) {if (!cache.g3d) {\n        var g3d = cache.g3d = new ht.graph3d.Graph3dView();\n        gv.fp('g3d', null, g3d);\n        if (data.a('eye')) g3d.setEye(data.a('eye'));\n        if (data.a('center')) g3d.setCenter(data.a('center'));\n        if (data.a('far')) g3d.setFar(data.a('far'));\n        if (data.a('near')) g3d.setNear(data.a('near'));\n\n        g3d.layoutHTML = function() {\n            gv.layoutHTML(data, g3d, true);\n        };\n    }\n    var sceneURL = data.a('sceneURL');\n    if (cache.g3d.sceneURL !== sceneURL) {\n        cache.g3d.dm().clear();\n        cache.g3d.sceneURL = sceneURL;\n        if (sceneURL) {\n            cache.g3d.deserialize(sceneURL, function() {\n                gv.fp('sceneLoad', false, true);\n            });\n        }\n    }\n    return cache.g3d;}",
+  "width": 200,
+  "height": 120,
+  "scrollable": true,
+  "interactive": true,
+  "pixelPerfect": false,
+  "attachStyle": "close",
+  "comps": []
+}

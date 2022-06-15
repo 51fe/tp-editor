@@ -1,0 +1,280 @@
+{
+  "gridBlockSize": 5,
+  "width": 200,
+  "height": 50,
+  "disableSelectedBorder": true,
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": "rgb(41,40,40)",
+      "borderColor": "rgb(240,240,240)",
+      "borderCap": "square",
+      "borderJoin": "bevel",
+      "cornerRadius": 0,
+      "shadowColor": "rgba(255,255,255,0.4)",
+      "shadowBlur": 0,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 2,
+      "rect": [
+        0,
+        0,
+        200,
+        50
+      ]
+    },
+    {
+      "type": "rect",
+      "borderColor": "#979797",
+      "displayName": "透明交互区域",
+      "rect": [
+        0,
+        0,
+        50,
+        50
+      ],
+      "onDown": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.color1', '#FFC826');\ndata.a('logo.color2', '#F24D63');\ndata.a('logo.color3','#48F4E8');\ndata.a('logo.color4','rgb(105,196,245)');\ndata.a('logo.text.color', '#45C4F9');\ndata.a('logo.text.color', 'white');\nht.Default.startAnim({\n    duration: 200,\n    easing: function (t) {\n        return 1 - (--t) * t * t * t;\n    },\n    action: function(v, t){ \n        data.a('logo.clip', 0.4 + 0.6 * v);\n    }\n});\n}",
+      "onUp": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.color1', undefined);\ndata.a('logo.color2', undefined);\ndata.a('logo.color3', undefined);\ndata.a('logo.color4', undefined);\ndata.a('logo.text.color', undefined);\nht.Default.startAnim({\n    duration: 200,\n    easing: function (t) {\n        return 1 - (--t) * t * t * t;\n    },\n    action: function(v, t){ \n        data.a('logo.clip', 1 - 0.6 * v);\n    }\n});\n}",
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.scale', 0.58);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.scale', 0.5);\n}"
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(235,80,80)",
+      "borderColor": "#979797",
+      "cornerRadius": {
+        "func": "attr@light1.radius",
+        "value": 1
+      },
+      "shadow": {
+        "func": "attr@light1.shadow",
+        "value": false
+      },
+      "shadowColor": "rgb(235,80,80)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "scaleX": {
+        "func": "attr@light1.scale",
+        "value": 1
+      },
+      "scaleY": {
+        "func": "attr@light1.scale",
+        "value": 1
+      },
+      "rect": [
+        185,
+        5,
+        10,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light1.scale', 1.2);\ndata.a('light1.radius', 3);\ndata.a('light1.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light1.scale', undefined);\ndata.a('light1.radius', undefined);\ndata.a('light1.shadow', undefined);\n}"
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(80,165,235)",
+      "borderColor": "#979797",
+      "cornerRadius": {
+        "func": "attr@light2.radius",
+        "value": 1
+      },
+      "shadow": {
+        "func": "attr@light2.shadow",
+        "value": false
+      },
+      "shadowColor": "rgb(80,165,235)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "scaleX": {
+        "func": "attr@light2.scale",
+        "value": 1
+      },
+      "scaleY": {
+        "func": "attr@light2.scale",
+        "value": 1
+      },
+      "rect": [
+        185,
+        20,
+        10,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light2.scale', 1.2);\ndata.a('light2.radius', 3);\ndata.a('light2.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light2.scale', undefined);\ndata.a('light2.radius', undefined);\ndata.a('light2.shadow', undefined);\n}"
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(80,235,173)",
+      "borderColor": "#979797",
+      "cornerRadius": {
+        "func": "attr@light3.radius",
+        "value": 1
+      },
+      "shadow": {
+        "func": "attr@light3.shadow",
+        "value": false
+      },
+      "shadowColor": "rgb(80,235,173)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "scaleX": {
+        "func": "attr@light3.scale",
+        "value": 1
+      },
+      "scaleY": {
+        "func": "attr@light3.scale",
+        "value": 1
+      },
+      "rect": [
+        185,
+        35,
+        10,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light3.scale', 1.2);\ndata.a('light3.radius', 3);\ndata.a('light3.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light3.scale', undefined);\ndata.a('light3.radius', undefined);\ndata.a('light3.shadow', undefined);\n}"
+    },
+    {
+      "type": "image",
+      "name": "symbols/basic/水印.json",
+      "clipPercentage": {
+        "func": "attr@logo.clip",
+        "value": 0.4
+      },
+      "clipDirection": "right",
+      "displayName": "水印",
+      "anchorX": 0.17674,
+      "anchorY": 0.52326,
+      "scaleX": {
+        "func": "attr@logo.scale",
+        "value": 0.5
+      },
+      "scaleY": {
+        "func": "attr@logo.scale",
+        "value": 0.5
+      },
+      "rect": [
+        -12.41389,
+        -10.81395,
+        200,
+        70
+      ]
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "shadow": {
+        "func": "attr@h1.shadow",
+        "value": false
+      },
+      "shadowColor": "rgba(77,196,247,0.5)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "displayName": "progressBar",
+      "rect": [
+        140,
+        5,
+        40,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.shadow', undefined);\n}",
+      "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "background": "#141414",
+      "foreColor": "#F5E39B",
+      "value": {
+        "func": "attr@h1.value",
+        "value": 0.5
+      },
+      "valueVisible": false
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "shadow": {
+        "func": "attr@v1.shadow",
+        "value": false
+      },
+      "shadowColor": "rgba(77,196,247,0.5)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "displayName": "progressBar",
+      "rect": [
+        125,
+        5,
+        10,
+        40
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.shadow', undefined);\n}",
+      "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}",
+      "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}",
+      "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}",
+      "background": "#141414",
+      "foreColor": "#FC5C36",
+      "value": {
+        "func": "attr@v1.value",
+        "value": 0.7
+      },
+      "valueVisible": false,
+      "direction": "v"
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "shadow": {
+        "func": "attr@h2.shadow",
+        "value": false
+      },
+      "shadowColor": "rgba(77,196,247,0.5)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "displayName": "progressBar",
+      "rect": [
+        140,
+        20,
+        40,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.shadow', undefined);\n}",
+      "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "background": "#141414",
+      "foreColor": "#F5E39B",
+      "value": {
+        "func": "attr@h2.value",
+        "value": 0.7
+      },
+      "valueVisible": false
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "shadow": {
+        "func": "attr@h3.shadow",
+        "value": false
+      },
+      "shadowColor": "rgba(77,196,247,0.5)",
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "displayName": "progressBar",
+      "rect": [
+        140,
+        35,
+        40,
+        10
+      ],
+      "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.shadow', true);\n}",
+      "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.shadow', undefined);\n}",
+      "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "background": "#141414",
+      "foreColor": "#F5E39B",
+      "value": {
+        "func": "attr@h3.value",
+        "value": 0.3
+      },
+      "valueVisible": false
+    }
+  ]
+}

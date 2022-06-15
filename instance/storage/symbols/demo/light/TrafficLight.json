@@ -1,0 +1,76 @@
+{
+  "modified": "Sun Jan 20 2019 12:14:11 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "light1.circle.background",
+      "valueType": "Color",
+      "name": "灯1圆背景",
+      "group": "灯光"
+    },
+    {
+      "attr": "light2.circle.background",
+      "valueType": "Color",
+      "name": "灯2圆背景"
+    },
+    {
+      "attr": "light3.circle.background",
+      "valueType": "Color",
+      "name": "灯3圆背景"
+    }
+  ],
+  "width": 40,
+  "height": 95,
+  "boundExtend": 2,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "#020202",
+      "borderWidth": 2,
+      "borderColor": "#32D3EB",
+      "displayName": "panel",
+      "rect": [
+        0,
+        0,
+        40,
+        95
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/demo/light/Light.json",
+      "prefix": "light1",
+      "displayName": "",
+      "rect": [
+        5.55171,
+        3.29132,
+        30,
+        30
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/demo/light/Light.json",
+      "prefix": "light2",
+      "displayName": "",
+      "rect": [
+        5.55171,
+        32.39566,
+        30,
+        30
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/demo/light/Light.json",
+      "prefix": "light3",
+      "displayName": "",
+      "rect": [
+        5.55171,
+        61.5,
+        30,
+        30
+      ]
+    }
+  ]
+}

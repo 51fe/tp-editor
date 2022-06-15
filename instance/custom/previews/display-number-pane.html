@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Preview Display</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+
+
+</head>
+
+<body>
+  <script>
+    var util = {
+      formatDate: function (date, formatStr) {
+        var str = formatStr;
+        var Week = ['日', '一', '二', '三', '四', '五', '六'];
+
+        str = str.replace(/yyyy|YYYY/, date.getFullYear());
+        str = str.replace(/yy|YY/, (date.getYear() % 100) > 9 ? (date.getYear() % 100).toString() : '0' + (date.getYear() % 100));
+
+        str = str.replace(/MM/, date.getMonth() > 9 ? (date.getMonth() + 1).toString() : '0' + (date.getMonth() + 1));
+        str = str.replace(/M/g, date.getMonth());
+
+        str = str.replace(/w|W/g, Week[date.getDay()]);
+
+        str = str.replace(/dd|DD/, date.getDate() > 9 ? date.getDate().toString() : '0' + date.getDate());
+        str = str.replace(/d|D/g, date.getDate());
+
+        str = str.replace(/hh|HH/, date.getHours() > 9 ? date.getHours().toString() : '0' + date.getHours());
+        str = str.replace(/h|H/g, date.getHours());
+        str = str.replace(/mm/, date.getMinutes() > 9 ? date.getMinutes().toString() : '0' + date.getMinutes());
+        str = str.replace(/m/g, date.getMinutes());
+        str = str.replace(/ss|SS/, date.getSeconds() > 9 ? date.getSeconds().toString() : '0' + date.getSeconds());
+        str = str.replace(/s|S/g, date.getSeconds());
+
+        return str;
+      },
+      random: function (min, max) {
+        if (max === undefined) {
+          max = min;
+          min = 0;
+        }
+        var rang = max - min;
+        return Math.floor(Math.random() * rang) + min;
+      }
+    };
+    (function () {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+        graphView.fitContent(true);
+
+        datetime = dataModel.getDataByTag('datetime');
+        num1 = dataModel.getDataByTag('num1');
+        num2 = dataModel.getDataByTag('num2');
+        var cnt = 0;
+        //datetime
+        setInterval(function () {
+          datetime.a('ht.value', util.formatDate(new Date(), 'YYYY-MM-DD hh:mm:ss'));
+          num1.a('ht.value', ++cnt);
+        }, 500);
+
+        // 模拟3秒获取一次数据
+        add();
+        setInterval(function () {
+          add();
+        }, 1000 * 3);
+      });
+
+      function add() {
+        var increase = util.random(100, 500);
+        var old = parseInt(num2.a('ht.value')) || 0;
+        ht.Default.startAnim({
+          frames: 30,
+          interval: 10,
+          easing: function (t) { return t * t; },
+          action: function (v, t) {
+            num2.a('ht.value', parseInt(old + increase * v));
+          }
+        });
+      }
+
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+{
+  "v": "6.2.8",
+  "p": {
+    "background": "rgb(0,0,0)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "connectActionType": null,
+    "rotateAsClock": false,
+    "previewURL": "display-number-pane.html"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 4207,
+      "p": {
+        "displayName": "number-pane",
+        "tag": "num1",
+        "image": "symbols/basic/number-pane.json",
+        "position": {
+          "x": 460.05495,
+          "y": 396.10052
+        },
+        "width": 236.3995,
+        "height": 24
+      },
+      "a": {
+        "ht.gap": 13
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 15528,
+      "p": {
+        "displayName": "number-pane",
+        "tag": "datetime",
+        "image": "symbols/basic/number-pane.json",
+        "position": {
+          "x": 460.05495,
+          "y": 367.28486
+        },
+        "width": 324,
+        "height": 24
+      },
+      "a": {
+        "pane.color": "rgb(212,0,0)",
+        "pane.value": "2018-00-00 00:00:00",
+        "pane.gap": 2,
+        "ht.color": "rgb(212,0,0)",
+        "ht.value": "2018-06-01 00:00:00",
+        "ht.gap": 2
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4209,
+      "p": {
+        "displayName": "number-pane",
+        "tag": "num2",
+        "image": "symbols/basic/number-pane.json",
+        "position": {
+          "x": 441.52838,
+          "y": 425.17456
+        },
+        "width": 268.3995,
+        "height": 24
+      },
+      "a": {
+        "pane.digit": 8,
+        "pane.color": "#FEB64D",
+        "pane.value": "123",
+        "pane.gap": 2,
+        "pane.textAlign": "right",
+        "ht.textAlign": "right",
+        "ht.color": "#FEB64D",
+        "ht.digit": 10,
+        "ht.gap": 13
+      }
+    }
+  ]
+}

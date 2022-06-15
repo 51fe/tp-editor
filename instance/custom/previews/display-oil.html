@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+
+  <script>
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+
+        var potList = [];
+        var paList = []
+        var maxVolume = 20000;
+        var maxHeight = 22;
+
+        dataModel.each(function (d) {
+          if (d.getDisplayName() === 'pot')
+            potList.push(d);
+          if (d.getDisplayName() === 'pa_msg')
+            paList.push(d);
+        });
+
+        setInterval(function () {
+          potList.forEach(function (p) {
+            var r = Math.random();
+            var t = Math.random() * 30 + 10;
+            p.a({
+              'volume': (r * maxVolume).toFixed(1),
+              'pb.value': r,
+              'height': (r * maxHeight).toFixed(1),
+              'temperature': t.toFixed(1)
+            });
+          });
+
+          paList.forEach(function (p) {
+            var r = Math.random() * 0.001;
+            p.a('value', r.toFixed(4));
+          });
+        }, 1000);
+
+        graphView.fitContent(true);
+      });
+    }
+
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
+</html>

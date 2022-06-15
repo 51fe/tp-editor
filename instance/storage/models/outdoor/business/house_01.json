@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/outdoor/business/house_01.obj",
+  "mtl": "assets/objs/outdoor/business/house_01.mtl",
+  "image": "",
+  "prefix": "assets/objs/outdoor/business/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    10,
+    10,
+    10
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

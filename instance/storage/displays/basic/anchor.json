@@ -1,0 +1,210 @@
+{
+  "v": "6.2.5",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "connectActionType": null
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 3149,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 0.5236,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3150,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 1.0472,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3151,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3152,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 2.0944,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3153,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 2.61799,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3154,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3155,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 3.66519,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3156,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 4.18879,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3157,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3158,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 5.23599,
+        "position": {
+          "x": 21.11079,
+          "y": 113.0048
+        },
+        "anchor": {
+          "x": 0.10128,
+          "y": 0.15635
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3159,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 5.75959,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3160,
+      "p": {
+        "image": "symbols/basic/node.json",
+        "rotation": 6.28319,
+        "position": {
+          "x": 179.15764,
+          "y": 185.37738
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 4.71053
+        }
+      }
+    }
+  ],
+  "contentRect": {
+    "x": 0.15748,
+    "y": 6.37714,
+    "width": 358.00038,
+    "height": 358.00043
+  }
+}

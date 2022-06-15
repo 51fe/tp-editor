@@ -1,0 +1,21 @@
+{
+  "dataBindings": [
+    {
+      "attr": "imageURL",
+      "valueType": "Image",
+      "defaultValue": "assets/hightopo.png"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_image.json",
+  "renderHTML": "__ht__function(data, gv, cache) {\n    if (!cache.htmlView) {\n        var image = cache.htmlView = document.createElement('img');\n        image.addEventListener('mousedown', function(e){e.preventDefault();}, false);\n        image.layoutHTML = function() {\n            gv.layoutHTML(data, image);\n        };\n    }\n    cache.htmlView.src = data.a('imageURL');\n    return cache.htmlView;\n}",
+  "width": {
+    "func": "__ht__function(data, view) {\nvar image = ht.Default.getImage(data.a('imageURL'));\nif (image && image.width) {\n    return image.width;\n}\nreturn undefined;\n}",
+    "value": 100
+  },
+  "height": {
+    "func": "__ht__function(data, view) {\nvar image = ht.Default.getImage(data.a('imageURL'));\nif (image && image.height) {\n    return image.height;\n}\nreturn undefined;\n}",
+    "value": 100
+  },
+  "pixelPerfect": false,
+  "comps": []
+}

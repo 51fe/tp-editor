@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Style</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="custom/images/favicon.ico" />
+        <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+
+        <!-- ht config -->
+        <script src='custom/configs-customstyle/htconfig.js'></script>
+
+        <!-- configuration for editor -->
+        <script src='custom/configs-customstyle/config.js'></script>
+
+        <!-- ht core -->
+        <script src='libs/core/ht.js'></script>
+        <!-- ht plugins -->
+        <script src="libs/plugin/ht-cssanimation.js"></script>
+        <script src='libs/plugin/ht-contextmenu.js'></script>
+        <script src='libs/plugin/ht-dialog.js'></script>
+        <script src='libs/plugin/ht-edgetype.js'></script>
+        <script src='libs/plugin/ht-form.js'></script>
+        <script src='libs/plugin/ht-overview.js'></script>
+        <script src="libs/plugin/ht-autolayout.js"></script>
+        <script src="libs/plugin/ht-obj.js"></script>
+        <script src="libs/plugin/ht-historymanager.js"></script>
+
+        <!-- socket.io -->
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script>
+            function init() {
+                var urls = tpeditor_config.subConfigs || [];
+                urls.push('client.js');
+                ht.Default.loadJS(urls, function(){
+                    urls = [
+                        'locales/' + tpeditor.config.locale + '.js',
+                        'custom/locales/' + tpeditor.config.locale + '.js'
+                    ];
+                    urls.push(tpeditor.init);
+                    if (tpeditor.config.libs) {
+                        urls = urls.concat(tpeditor.config.libs);
+                    }
+                    urls.push('vs/loader.js');
+                    urls.push('vs/editor/editor.main.nls.js');
+                    urls.push('vs/editor/editor.main.js');
+                    ht.Default.loadJS(urls, function(){
+                        window.editor = tpeditor.createEditor();
+                    });
+                });
+            }
+        </script>
+    </head>
+    <body onload='init()'>
+    </body>
+</html>

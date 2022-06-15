@@ -1,0 +1,47 @@
+{
+  "modified": "Fri Jan 11 2019 11:56:37 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "borderColor",
+      "valueType": "Color"
+    },
+    {
+      "attr": "circleRect",
+      "valueType": "String"
+    }
+  ],
+  "width": 256,
+  "height": 256,
+  "boundExtend": 4,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "circle",
+      "borderWidth": 4,
+      "borderColor": "rgb(212,0,0)",
+      "rect": [
+        0,
+        124,
+        256,
+        8
+      ]
+    },
+    {
+      "type": "circle",
+      "borderWidth": 6,
+      "borderColor": {
+        "func": "attr@borderColor",
+        "value": "rgb(255,133,133)"
+      },
+      "rect": {
+        "func": "attr@circleRect",
+        "value": [
+          -0.5,
+          124,
+          257,
+          8
+        ]
+      }
+    }
+  ]
+}

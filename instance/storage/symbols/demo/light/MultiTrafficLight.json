@@ -1,0 +1,91 @@
+{
+  "modified": "Sun Jan 20 2019 12:15:00 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "left.light1.circle.background",
+      "valueType": "Color",
+      "name": "左灯1圆背景",
+      "group": "左灯光"
+    },
+    {
+      "attr": "left.light2.circle.background",
+      "valueType": "Color",
+      "name": "左灯2圆背景"
+    },
+    {
+      "attr": "left.light3.circle.background",
+      "valueType": "Color",
+      "name": "左灯3圆背景"
+    },
+    {
+      "attr": "center.light1.circle.background",
+      "valueType": "Color",
+      "name": "中灯1圆背景",
+      "group": "中灯光"
+    },
+    {
+      "attr": "center.light2.circle.background",
+      "valueType": "Color",
+      "name": "中灯2圆背景"
+    },
+    {
+      "attr": "center.light3.circle.background",
+      "valueType": "Color",
+      "name": "中灯3圆背景"
+    },
+    {
+      "attr": "right.light1.circle.background",
+      "valueType": "Color",
+      "name": "右灯1圆背景",
+      "group": "右灯光"
+    },
+    {
+      "attr": "right.light2.circle.background",
+      "valueType": "Color",
+      "name": "右灯2圆背景"
+    },
+    {
+      "attr": "right.light3.circle.background",
+      "valueType": "Color",
+      "name": "右灯3圆背景"
+    }
+  ],
+  "width": 130,
+  "height": 95,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "image",
+      "name": "symbols/demo/light/TrafficLight.json",
+      "prefix": "left",
+      "rect": [
+        0,
+        0,
+        40,
+        95
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/demo/light/TrafficLight.json",
+      "prefix": "center",
+      "rect": [
+        45,
+        0,
+        40,
+        95
+      ]
+    },
+    {
+      "type": "image",
+      "name": "symbols/demo/light/TrafficLight.json",
+      "prefix": "right",
+      "rect": [
+        90,
+        0,
+        40,
+        95
+      ]
+    }
+  ]
+}

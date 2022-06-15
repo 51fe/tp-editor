@@ -1,0 +1,45 @@
+{
+  "modified": "Wed Jan 02 2019 17:30:52 GMT+0800 (中国标准时间)",
+  "width": 204,
+  "height": 48,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "text",
+      "text": "文本说明文本",
+      "align": "center",
+      "color": "rgb(61,61,61)",
+      "font": "24px arial, sans-serif",
+      "rect": [
+        42.93149,
+        6.25159,
+        118.0751,
+        35.49683
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(61,61,61)",
+      "borderColor": "#979797",
+      "cornerRadius": 8,
+      "rect": [
+        187.86531,
+        6.25159,
+        16,
+        35.49683
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(61,61,61)",
+      "borderColor": "#979797",
+      "cornerRadius": 8,
+      "rect": [
+        0.13469,
+        6.25159,
+        16,
+        35.49683
+      ]
+    }
+  ]
+}

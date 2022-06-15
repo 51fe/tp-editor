@@ -1,0 +1,5620 @@
+{
+  "v": "7.0.1-dev23",
+  "p": {
+    "background": "rgb(0,0,0)",
+    "envmap": "assets/map/environment/dusk_01.jpg",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "bloom": {
+        "enable": true,
+        "strength": 0.12,
+        "threshold": 0.79,
+        "radius": 0.4,
+        "overrideAlpha": false
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 8460,
+      "p": {
+        "displayName": "skybox",
+        "tag": "skyBox",
+        "rotation": 0.80285,
+        "width": 9000,
+        "height": 9000,
+        "tall": 9000,
+        "elevation": 273
+      },
+      "s": {
+        "shape3d": "sphere",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.reverse.flip": true,
+        "shape3d.image": "assets/map/skybox/day_01.jpg",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8461,
+      "p": {
+        "displayName": "ground",
+        "parent": {
+          "__i": 8460
+        },
+        "host": {
+          "__i": 8460
+        },
+        "rotation": 6.28319,
+        "anchorElevation": 0,
+        "width": 1500,
+        "height": 1500,
+        "tall": 9,
+        "elevation": -8.64606
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "rgba(107,107,107,0.26)",
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.side": 6,
+        "shape3d.top.uv.scale": [
+          64,
+          64
+        ],
+        "all.color": "rgba(186,186,186,0.51)",
+        "all.reverse.cull": true,
+        "bottom.visible": false,
+        "all.transparent": true,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "envmap": 0.05,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8462,
+      "p": {
+        "parent": {
+          "__i": 8460
+        },
+        "host": {
+          "__i": 8460
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/custom/ground/water_treatment/ground.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8463,
+      "p": {
+        "parent": {
+          "__i": 8460
+        },
+        "host": {
+          "__i": 8460
+        },
+        "position": {
+          "x": 0,
+          "y": -17.77721
+        },
+        "anchorElevation": 0,
+        "elevation": 1.51499
+      },
+      "s": {
+        "shape3d": "models/custom/ground/water_treatment/road.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8464,
+      "p": {
+        "position": {
+          "x": -11.80666,
+          "y": 21.56778
+        },
+        "anchorElevation": 0,
+        "elevation": 1.2335
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/pump_house_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8465,
+      "p": {
+        "position": {
+          "x": -212.80602,
+          "y": -23.99869
+        },
+        "anchorElevation": 0,
+        "elevation": 0.99694
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_08.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8466,
+      "p": {
+        "position": {
+          "x": -333.56821,
+          "y": 22.74882
+        },
+        "anchorElevation": 0,
+        "elevation": 1.33962
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8467,
+      "p": {
+        "position": {
+          "x": -323.93396,
+          "y": 119.06138
+        },
+        "anchorElevation": 0,
+        "elevation": 1.36237
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8468,
+      "p": {
+        "position": {
+          "x": -323.93396,
+          "y": 166.14978
+        },
+        "anchorElevation": 0,
+        "elevation": 1.45527
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_03.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8469,
+      "p": {
+        "position": {
+          "x": -73.72667,
+          "y": 123.23451
+        },
+        "anchorElevation": 0,
+        "elevation": 1.34206
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_04.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8470,
+      "p": {
+        "position": {
+          "x": 43.63349,
+          "y": 125.38582
+        },
+        "anchorElevation": 0,
+        "elevation": 1.31291
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_05.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8471,
+      "p": {
+        "position": {
+          "x": 188.26296,
+          "y": 125.25687
+        },
+        "anchorElevation": 0,
+        "elevation": 1.22206
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_06.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8472,
+      "p": {
+        "position": {
+          "x": 349.88414,
+          "y": 123.32472
+        },
+        "anchorElevation": 0,
+        "elevation": 1.09647
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_07.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8473,
+      "p": {
+        "position": {
+          "x": 339.5743,
+          "y": -28.243
+        },
+        "anchorElevation": 0,
+        "elevation": 1.20326
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/laminar_cooling_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8474,
+      "p": {
+        "parent": {
+          "__i": 8473
+        },
+        "host": {
+          "__i": 8473
+        },
+        "position": {
+          "x": -66.46133,
+          "y": -33.5028
+        },
+        "anchorElevation": 0,
+        "elevation": 1.46023
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/laminar_cooling_03.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8475,
+      "p": {
+        "parent": {
+          "__i": 8473
+        },
+        "host": {
+          "__i": 8473
+        },
+        "position": {
+          "x": 134.1859,
+          "y": -33.5028
+        },
+        "anchorElevation": 0,
+        "elevation": 1.16869
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/laminar_cooling_03.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8476,
+      "p": {
+        "parent": {
+          "__i": 8473
+        },
+        "host": {
+          "__i": 8473
+        },
+        "position": {
+          "x": 282.78681,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 0.85769
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/laminar_cooling_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8477,
+      "p": {
+        "position": {
+          "x": -334.71289,
+          "y": -58.77045
+        },
+        "anchorElevation": 0,
+        "elevation": 1.34789
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/pump_house_03.json",
+        "wf.visible": "selected",
+        "envmap": 0.2,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8478,
+      "p": {
+        "position": {
+          "x": 277.4781,
+          "y": 13.99543
+        },
+        "anchorElevation": 0,
+        "elevation": 1.28881
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/pump_house_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8479,
+      "p": {
+        "position": {
+          "x": -355.92728,
+          "y": -106.21611
+        },
+        "anchorElevation": 0,
+        "elevation": 1.2771
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/dehydrator_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8480,
+      "p": {
+        "position": {
+          "x": 134.54861,
+          "y": -106.97371
+        },
+        "anchorElevation": 0,
+        "elevation": 1.46429
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/filter_room_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8481,
+      "p": {
+        "position": {
+          "x": -250.425,
+          "y": 142.9804
+        },
+        "anchorElevation": 0,
+        "elevation": 1.33201
+      },
+      "s": {
+        "shape3d": "models/equipment/water/pool_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8482,
+      "p": {
+        "position": {
+          "x": -191.13151,
+          "y": 143.683
+        },
+        "anchorElevation": 0,
+        "elevation": 1.36509
+      },
+      "s": {
+        "shape3d": "models/equipment/water/pool_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8483,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": -178.32042,
+          "y": -110.04257
+        },
+        "anchorElevation": 0,
+        "width": 34,
+        "height": 10,
+        "tall": 12
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_07.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8484,
+      "p": {
+        "rotation": -1.5708,
+        "position": {
+          "x": -66.17029,
+          "y": -110.04257
+        },
+        "anchorElevation": 0,
+        "width": 34,
+        "height": 10,
+        "tall": 12
+      },
+      "s": {
+        "shape3d": "models/outdoor/industrial_buliding/workshop_07.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8485,
+      "p": {
+        "position": {
+          "x": -400.08749,
+          "y": 100.323
+        },
+        "anchorElevation": 0,
+        "elevation": 1.31446
+      },
+      "s": {
+        "shape3d": "models/equipment/water/tower_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8486,
+      "p": {
+        "parent": {
+          "__i": 8485
+        },
+        "host": {
+          "__i": 8485
+        },
+        "position": {
+          "x": -399.19956,
+          "y": 138.51116
+        },
+        "anchorElevation": 0,
+        "elevation": 1.53154
+      },
+      "s": {
+        "shape3d": "models/equipment/water/tower_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8487,
+      "p": {
+        "parent": {
+          "__i": 8485
+        },
+        "host": {
+          "__i": 8485
+        },
+        "position": {
+          "x": -395.58598,
+          "y": 169.90271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.40892
+      },
+      "s": {
+        "shape3d": "models/equipment/water/tower_02.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8488,
+      "p": {
+        "position": {
+          "x": -307.2307,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8489,
+      "p": {
+        "parent": {
+          "__i": 8488
+        },
+        "host": {
+          "__i": 8488
+        },
+        "position": {
+          "x": -324.9216,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8490,
+      "p": {
+        "parent": {
+          "__i": 8488
+        },
+        "host": {
+          "__i": 8488
+        },
+        "position": {
+          "x": -289.5398,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8491,
+      "p": {
+        "parent": {
+          "__i": 8488
+        },
+        "host": {
+          "__i": 8488
+        },
+        "position": {
+          "x": -342.6125,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8492,
+      "p": {
+        "parent": {
+          "__i": 8488
+        },
+        "host": {
+          "__i": 8488
+        },
+        "position": {
+          "x": -360.3034,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8493,
+      "p": {
+        "parent": {
+          "__i": 8488
+        },
+        "host": {
+          "__i": 8488
+        },
+        "position": {
+          "x": -377.9943,
+          "y": -23.50344
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/water_purification_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8494,
+      "p": {
+        "position": {
+          "x": -97.58869,
+          "y": -109.54404
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/pool_03.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8495,
+      "p": {
+        "parent": {
+          "__i": 8494
+        },
+        "host": {
+          "__i": 8494
+        },
+        "position": {
+          "x": -146.71249,
+          "y": -109.54404
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/equipment/water/pool_03.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8496,
+      "p": {
+        "position": {
+          "x": -214.69078,
+          "y": -98.77549
+        },
+        "anchorElevation": 0,
+        "elevation": 1.15196
+      },
+      "s": {
+        "shape3d": "models/equipment/water/oil_remover_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8497,
+      "p": {
+        "parent": {
+          "__i": 8496
+        },
+        "host": {
+          "__i": 8496
+        },
+        "position": {
+          "x": -214.69078,
+          "y": -122.1465
+        },
+        "anchorElevation": 0,
+        "elevation": 1.15196
+      },
+      "s": {
+        "shape3d": "models/equipment/water/oil_remover_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8498,
+      "p": {
+        "position": {
+          "x": -301.27706,
+          "y": -109.06552
+        },
+        "anchorElevation": 0,
+        "elevation": 2.13476
+      },
+      "s": {
+        "shape3d": "models/equipment/water/sedimentation_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8499,
+      "p": {
+        "parent": {
+          "__i": 8498
+        },
+        "host": {
+          "__i": 8498
+        },
+        "position": {
+          "x": -259.4067,
+          "y": -109.06552
+        },
+        "anchorElevation": 0,
+        "elevation": 2.13597
+      },
+      "s": {
+        "shape3d": "models/equipment/water/sedimentation_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8500,
+      "p": {
+        "position": {
+          "x": -125.64927,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8501,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": -99.2948,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8502,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": -18.50284,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8503,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": -72.98252,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8504,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": -45.64232,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8505,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 10.85647,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8506,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 47.74092,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27.04362
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8507,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 75.3613,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8508,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 101.71577,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8509,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 263.60676,
+          "y": -27.23369
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8510,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 292.96607,
+          "y": -27.23369
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8511,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 335.71825,
+          "y": -25.89386
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8512,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 182.50773,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8513,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 128.02805,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8514,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 155.36825,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8515,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": 211.86704,
+          "y": -30.17324
+        },
+        "anchorElevation": 0,
+        "elevation": 27
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8516,
+      "p": {
+        "parent": {
+          "__i": 8500
+        },
+        "host": {
+          "__i": 8500
+        },
+        "position": {
+          "x": -153.26965,
+          "y": -30.64782
+        },
+        "anchorElevation": 0,
+        "elevation": 27.04362
+      },
+      "s": {
+        "shape3d": "models/equipment/water/suction_well_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8517,
+      "p": {
+        "position": {
+          "x": 296.42056,
+          "y": -128.29716
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8518,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 274.36427,
+          "y": -128.29151
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8519,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 285.39241,
+          "y": -128.30281
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8520,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 263.33612,
+          "y": -128.28586
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8521,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 252.30797,
+          "y": -128.28021
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8522,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 241.27983,
+          "y": -128.39885
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8523,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 230.25168,
+          "y": -128.3932
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8524,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 219.22354,
+          "y": -128.38755
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8525,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 208.19539,
+          "y": -128.3819
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8526,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 197.16724,
+          "y": -128.27456
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8527,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 186.1391,
+          "y": -128.37625
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8528,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 175.11095,
+          "y": -128.3706
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8529,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 164.0828,
+          "y": -128.36495
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8530,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 153.05466,
+          "y": -128.3593
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8531,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 142.02651,
+          "y": -128.35365
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8532,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 130.99836,
+          "y": -128.34801
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8533,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 119.97022,
+          "y": -128.34236
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8534,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 108.94207,
+          "y": -128.33671
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8535,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 97.91392,
+          "y": -128.33106
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8536,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 86.88578,
+          "y": -128.32541
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8537,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 75.85763,
+          "y": -128.31976
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8538,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 64.82948,
+          "y": -128.31411
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8539,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 53.80134,
+          "y": -128.30846
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8540,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 42.77319,
+          "y": -128.26891
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8541,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 31.74505,
+          "y": -128.26326
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8542,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 20.7169,
+          "y": -128.25762
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8543,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": 9.68875,
+          "y": -128.25197
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8544,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": -1.33939,
+          "y": -128.24632
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8545,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": -12.36754,
+          "y": -128.24067
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8546,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "position": {
+          "x": -23.39569,
+          "y": -128.23502
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8547,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 297.84649,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8548,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 275.86414,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8549,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 286.85532,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8550,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 264.87297,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8551,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 253.88179,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8552,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 242.89061,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8553,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 231.89944,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8554,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 220.90826,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8555,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 209.91709,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8556,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 198.92591,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8557,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 187.93474,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8558,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 176.94356,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8559,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 165.95239,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8560,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 154.96121,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8561,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 143.97004,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8562,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 132.97886,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8563,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 121.98768,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8564,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 110.99651,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8565,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 100.00533,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8566,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 89.01416,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8567,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 78.02298,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8568,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 67.03181,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8569,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 56.04063,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8570,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 45.04946,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8571,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 34.05828,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8572,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 23.06711,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8573,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 12.07593,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8574,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": 1.08475,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8575,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -9.90642,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8576,
+      "p": {
+        "parent": {
+          "__i": 8517
+        },
+        "host": {
+          "__i": 8517
+        },
+        "rotation": -3.14159,
+        "position": {
+          "x": -20.8976,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "elevation": 1.76232
+      },
+      "s": {
+        "shape3d": "models/equipment/water/filter_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.05,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8577,
+      "p": {
+        "position": {
+          "x": 380.26119,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8578,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 262.81388,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8579,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 148.3211,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8580,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 18.14559,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8581,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -112.59155,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1,
+        "width": 787
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8582,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -253.03493,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1,
+        "width": 787
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8583,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -374.06289,
+          "y": -191.73574
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1,
+        "width": 787
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8584,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": 422.55971,
+          "y": -134.6512
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8585,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": 422.55956,
+          "y": -16.63376
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8586,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "rotation": -1.5708,
+        "position": {
+          "x": 422.55956,
+          "y": 87.24066
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8587,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -234.1316,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8588,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -0.60643,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8589,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 116.15615,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8590,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 232.91874,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8591,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": 349.68132,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8592,
+      "p": {
+        "parent": {
+          "__i": 8577
+        },
+        "host": {
+          "__i": 8577
+        },
+        "position": {
+          "x": -117.36902,
+          "y": 84.83812
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.1,
+          "y": 0.1
+        },
+        "scaleTall": 0.1
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_box_01.json",
+        "wf.visible": "selected",
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8593,
+      "p": {
+        "position": {
+          "x": 354.1071,
+          "y": -163.18437
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8594,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 319.25783,
+          "y": -163.22629
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8595,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 284.40857,
+          "y": -163.26822
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8596,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 249.5593,
+          "y": -163.31015
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8597,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 214.71003,
+          "y": -163.35207
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8598,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 179.86077,
+          "y": -163.394
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8599,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 145.0115,
+          "y": -163.43592
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8600,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 110.16223,
+          "y": -163.47785
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8601,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 75.31297,
+          "y": -163.51978
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8602,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 40.4637,
+          "y": -163.5617
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8603,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 5.61443,
+          "y": -163.60363
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8604,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -29.23483,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8605,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -73.28766,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8606,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -106.9297,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8607,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -140.57174,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8608,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -174.21378,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8609,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -207.85582,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8610,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -241.49785,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8611,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -275.13989,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8612,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -308.78193,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8613,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -342.42397,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8614,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -376.066,
+          "y": -163.64555
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8615,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 388.95637,
+          "y": -135.92677
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8616,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 388.95637,
+          "y": -110.48609
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8617,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 389.16859,
+          "y": -82.62631
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8618,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 390.70955,
+          "y": -44.41119
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8619,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 390.70955,
+          "y": -11.96643
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8620,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 390.70955,
+          "y": 20.47833
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8621,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 390.70955,
+          "y": 52.9231
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8622,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.715,
+          "y": 182.43084
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8623,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.82771,
+          "y": 141.21559
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8624,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.94041,
+          "y": 100.00035
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8625,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -420.05312,
+          "y": 58.78511
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8626,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.26419,
+          "y": 17.56987
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8627,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -420.16582,
+          "y": -23.64537
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8628,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -420.27853,
+          "y": -64.86062
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8629,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.6023,
+          "y": -106.07586
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8630,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": -419.4896,
+          "y": -147.2911
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8631,
+      "p": {
+        "parent": {
+          "__i": 8593
+        },
+        "host": {
+          "__i": 8593
+        },
+        "position": {
+          "x": 388.95637,
+          "y": -163.14244
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.03,
+          "y": 0.03
+        },
+        "scaleTall": 0.03,
+        "elevation": 0.47254
+      },
+      "s": {
+        "shape3d": "models/outdoor/decorate/bush_Sphere_01.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false,
+        "envmap": 0.2,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8632,
+      "p": {
+        "displayName": "water_light",
+        "position": {
+          "x": -146.475,
+          "y": -109.63854
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": -0.82674
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8633,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -97.71554,
+          "y": -109.63854
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": -0.82674
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8634,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -301.12648,
+          "y": -109.07707
+        },
+        "anchorElevation": 0,
+        "width": 31,
+        "height": 31,
+        "tall": 1,
+        "elevation": 11
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "shape3d.top.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8635,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -259.25871,
+          "y": -109.07707
+        },
+        "anchorElevation": 0,
+        "width": 31,
+        "height": 31,
+        "tall": 1,
+        "elevation": 11
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "shape3d.top.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8636,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -192.20777,
+          "y": 141.15102
+        },
+        "anchorElevation": 0,
+        "width": 44,
+        "height": 44.7,
+        "tall": 1,
+        "elevation": 14
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "shape3d.top.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8637,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -359.78675,
+          "y": -20.12747
+        },
+        "anchorElevation": 0,
+        "width": 52.43708,
+        "height": 41.91056,
+        "tall": 8,
+        "elevation": 0.17326
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8638,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -307.70362,
+          "y": -20.12747
+        },
+        "anchorElevation": 0,
+        "width": 54.01854,
+        "height": 41.91056,
+        "tall": 8,
+        "elevation": 0.17326
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.41,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 8639,
+      "p": {
+        "displayName": "water_light",
+        "parent": {
+          "__i": 8632
+        },
+        "host": {
+          "__i": 8632
+        },
+        "position": {
+          "x": -250.88355,
+          "y": 143.33508
+        },
+        "anchorElevation": 0,
+        "width": 52.21525,
+        "height": 74.26557,
+        "tall": 9,
+        "elevation": 0.27207,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": -261.79153,
+              "y": 106.2023
+            },
+            {
+              "x": -224.77593,
+              "y": 106.2023
+            },
+            {
+              "x": -224.77593,
+              "y": 180.46786
+            },
+            {
+              "x": -276.99118,
+              "y": 180.46786
+            },
+            {
+              "x": -276.99118,
+              "y": 144.48604
+            },
+            {
+              "x": -261.79153,
+              "y": 144.48604
+            }
+          ]
+        },
+        "thickness": -1
+      },
+      "s": {
+        "shape3d.color": "#EEEEEE",
+        "shape3d.top.color": "#EEEEEE",
+        "shape3d.bottom.color": "#EEEEEE",
+        "shape.background": "#EEEEEE",
+        "shape3d.visible": false,
+        "shape3d.bottom.visible": false,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "shape3d.top.image": "assets/map/water/water_01.jpg",
+        "envmap": 0.4,
+        "2d.movable": false,
+        "3d.movable": false,
+        "2d.selectable": false,
+        "3d.selectable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8640,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -145.62994,
+          "y": -143.17355
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": -1.96716
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.transparent": true,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8641,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -97.71554,
+          "y": -143.17355
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": -1.96717
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8642,
+      "p": {
+        "displayName": "data",
+        "rotationX": 1.5708,
+        "position": {
+          "x": -361.91367,
+          "y": -58.38226
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 32.28055
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8643,
+      "p": {
+        "displayName": "data",
+        "rotationX": 1.5708,
+        "position": {
+          "x": -313.99927,
+          "y": -58.38226
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 32.28055
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8644,
+      "p": {
+        "displayName": "data",
+        "rotation": -3.14159,
+        "rotationX": 1.5708,
+        "position": {
+          "x": -313.99927,
+          "y": -58.38226
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 32.28055
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8645,
+      "p": {
+        "displayName": "data",
+        "rotation": -3.14159,
+        "rotationX": 1.5708,
+        "position": {
+          "x": -361.91367,
+          "y": -58.38226
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 32.28055
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8646,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -248.70982,
+          "y": 201.53656
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8647,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -200.79542,
+          "y": 201.53656
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8648,
+      "p": {
+        "displayName": "data",
+        "rotation": -1.5708,
+        "rotationX": 1.5708,
+        "position": {
+          "x": -395.58598,
+          "y": 208.92186
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 21.89736
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8649,
+      "p": {
+        "displayName": "data",
+        "rotation": 1.5708,
+        "rotationX": 1.5708,
+        "position": {
+          "x": -395.58598,
+          "y": 208.67221
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 21.89736
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8650,
+      "p": {
+        "displayName": "data",
+        "rotationX": 1.5708,
+        "position": {
+          "x": 52.0442,
+          "y": 15.76643
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 7,
+        "elevation": 38.89943
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8651,
+      "p": {
+        "displayName": "data",
+        "rotation": -3.14159,
+        "rotationX": 1.5708,
+        "position": {
+          "x": 52.29385,
+          "y": 15.76643
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.87707,
+        "tall": 8,
+        "elevation": 38.89943
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8652,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": 339.5743,
+          "y": -106.97371
+        },
+        "anchorElevation": 0,
+        "width": 67.80108,
+        "height": 45.06557,
+        "tall": 8,
+        "elevation": -1
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8653,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -305.20593,
+          "y": -145.35281
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.05639,
+        "tall": 8,
+        "elevation": -1.96716
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.transparent": true,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8654,
+      "p": {
+        "displayName": "data",
+        "position": {
+          "x": -257.29153,
+          "y": -145.35281
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 29.05639,
+        "tall": 8,
+        "elevation": -1.96717
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/1.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8655,
+      "p": {
+        "displayName": "data",
+        "rotationX": 1.5708,
+        "position": {
+          "x": -21.63993,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 25.87707,
+        "tall": 2,
+        "elevation": 38.89943
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/2.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8656,
+      "p": {
+        "displayName": "data",
+        "rotation": -3.14159,
+        "rotationX": 1.5708,
+        "position": {
+          "x": -21.39028,
+          "y": -85.43271
+        },
+        "anchorElevation": 0,
+        "width": 44.95,
+        "height": 25.87707,
+        "tall": 2,
+        "elevation": 38.89943
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape3d": "plane",
+        "shape3d.image": "symbols/3d/box/concise/3.json",
+        "envmap": 0,
+        "shape3d.transparent": true,
+        "shape3d.reverse.cull": true,
+        "wf.short": true,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -251.07784,
+      331.12606,
+      406.55809
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "near": 10,
+    "far": 10000000,
+    "background": "rgb(0,0,0)",
+    "gridVisible": false,
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ],
+    "editHelperDisabled": false
+  }
+}

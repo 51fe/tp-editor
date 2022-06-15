@@ -1,0 +1,305 @@
+{
+  "modified": "Sat Dec 29 2018 14:07:45 GMT+0800 (中国标准时间)",
+  "width": 493,
+  "height": 248,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "shape",
+      "background": "rgba(5,5,5,0.25)",
+      "borderWidth": 1,
+      "borderColor": "#32D3EB",
+      "selectable": false,
+      "scaleX": -1,
+      "rotation": 3.14159,
+      "points": [
+        19.37864,
+        1.33384,
+        19.37864,
+        21.94002,
+        4.50452,
+        29.73346,
+        4.50452,
+        71.09464,
+        19.37864,
+        79.08969,
+        19.37864,
+        190.1861,
+        43.21138,
+        205.73833,
+        43.21138,
+        246.66574,
+        149.29689,
+        246.66574,
+        166.9701,
+        227.42725,
+        308.29443,
+        227.42746,
+        325.51732,
+        246.66595,
+        451.37669,
+        246.66574,
+        472.39432,
+        232.93875,
+        472.39432,
+        205.73833,
+        491.37669,
+        192.20796,
+        491.37669,
+        44.78595,
+        472.39432,
+        35.26214,
+        472.39432,
+        15.36661,
+        109.51587,
+        15.36661,
+        90.64696,
+        1.33384,
+        19.37864,
+        1.33384
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(29,110,122,0.80)",
+      "fillRule": "evenodd",
+      "selectable": false,
+      "scaleX": -1,
+      "points": [
+        144.77856,
+        234.64468,
+        160.91769,
+        246.6666,
+        115.25166,
+        246.6666,
+        98.75765,
+        234.64468
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(29,110,122,0.50)",
+      "fillRule": "evenodd",
+      "selectable": false,
+      "scaleX": -1,
+      "points": [
+        202.15979,
+        234.64468,
+        218.29891,
+        246.6666,
+        172.63288,
+        246.6666,
+        156.13887,
+        234.64468
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(31,110,122,0.20)",
+      "fillRule": "evenodd",
+      "selectable": false,
+      "scaleX": -1,
+      "points": [
+        259.54101,
+        234.64468,
+        275.68014,
+        246.6666,
+        230.01411,
+        246.6666,
+        213.5201,
+        234.64468
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(250,250,250,0.32)",
+      "borderColor": "#979797",
+      "rect": [
+        252.35315,
+        72.60634,
+        3.43437,
+        142.75474
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        279.60137,
+        112.62676,
+        20.3489,
+        89.15539
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        313.72624,
+        152.68812,
+        20.3489,
+        49.09403
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        347.85111,
+        67.93019,
+        20.3489,
+        133.85195
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        381.97597,
+        126.49736,
+        20.3489,
+        75.28479
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        416.10084,
+        86.72165,
+        20.3489,
+        115.0605
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(250,250,250,0.32)",
+      "borderColor": "#979797",
+      "rect": [
+        61.23815,
+        72.60634,
+        3.43437,
+        142.75474
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(250,250,250,0.32)",
+      "borderColor": "#979797",
+      "rotation": 1.5708,
+      "rect": [
+        252.18761,
+        -1.08394,
+        3.76546,
+        409.49861
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        75.766,
+        135.71393,
+        20.41498,
+        66.06822
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        110.00169,
+        104.41926,
+        20.41498,
+        97.36289
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        144.23737,
+        152.68811,
+        20.41498,
+        49.09403
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        178.47306,
+        168.74804,
+        20.41498,
+        33.03411
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgba(0,255,68,0.00)",
+      "borderColor": "#979797",
+      "gradient": "linear.north",
+      "gradientColor": "rgb(43,134,224)",
+      "rect": [
+        212.70875,
+        144.2519,
+        20.41498,
+        57.53025
+      ]
+    },
+    {
+      "type": "text",
+      "text": "文本保密文本",
+      "align": "right",
+      "color": "rgb(51,153,255)",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rect": [
+        326.69818,
+        16.28561,
+        94.19361,
+        13.24478
+      ]
+    },
+    {
+      "type": "text",
+      "text": "文本保密",
+      "color": "rgb(51,153,255)",
+      "scaleX": 2,
+      "scaleY": 2,
+      "rect": [
+        95.2717,
+        16.28561,
+        91.90135,
+        13.24478
+      ]
+    }
+  ]
+}

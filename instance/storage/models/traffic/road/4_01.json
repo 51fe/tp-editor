@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/traffic/road/4_01.obj",
+  "mtl": "assets/objs/traffic/road/4_01.mtl",
+  "image": "",
+  "prefix": "assets/objs/traffic/road/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    0.025,
+    0.025,
+    0.025
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

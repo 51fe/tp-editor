@@ -1,0 +1,3626 @@
+{
+  "v": "6.1.7",
+  "p": {
+    "background": "#000000",
+    "layers": [
+      {
+        "name": "0",
+        "visible": true,
+        "selectable": true,
+        "movable": false,
+        "editable": true
+      },
+      {
+        "name": "1",
+        "visible": true,
+        "selectable": true,
+        "movable": true,
+        "editable": true
+      }
+    ],
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "width": 1440,
+    "height": 900
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 1052,
+      "p": {
+        "displayName": "电压互感器3",
+        "image": "symbols/demo/power/电压互感器3.json",
+        "position": {
+          "x": 604.93151,
+          "y": 55.16784
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1053,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 645.52042,
+          "y": 110.43785
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1054,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "position": {
+          "x": 625.22597,
+          "y": 82.80284
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1055,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "position": {
+          "x": 584.63705,
+          "y": 82.80284
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1056,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 520.55974,
+          "y": 82.80284
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1057,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 492.92473,
+          "y": 110.43785
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1058,
+      "p": {
+        "position": {
+          "x": 537.98034,
+          "y": 101.42918
+        },
+        "width": 50.58489,
+        "height": 154.48762,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 563.27278,
+              "y": 24.18537
+            },
+            {
+              "x": 563.27278,
+              "y": 82.67648
+            },
+            {
+              "x": 548.44764,
+              "y": 82.67648
+            },
+            {
+              "x": 563.27278,
+              "y": 82.67648
+            },
+            {
+              "x": 563.27278,
+              "y": 149.57892
+            },
+            {
+              "x": 512.6879,
+              "y": 149.57892
+            },
+            {
+              "x": 512.6879,
+              "y": 178.67299
+            },
+            {
+              "x": 512.6879,
+              "y": 149.57892
+            },
+            {
+              "x": 563.27278,
+              "y": 149.57892
+            },
+            {
+              "x": 563.27278,
+              "y": 178.67299
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1059,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 512.6879,
+          "y": 203.71722
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1060,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 563.27278,
+          "y": 203.71722
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1061,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 612.42761,
+          "y": 203.71722
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1062,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 612.42761,
+          "y": 151.03799
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1063,
+      "p": {
+        "position": {
+          "x": 587.8502,
+          "y": 287.79454
+        },
+        "width": 49.15483,
+        "height": 118.06619,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 563.27278,
+              "y": 228.76144
+            },
+            {
+              "x": 563.27278,
+              "y": 287.25255
+            },
+            {
+              "x": 612.42761,
+              "y": 287.25255
+            },
+            {
+              "x": 612.42761,
+              "y": 228.76144
+            },
+            {
+              "x": 612.42761,
+              "y": 287.25255
+            },
+            {
+              "x": 563.27278,
+              "y": 287.25255
+            },
+            {
+              "x": 563.27278,
+              "y": 346.82763
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1064,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 512.6879,
+          "y": 256.39645
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1065,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 563.27278,
+          "y": 371.87185
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1066,
+      "p": {
+        "displayName": "带有载调压俩圈自耦变压器",
+        "image": "symbols/demo/power/带有载调压俩圈自耦变压器.json",
+        "position": {
+          "x": 563.27278,
+          "y": 432.75523
+        },
+        "width": 86.3594,
+        "height": 71.6783
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1067,
+      "p": {
+        "position": {
+          "x": 652.37816,
+          "y": 602.74364
+        },
+        "width": 930.29758,
+        "height": 268.29853,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 563.27278,
+              "y": 468.59438
+            },
+            {
+              "x": 563.27278,
+              "y": 489.59088
+            },
+            {
+              "x": 1117.52695,
+              "y": 489.59088
+            },
+            {
+              "x": 187.22937,
+              "y": 489.59088
+            },
+            {
+              "x": 187.22937,
+              "y": 491.88208
+            },
+            {
+              "x": 187.22937,
+              "y": 489.59088
+            },
+            {
+              "x": 563.27278,
+              "y": 489.59088
+            },
+            {
+              "x": 563.27278,
+              "y": 736.8929
+            },
+            {
+              "x": 500.30849,
+              "y": 736.8929
+            },
+            {
+              "x": 500.30849,
+              "y": 610.81807
+            },
+            {
+              "x": 500.30849,
+              "y": 641.40427
+            },
+            {
+              "x": 525.1375,
+              "y": 641.40427
+            },
+            {
+              "x": 474.88743,
+              "y": 641.40427
+            },
+            {
+              "x": 474.88743,
+              "y": 647.8359
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1068,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 524.9566,
+          "y": 709.2579
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1069,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 524.9566,
+          "y": 661.32843
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1070,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 347.93846,
+          "y": 513.89635
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1071,
+      "p": {
+        "displayName": "手车刀闸",
+        "parent": {
+          "__i": 1070
+        },
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 500.30894,
+          "y": 513.89635
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1072,
+      "p": {
+        "displayName": "手车刀闸",
+        "parent": {
+          "__i": 1070
+        },
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 500.30894,
+          "y": 591.64086
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1073,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 187.25379,
+          "y": 513.89635
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1074,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 187.25379,
+          "y": 596.36516
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1075,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 187.25379,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": true,
+        "enabled": false,
+        "powerOn": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1076,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 217.47336,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1077,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 217.47336,
+          "y": 659.83931
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1078,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 156.02863,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1079,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 156.02863,
+          "y": 655.08955
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1080,
+      "p": {
+        "position": {
+          "x": 203.98654,
+          "y": 631.59221
+        },
+        "width": 95.91583,
+        "height": 33.26863,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 187.38507,
+              "y": 614.9579
+            },
+            {
+              "x": 187.38507,
+              "y": 624.9692
+            },
+            {
+              "x": 156.02863,
+              "y": 624.9692
+            },
+            {
+              "x": 156.02863,
+              "y": 632.7191
+            },
+            {
+              "x": 156.02863,
+              "y": 624.9692
+            },
+            {
+              "x": 187.38507,
+              "y": 624.9692
+            },
+            {
+              "x": 251.94445,
+              "y": 624.9692
+            },
+            {
+              "x": 251.94445,
+              "y": 648.22653
+            },
+            {
+              "x": 251.94445,
+              "y": 624.9692
+            },
+            {
+              "x": 217.46608,
+              "y": 624.9692
+            },
+            {
+              "x": 217.46608,
+              "y": 640.63431
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1081,
+      "p": {
+        "displayName": "高压熔断器",
+        "image": "symbols/demo/power/高压熔断器.json",
+        "position": {
+          "x": 500.30894,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1082,
+      "p": {
+        "position": {
+          "x": 187.22937,
+          "y": 685.62982
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1083,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 187.22937,
+          "y": 651.62614
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1084,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 187.22937,
+          "y": 668.62798
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "circle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1085,
+      "p": {
+        "position": {
+          "x": 187.22937,
+          "y": 668.11341
+        },
+        "width": 1,
+        "height": 86.49931,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 187.22937,
+              "y": 624.86376
+            },
+            {
+              "x": 187.22937,
+              "y": 711.36307
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1086,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 347.93846,
+          "y": 596.36516
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1087,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 347.93846,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1088,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 378.15803,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1089,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 378.15803,
+          "y": 659.83931
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1090,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 316.71329,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1091,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 316.71329,
+          "y": 655.08955
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1092,
+      "p": {
+        "position": {
+          "x": 364.67121,
+          "y": 631.59221
+        },
+        "width": 95.91583,
+        "height": 33.26863,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 348.06974,
+              "y": 614.9579
+            },
+            {
+              "x": 348.06974,
+              "y": 624.9692
+            },
+            {
+              "x": 316.71329,
+              "y": 624.9692
+            },
+            {
+              "x": 316.71329,
+              "y": 632.7191
+            },
+            {
+              "x": 316.71329,
+              "y": 624.9692
+            },
+            {
+              "x": 348.06974,
+              "y": 624.9692
+            },
+            {
+              "x": 412.62912,
+              "y": 624.9692
+            },
+            {
+              "x": 412.62912,
+              "y": 648.22653
+            },
+            {
+              "x": 412.62912,
+              "y": 624.9692
+            },
+            {
+              "x": 378.15075,
+              "y": 624.9692
+            },
+            {
+              "x": 378.15075,
+              "y": 640.63431
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1093,
+      "p": {
+        "position": {
+          "x": 347.91404,
+          "y": 685.62982
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1094,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 347.91404,
+          "y": 651.62614
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1095,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 347.91404,
+          "y": 668.62798
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "circle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1096,
+      "p": {
+        "position": {
+          "x": 347.91404,
+          "y": 668.11341
+        },
+        "width": 1,
+        "height": 86.49931,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 347.91404,
+              "y": 624.86376
+            },
+            {
+              "x": 347.91404,
+              "y": 711.36307
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1097,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 656.88293,
+          "y": 513.89635
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1098,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 656.88293,
+          "y": 596.36516
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1099,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 656.88293,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1100,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 687.1025,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1101,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 687.1025,
+          "y": 659.83931
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1102,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 625.65776,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1103,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 625.65776,
+          "y": 655.08955
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1104,
+      "p": {
+        "position": {
+          "x": 673.61568,
+          "y": 631.59221
+        },
+        "width": 95.91583,
+        "height": 33.26863,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 657.01421,
+              "y": 614.9579
+            },
+            {
+              "x": 657.01421,
+              "y": 624.9692
+            },
+            {
+              "x": 625.65776,
+              "y": 624.9692
+            },
+            {
+              "x": 625.65776,
+              "y": 632.7191
+            },
+            {
+              "x": 625.65776,
+              "y": 624.9692
+            },
+            {
+              "x": 657.01421,
+              "y": 624.9692
+            },
+            {
+              "x": 721.57359,
+              "y": 624.9692
+            },
+            {
+              "x": 721.57359,
+              "y": 648.22653
+            },
+            {
+              "x": 721.57359,
+              "y": 624.9692
+            },
+            {
+              "x": 687.09522,
+              "y": 624.9692
+            },
+            {
+              "x": 687.09522,
+              "y": 640.63431
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1105,
+      "p": {
+        "position": {
+          "x": 656.85851,
+          "y": 685.62982
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1106,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 656.85851,
+          "y": 651.62614
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1107,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 656.85851,
+          "y": 668.62798
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "circle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1108,
+      "p": {
+        "position": {
+          "x": 674.82756,
+          "y": 695.87311
+        },
+        "width": 35.9381,
+        "height": 142.0187,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 656.85851,
+              "y": 624.86376
+            },
+            {
+              "x": 656.85851,
+              "y": 766.88246
+            },
+            {
+              "x": 692.79661,
+              "y": 766.88246
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1109,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 717.84083,
+          "y": 766.88246
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1110,
+      "p": {
+        "displayName": "站用变",
+        "image": "symbols/demo/power/站用变.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 756.27296,
+          "y": 766.88246
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1111,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 795.96308,
+          "y": 766.88246
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1112,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 812.86059,
+          "y": 796.11411
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1113,
+      "p": {
+        "displayName": "电力电感器",
+        "image": "symbols/demo/power/电力电感器.json",
+        "position": {
+          "x": 847.0323,
+          "y": 753.06495
+        },
+        "width": 62.34341,
+        "height": 27.63501
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1114,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 846.05153,
+          "y": 766.88246
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1115,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 1013.58778,
+          "y": 513.89635
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1116,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1013.58778,
+          "y": 596.36516
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1117,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 1013.58778,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1118,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 1043.80735,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1119,
+      "p": {
+        "displayName": "电阻",
+        "image": "symbols/demo/power/电阻.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1043.80735,
+          "y": 659.83931
+        },
+        "width": 40.58892,
+        "height": 26.77141
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1120,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 982.36262,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1121,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 982.36262,
+          "y": 655.08955
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1122,
+      "p": {
+        "position": {
+          "x": 1030.32053,
+          "y": 631.59221
+        },
+        "width": 95.91583,
+        "height": 33.26863,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1013.71906,
+              "y": 614.9579
+            },
+            {
+              "x": 1013.71906,
+              "y": 624.9692
+            },
+            {
+              "x": 982.36262,
+              "y": 624.9692
+            },
+            {
+              "x": 982.36262,
+              "y": 632.7191
+            },
+            {
+              "x": 982.36262,
+              "y": 624.9692
+            },
+            {
+              "x": 1013.71906,
+              "y": 624.9692
+            },
+            {
+              "x": 1078.27844,
+              "y": 624.9692
+            },
+            {
+              "x": 1078.27844,
+              "y": 648.22653
+            },
+            {
+              "x": 1078.27844,
+              "y": 624.9692
+            },
+            {
+              "x": 1043.80007,
+              "y": 624.9692
+            },
+            {
+              "x": 1043.80007,
+              "y": 640.63431
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1123,
+      "p": {
+        "position": {
+          "x": 1013.56336,
+          "y": 685.62982
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1124,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 1013.56336,
+          "y": 651.62614
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "triangle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1125,
+      "p": {
+        "rotation": 3.14159,
+        "position": {
+          "x": 1013.56336,
+          "y": 668.62798
+        },
+        "width": 15.49902,
+        "height": 18.28885
+      },
+      "s": {
+        "shape": "circle",
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1126,
+      "p": {
+        "position": {
+          "x": 1031.53241,
+          "y": 695.87311
+        },
+        "width": 35.9381,
+        "height": 142.0187,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1013.56336,
+              "y": 624.86376
+            },
+            {
+              "x": 1013.56336,
+              "y": 766.88246
+            },
+            {
+              "x": 1049.50146,
+              "y": 766.88246
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1127,
+      "p": {
+        "displayName": "电压互感器1",
+        "image": "symbols/demo/power/电压互感器1.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1069.6425,
+          "y": 766.88246
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1128,
+      "p": {
+        "displayName": "避雷器",
+        "image": "symbols/demo/power/避雷器.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1123.66003,
+          "y": 766.88246
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1129,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 1057.19305,
+          "y": 802.28981
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1130,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 1057.19305,
+          "y": 848.17962
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1131,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 1151.29503,
+          "y": 656.81673
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1132,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1151.29503,
+          "y": 743.56542
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1133,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 1151.29503,
+          "y": 701.52962
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1134,
+      "p": {
+        "position": {
+          "x": 1219.41091,
+          "y": 723.09181
+        },
+        "width": 135.19172,
+        "height": 88.77459,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1151.81505,
+              "y": 678.70452
+            },
+            {
+              "x": 1229.56439,
+              "y": 678.70452
+            },
+            {
+              "x": 1192.26415,
+              "y": 678.70452
+            },
+            {
+              "x": 1192.26415,
+              "y": 767.4791
+            },
+            {
+              "x": 1179.94591,
+              "y": 767.4791
+            },
+            {
+              "x": 1287.00677,
+              "y": 767.4791
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1135,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "position": {
+          "x": 1229.48597,
+          "y": 656.81673
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1136,
+      "p": {
+        "displayName": "手车刀闸",
+        "image": "symbols/demo/power/手车刀闸.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1229.48597,
+          "y": 743.56542
+        },
+        "width": 41.45251,
+        "height": 46.63407
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1137,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 1229.48597,
+          "y": 701.52962
+        },
+        "width": 41.45251,
+        "height": 50.08845
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1138,
+      "p": {
+        "displayName": "电压互感器1",
+        "image": "symbols/demo/power/电压互感器1.json",
+        "position": {
+          "x": 1229.48597,
+          "y": 605.86469
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1139,
+      "p": {
+        "displayName": "避雷器",
+        "image": "symbols/demo/power/避雷器.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1257.12098,
+          "y": 553.18546
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1140,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 1283.97137,
+          "y": 580.06953
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1141,
+      "p": {
+        "position": {
+          "x": 1229.43307,
+          "y": 569.1333
+        },
+        "width": 1,
+        "height": 33.39757,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 1229.43307,
+              "y": 552.43452
+            },
+            {
+              "x": 1229.43307,
+              "y": 585.83209
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1142,
+      "p": {
+        "displayName": "T接线",
+        "image": "symbols/demo/power/T接线.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1229.00128,
+          "y": 493.50435
+        },
+        "width": 20.72625,
+        "height": 44.90689
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1143,
+      "p": {
+        "displayName": "熔断开关",
+        "image": "symbols/demo/power/熔断开关.json",
+        "position": {
+          "x": 1229.00128,
+          "y": 525.55045
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1144,
+      "p": {
+        "displayName": "避雷器",
+        "image": "symbols/demo/power/避雷器.json",
+        "position": {
+          "x": 1078.27844,
+          "y": 661.1347
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1145,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 1078.27844,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1146,
+      "p": {
+        "displayName": "避雷器",
+        "image": "symbols/demo/power/避雷器.json",
+        "position": {
+          "x": 721.57359,
+          "y": 661.1347
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1147,
+      "p": {
+        "displayName": "接地",
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 721.57359,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 1148,
+      "p": {
+        "position": {
+          "x": 474.8242,
+          "y": 691.98602
+        },
+        "width": 41.45251,
+        "height": 101.90409
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1149,
+      "p": {
+        "displayName": "避雷器",
+        "parent": {
+          "__i": 1148
+        },
+        "image": "symbols/demo/power/避雷器.json",
+        "position": {
+          "x": 474.8242,
+          "y": 668.66898
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1150,
+      "p": {
+        "displayName": "接地",
+        "parent": {
+          "__i": 1148
+        },
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 474.8242,
+          "y": 715.30305
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 1151,
+      "p": {
+        "position": {
+          "x": 412.62912,
+          "y": 684.45174
+        },
+        "width": 41.45251,
+        "height": 101.90409
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1152,
+      "p": {
+        "displayName": "避雷器",
+        "parent": {
+          "__i": 1151
+        },
+        "image": "symbols/demo/power/避雷器.json",
+        "position": {
+          "x": 412.62912,
+          "y": 661.1347
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1153,
+      "p": {
+        "displayName": "接地",
+        "parent": {
+          "__i": 1151
+        },
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 412.62912,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Block",
+      "i": 1154,
+      "p": {
+        "position": {
+          "x": 251.94445,
+          "y": 684.45174
+        },
+        "width": 41.45251,
+        "height": 101.90409
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1155,
+      "p": {
+        "displayName": "避雷器",
+        "parent": {
+          "__i": 1154
+        },
+        "image": "symbols/demo/power/避雷器.json",
+        "position": {
+          "x": 251.94445,
+          "y": 661.1347
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1156,
+      "p": {
+        "displayName": "接地",
+        "parent": {
+          "__i": 1154
+        },
+        "image": "symbols/demo/power/接地.json",
+        "position": {
+          "x": 251.94445,
+          "y": 707.76878
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1157,
+      "p": {
+        "position": {
+          "x": 921.104,
+          "y": 775.56978
+        },
+        "width": 97.24623,
+        "height": 110.55893,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 910.87717,
+              "y": 830.84924
+            },
+            {
+              "x": 872.48089,
+              "y": 830.84924
+            },
+            {
+              "x": 872.48089,
+              "y": 766.69446
+            },
+            {
+              "x": 900.84814,
+              "y": 766.69446
+            },
+            {
+              "x": 900.84814,
+              "y": 781.41191
+            },
+            {
+              "x": 900.84814,
+              "y": 739.2122
+            },
+            {
+              "x": 908.87106,
+              "y": 739.2122
+            },
+            {
+              "x": 908.87106,
+              "y": 720.29031
+            },
+            {
+              "x": 947.67415,
+              "y": 720.29031
+            },
+            {
+              "x": 947.67415,
+              "y": 739.2122
+            },
+            {
+              "x": 956.74092,
+              "y": 739.2122
+            },
+            {
+              "x": 956.74092,
+              "y": 781.41191
+            },
+            {
+              "x": 956.74092,
+              "y": 766.69446
+            },
+            {
+              "x": 969.72712,
+              "y": 766.69446
+            },
+            {
+              "x": 969.72712,
+              "y": 830.84924
+            },
+            {
+              "x": 947.12013,
+              "y": 830.84924
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1158,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 928.57249,
+          "y": 830.90774
+        },
+        "width": 20.72625,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1159,
+      "p": {
+        "displayName": "站用变",
+        "image": "symbols/demo/power/站用变.json",
+        "position": {
+          "x": 887.37308,
+          "y": 787.60871
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1160,
+      "p": {
+        "displayName": "站用变",
+        "image": "symbols/demo/power/站用变.json",
+        "position": {
+          "x": 887.37308,
+          "y": 743.56542
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1161,
+      "p": {
+        "displayName": "电抗",
+        "image": "symbols/demo/power/电抗.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 928.57249,
+          "y": 782.188
+        },
+        "width": 41.45251,
+        "height": 55.27001
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1162,
+      "p": {
+        "displayName": "阻波器",
+        "image": "symbols/demo/power/阻波器.json",
+        "position": {
+          "x": 928.39379,
+          "y": 750.90597
+        },
+        "width": 40.58892,
+        "height": 40.58892
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1163,
+      "p": {
+        "position": {
+          "x": 927.87825,
+          "y": 719.63645
+        },
+        "width": 15.40533,
+        "height": 6.88709
+      },
+      "s": {
+        "shape": "rect",
+        "shape.background": "rgb(255,255,255)",
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(255,0,0)"
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1164,
+      "p": {
+        "displayName": "刀闸",
+        "image": "symbols/demo/power/刀闸.json",
+        "position": {
+          "x": 707.82875,
+          "y": 361.91608
+        }
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "state": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1165,
+      "p": {
+        "displayName": "开关",
+        "image": "symbols/demo/power/开关.json",
+        "position": {
+          "x": 751.76651,
+          "y": 361.91608
+        }
+      },
+      "a": {
+        "powerLevel": "lightgreen",
+        "powerOn": true,
+        "enabled": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1166,
+      "p": {
+        "displayName": "站用变",
+        "image": "symbols/demo/power/站用变.json",
+        "position": {
+          "x": 681.05199,
+          "y": 367.66466
+        },
+        "anchor": {
+          "x": 0.59737,
+          "y": 0.54295
+        }
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1167,
+      "p": {
+        "displayName": "站用变",
+        "image": "symbols/demo/power/站用变.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 633.40809,
+          "y": 430.67383
+        },
+        "anchor": {
+          "x": 0.59737,
+          "y": 0.54295
+        }
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1168,
+      "p": {
+        "position": {
+          "x": 635.60404,
+          "y": 364.65906
+        },
+        "width": 143.8964,
+        "height": 123.23658,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 707.55224,
+              "y": 333.64628
+            },
+            {
+              "x": 707.55224,
+              "y": 303.04077
+            },
+            {
+              "x": 676.28599,
+              "y": 303.04077
+            },
+            {
+              "x": 676.28599,
+              "y": 426.27735
+            },
+            {
+              "x": 563.65584,
+              "y": 426.27735
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1169,
+      "p": {
+        "position": {
+          "x": 713.29751,
+          "y": 408.26618
+        },
+        "width": 76.93991,
+        "height": 36.02235,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 708.01499,
+              "y": 390.255
+            },
+            {
+              "x": 708.01499,
+              "y": 426.2617
+            },
+            {
+              "x": 751.76747,
+              "y": 426.2617
+            },
+            {
+              "x": 751.76747,
+              "y": 390.255
+            },
+            {
+              "x": 751.76747,
+              "y": 426.2617
+            },
+            {
+              "x": 674.82756,
+              "y": 426.27735
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1170,
+      "p": {
+        "position": {
+          "x": 728.85349,
+          "y": 318.34353
+        },
+        "width": 45.82605,
+        "height": 30.60551,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 751.76651,
+              "y": 333.64628
+            },
+            {
+              "x": 751.76651,
+              "y": 303.04077
+            },
+            {
+              "x": 705.94046,
+              "y": 303.04077
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.width": 2
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 1171,
+      "p": {
+        "position": {
+          "x": 751.76746,
+          "y": 296.50708
+        },
+        "width": 1,
+        "height": 19.73358,
+        "segments": null,
+        "points": {
+          "__a": [
+            {
+              "x": 751.76746,
+              "y": 306.37387
+            },
+            {
+              "x": 751.76746,
+              "y": 286.64029
+            }
+          ]
+        }
+      },
+      "s": {
+        "type": "shape",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 2,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1172,
+      "p": {
+        "rotation": 6.28319,
+        "position": {
+          "x": 751.76747,
+          "y": 286.03146
+        },
+        "width": 3,
+        "height": 4
+      },
+      "s": {
+        "shape": "triangle",
+        "opacity": 1,
+        "shape.background": null,
+        "shape.border.width": 6,
+        "shape.border.color": "rgb(250,0,0)",
+        "shape.border.join": "miter",
+        "shape.dash.pattern": [
+          16,
+          16
+        ]
+      },
+      "a": {
+        "powerLevel": "lightgreen"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2815,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 612.00355,
+          "y": 544.97688
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "35159",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2818,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 564.34259,
+          "y": 544.1333
+        }
+      },
+      "s": {
+        "text": "301",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2821,
+      "p": {
+        "displayName": "其它遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 404.67121,
+          "y": 519.1333
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true,
+        "animat.custom.used": false,
+        "animat.custom.running": false,
+        "animat.custom.onUpdate": "data.a('value', Number(value * 100).toFixed(2))",
+        "animat.custom.duration": 10000
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2836,
+      "p": {
+        "displayName": "无功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/无功遥测.json",
+        "position": {
+          "x": 404.67121,
+          "y": 544.97688
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2837,
+      "p": {
+        "displayName": "有功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/有功遥测.json",
+        "position": {
+          "x": 404.67121,
+          "y": 570.82047
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2838,
+      "p": {
+        "displayName": "其它遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 241.58133,
+          "y": 518.28972
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2839,
+      "p": {
+        "displayName": "无功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/无功遥测.json",
+        "position": {
+          "x": 241.58133,
+          "y": 544.1333
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2840,
+      "p": {
+        "displayName": "有功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/有功遥测.json",
+        "position": {
+          "x": 241.58133,
+          "y": 569.97688
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2857,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 352.26599,
+          "y": 545.82047
+        }
+      },
+      "s": {
+        "text": "3511",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2858,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 167.47336,
+          "y": 544.97688
+        }
+      },
+      "s": {
+        "text": "3512",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2859,
+      "p": {
+        "displayName": "其它遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 453.88429,
+          "y": 374.65906
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2860,
+      "p": {
+        "displayName": "无功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/无功遥测.json",
+        "position": {
+          "x": 453.88429,
+          "y": 400.50264
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2861,
+      "p": {
+        "displayName": "有功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/有功遥测.json",
+        "position": {
+          "x": 453.88429,
+          "y": 426.34623
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2862,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 968.70811,
+          "y": 544.1333
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "3571",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2863,
+      "p": {
+        "displayName": "其它遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 1069.6425,
+          "y": 519.1333
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2864,
+      "p": {
+        "displayName": "无功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/无功遥测.json",
+        "position": {
+          "x": 1069.6425,
+          "y": 544.97688
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2865,
+      "p": {
+        "displayName": "有功遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/有功遥测.json",
+        "position": {
+          "x": 1069.6425,
+          "y": 570.82047
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 2867,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 1084.31403,
+          "y": 886.65658
+        }
+      },
+      "s": {
+        "text": "站用变",
+        "text.color": "#ffea00",
+        "text.font": "16px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5107,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 1130.56878,
+          "y": 691.98602
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "401",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 5248,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 1281.27433,
+          "y": 693.11341
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "402",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 7787,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 1293.45894,
+          "y": 519.97688
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "外部电源",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 8782,
+      "p": {
+        "position": {
+          "x": 1189.60636,
+          "y": 646.03398
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "手动切换",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8783,
+      "p": {
+        "displayName": "其它遥测",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 725,
+          "y": 524.97688
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8784,
+      "p": {
+        "displayName": "无功遥测",
+        "image": "symbols/demo/power/无功遥测.json",
+        "position": {
+          "x": 725,
+          "y": 550.82047
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 8785,
+      "p": {
+        "displayName": "有功遥测",
+        "image": "symbols/demo/power/有功遥测.json",
+        "position": {
+          "x": 725,
+          "y": 576.66405
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 8786,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 548.19478,
+          "y": 222.92913
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "113-3",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 8787,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 606.45248,
+          "y": 353.0725
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "101",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 17604,
+      "p": {
+        "position": {
+          "x": 800.96308,
+          "y": 363.91608
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "1107",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 17605,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 468.87336,
+          "y": 222.92913
+        },
+        "anchor": {
+          "x": 0.44776,
+          "y": 0.5
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "113-D3",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 17606,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 646.38402,
+          "y": 222.92913
+        },
+        "width": 48.30671
+      },
+      "s": {
+        "text": "113-D2",
+        "text.color": "#FFFFFF",
+        "text.font": "14px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 17789,
+      "p": {
+        "displayName": "其它遥测",
+        "layer": "1",
+        "image": "symbols/demo/power/其它遥测.json",
+        "position": {
+          "x": 453.88429,
+          "y": 451.74306
+        }
+      },
+      "a": {
+        "showUnit": true,
+        "showLabel": true,
+        "label": "Fr",
+        "unit": "HZ"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 28193,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 1243.45894,
+          "y": 807.188
+        }
+      },
+      "s": {
+        "text": "380V母线",
+        "text.color": "#ffea00",
+        "text.font": "16px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 28194,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 815.86059,
+          "y": 857.188
+        }
+      },
+      "s": {
+        "text": "1#SVG",
+        "text.color": "#ffea00",
+        "text.font": "16px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 28195,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 358.30159,
+          "y": 782.188
+        }
+      },
+      "s": {
+        "text": "1#光伏线",
+        "text.color": "#ffea00",
+        "text.font": "16px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Text",
+      "i": 28197,
+      "p": {
+        "layer": "1",
+        "position": {
+          "x": 226.89067,
+          "y": 782.188
+        }
+      },
+      "s": {
+        "text": "2#光伏线",
+        "text.color": "#ffea00",
+        "text.font": "16px arial, sans-serif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 28992,
+      "p": {
+        "displayName": "禁止操作",
+        "layer": "1",
+        "image": "symbols/demo/power/禁止操作.json",
+        "position": {
+          "x": 1308.27502,
+          "y": 353.0725
+        }
+      }
+    }
+  ]
+}

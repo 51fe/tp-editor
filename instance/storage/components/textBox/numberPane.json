@@ -1,0 +1,69 @@
+{
+  "modified": "Mon Jul 15 2019 14:54:19 GMT+0800 (中国标准时间)",
+  "width": 200,
+  "height": 20,
+  "snapshotURL": "",
+  "func": "__ht__function(g, rect, comp, data, view) {\nvar imgMap = comp.getValue('imgMap'),\n    textAlign = comp.getValue('textAlign'),\n    value = comp.getValue('value'),\n    gap = comp.getValue('gap'),\n    color = comp.getColor('color'),\n    iconWidth = comp.getValue('iconWidth'),\n    iconHeight = comp.getValue('iconHeight'),\n    digitCount = comp.getValue('digitCount'),\n    fixed = comp.getValue('fixed');\nvar x = rect.x,\n    y = rect.y,\n    width = rect.width,\n    height = rect.height;\n\nvar drawStretchImage = ht.Default.drawStretchImage;\n\n// format\nvar str = value + '';\nif (str.indexOf('.') > 0 && parseFloat(value)) {\n    str = parseFloat(value).toFixed(fixed);\n}\nif (digitCount && digitCount > str.length) {\n    var diff = digitCount - str.length;\n    var pre = '';\n    for (var i = 0; i < diff; i++) {\n        pre += 0;\n    }\n    str = pre + str;\n}\nvar tx, ty = y;// + (height - iconHeight) / 2;\nvar ratio = iconWidth / iconHeight;\niconHeight = height;\niconWidth = ratio * iconHeight;\nvar strWidth = iconWidth * str.length + gap * (str.length - 1);\nif (textAlign === 'center') {\n    //居中需要判断宽度\n    tx = x + (width - strWidth) / 2;\n}\nelse if (textAlign === 'right') {\n    tx = x + width - strWidth;\n}\nelse {\n    tx = x;\n}\n\nfor (var i = 0; i < str.length; i++) {\n    var n = str.charCodeAt(i);\n    var img = imgMap[n];\n    if (img) {\n        drawStretchImage(g, ht.Default.getImage(img), 'fill', tx, ty, iconWidth, iconHeight, data, view, color);\n    }\n    tx += iconWidth + gap;\n}\n}",
+  "properties": {
+    "imgMap": {
+      "valueType": "Object",
+      "defaultValue": {
+        "45": "symbols/demo/number/-.json",
+        "46": "symbols/demo/number/p.json",
+        "48": "symbols/demo/number/0.json",
+        "49": "symbols/demo/number/1.json",
+        "50": "symbols/demo/number/2.json",
+        "51": "symbols/demo/number/3.json",
+        "52": "symbols/demo/number/4.json",
+        "53": "symbols/demo/number/5.json",
+        "54": "symbols/demo/number/6.json",
+        "55": "symbols/demo/number/7.json",
+        "56": "symbols/demo/number/8.json",
+        "57": "symbols/demo/number/9.json",
+        "58": "symbols/demo/number/colon.json",
+        "8451": "symbols/demo/number/℃.json"
+      },
+      "name": "NumPaneImageMap"
+    },
+    "value": {
+      "valueType": "String",
+      "defaultValue": 888.88,
+      "name": "NumPaneContent"
+    },
+    "textAlign": {
+      "valueType": "Align",
+      "defaultValue": "center",
+      "name": "TBTextAlign"
+    },
+    "gap": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 2,
+      "name": "NumPaneGap"
+    },
+    "color": {
+      "valueType": "Color",
+      "defaultValue": "#32D3EB",
+      "name": "TBColor"
+    },
+    "iconWidth": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 11,
+      "name": "NumPaneIconWidth"
+    },
+    "iconHeight": {
+      "valueType": "PositiveNumber",
+      "defaultValue": "18",
+      "name": "NumPaneIconHeight"
+    },
+    "digitCount": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 0,
+      "name": "NumPaneDigitCount"
+    },
+    "fixed": {
+      "valueType": "PositiveNumber",
+      "defaultValue": 2,
+      "name": "NumPaneDigitFixed"
+    }
+  }
+}

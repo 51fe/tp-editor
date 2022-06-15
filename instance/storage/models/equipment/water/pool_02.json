@@ -1,0 +1,19 @@
+{
+  "modelType": "obj",
+  "obj": "assets/objs/equipment/water/pool_02.obj",
+  "mtl": "assets/objs/equipment/water/pool_02.mtl",
+  "image": "",
+  "prefix": "assets/objs/equipment/water/",
+  "center": true,
+  "reverseFlipMtls": "*",
+  "s3": [
+    1,
+    1,
+    1
+  ],
+  "r3": [
+    0,
+    0,
+    0
+  ]
+}

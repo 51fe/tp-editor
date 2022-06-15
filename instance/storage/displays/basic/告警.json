@@ -1,0 +1,72 @@
+{
+  "v": "6.2.4",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "connectActionType": "copyStyle"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 4027,
+      "p": {
+        "displayName": "告警绑定",
+        "image": "symbols/basic/告警绑定.json",
+        "position": {
+          "x": 205.36144,
+          "y": 188.52911
+        }
+      },
+      "a": {
+        "alarmInfo": {
+          "severity": 1,
+          "count": 5
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4028,
+      "p": {
+        "displayName": "告警绑定",
+        "image": "symbols/basic/告警绑定.json",
+        "position": {
+          "x": 294.94769,
+          "y": 188.52911
+        }
+      },
+      "a": {
+        "alarmInfo": {
+          "severity": 2,
+          "count": 3
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4029,
+      "p": {
+        "displayName": "告警绑定",
+        "image": "symbols/basic/告警绑定.json",
+        "position": {
+          "x": 384.53395,
+          "y": 188.52911
+        }
+      },
+      "a": {
+        "alarmInfo": {
+          "severity": 3,
+          "count": 1
+        }
+      }
+    }
+  ],
+  "contentRect": {
+    "x": 155.36144,
+    "y": 138.52911,
+    "width": 279.17251,
+    "height": 100
+  }
+}

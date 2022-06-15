@@ -1,0 +1,18 @@
+{
+  "modified": "Thu Mar 21 2019 11:16:06 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "displayURL",
+      "valueType": "URL",
+      "defaultValue": "displays/industry/factory.json"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_display.json",
+  "renderHTML": "__ht__function(data, gv, cache) {if (!cache.graphView) {\n        var graphView = cache.graphView = new ht.graph.GraphView();\n        graphView.setScrollBarVisible(false);\n        graphView.setEditable(true);\n        graphView.layoutHTML = function() {\n            gv.layoutHTML(data, graphView, true);\n            var rect = data.getRect();\n            if (cache.lastWidth !== graphView.getWidth() ||\n                cache.lastHeight !== graphView.getHeight() ||\n                cache.lastZoom !== graphView.getZoom()) {\n                cache.lastWidth = graphView.getWidth();\n                cache.lastHeight = graphView.getHeight();\n                cache.lastZoom = graphView.getZoom();\n                setTimeout(function() {\n                    graphView.fitContent(false);\n                }, 500);\n            }\n        };\n    }\n    var displayURL = data.a('displayURL');\n    if (cache.graphView.displayURL !== displayURL) {\n        cache.graphView.dm().clear();\n        cache.graphView.displayURL = displayURL;\n        if (displayURL) {\n            ht.Default.xhrLoad(displayURL, function(json) {\n                cache.graphView.dm().deserialize(json);\n                setTimeout(function() {\n                    cache.graphView.fitContent(true);\n                }, 500);\n            });\n        }\n    }\n    return cache.graphView;}",
+  "width": 200,
+  "height": 120,
+  "scrollable": true,
+  "interactive": true,
+  "pixelPerfect": false,
+  "comps": []
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>场景预览</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico?v=2" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-modeling.js'></script>
+  <script src='libs/plugin/ht-obj.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+
+  <script>
+    dataModel = new ht.DataModel();
+    g3d = new ht.graph3d.Graph3dView(dataModel);
+    g3d.enableToolTip();
+
+    window.addEventListener('load', function () {
+      g3d.addToDOM();
+
+      g3d.deserialize('previews/scene.json');
+    });
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

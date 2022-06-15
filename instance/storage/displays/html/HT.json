@@ -1,0 +1,228 @@
+{
+  "v": "7.0.2-dev7",
+  "p": {
+    "background": "rgb(56,58,89)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "rotateAsClock": false,
+    "connectActionType": null,
+    "fitContent": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 1783,
+      "p": {
+        "displayName": "div",
+        "image": "symbols/html/div.json",
+        "position": {
+          "x": 439.03775,
+          "y": 566.55421
+        },
+        "width": 729.39602,
+        "height": 184.78184
+      },
+      "s": {
+        "select.width": 0,
+        "2d.movable": false
+      },
+      "a": {
+        "div.content": "<div style=\"text-align:center;font-size:24px\">\n<h2>HT for Web</h2>\n<p>Everything you need to create cutting-edge 2D and 3D visualization</p>\n</div>",
+        "div.background": "#32D3EB",
+        "div.color": "white",
+        "div.padding": 5
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1784,
+      "p": {
+        "displayName": "div",
+        "image": "symbols/html/div.json",
+        "position": {
+          "x": 439.03775,
+          "y": 901.86981
+        },
+        "width": 729.39602,
+        "height": 485.84936
+      },
+      "s": {
+        "select.width": 0,
+        "2d.movable": false
+      },
+      "a": {
+        "div.padding": 20,
+        "div.content": "<h2>A rich JavaScript UI library</h2>\n<p>that delivers a complete set of HTML5 UI widgets. With HT for Web, you can easily create modern web and mobile enterprise applications without worrying about cross-browser compatibility, standards compliance or touch-device support.</p>\n<hr>\n<h2>A monitoring and visualization solution</h2>\n<p>for the easy creation and deployment of highly customizable and fully interactive topology diagrams, dashboards and charts. HT for Web is used to visualize and control real-time and mission-critical processes in a variety of industries, from Telecommunication Network Monitoring to Industrial Automation (HMI/SCADA).</p>\n<hr>\n<h2>A WebGL based 3D graphics engine. </h2>\n<p>HT for Web offers a unique kind of abstraction layer for WebGL, extending the Model–View–Presenter (MVP) design pattern to the world of 3D graphics. With HT for Web, you can focus more on core functionality and logic, rather than dealing with the complexities of 3D rendering and mathematics.</p>",
+        "div.background": "white",
+        "div.color": "rgb(61,61,61)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1785,
+      "p": {
+        "displayName": "div",
+        "image": "symbols/html/div.json",
+        "position": {
+          "x": 2181.89139,
+          "y": 566.55421
+        },
+        "width": 729.39602,
+        "height": 184.78184
+      },
+      "s": {
+        "select.width": 0,
+        "2d.movable": false
+      },
+      "a": {
+        "div.content": "<div style=\"text-align:center;font-size:24px\">\n<h2>HT for Web</h2>\n<p>构建先进2D和3D可视化所需要的一切</p>\n</div>",
+        "div.background": "#32D3EB",
+        "div.color": "white",
+        "div.padding": 5
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1786,
+      "p": {
+        "displayName": "div",
+        "image": "symbols/html/div.json",
+        "position": {
+          "x": 2181.89139,
+          "y": 901.86981
+        },
+        "width": 729.39602,
+        "height": 485.84936
+      },
+      "s": {
+        "select.width": 0,
+        "2d.movable": false
+      },
+      "a": {
+        "div.padding": 20,
+        "div.content": "<h2>一套丰富的JavaScript界面类库</h2>\n<p>提供完整的基于HTML5图形界面组件库。使用HT for Web您可以轻松构建现代化的，跨桌面和移动终端的企业应用，无需担忧跨平台兼容性，及触屏手势交互等棘手问题。</p>\n<hr>\n<h2>一套监控可视化解决方案</h2>\n<p>可用于快速创建和部署，高度可定制化，并具有强大交互功能的拓扑图形及表盘图表等应用。HT for Web非常适用于实时监控系统的界面呈现，广泛应用于电信网络拓扑和设备管理，以及电力、燃气等工业自动化(HMI/SCADA)领域。</p>\n<hr>\n<h2>一套强大的基于WebGL技术的3D图形引擎</h2>\n<p>HT for Web提供了一套独特的WebGL层抽象，将Model–View–Presenter (MVP)的设计模型延伸应用到了3D图形领域。使用HT for Web您可更关注于业务逻辑功能，不必将精力投入复杂3D渲染和数学等非业务核心的技术细节。</p>",
+        "div.background": "white",
+        "div.color": "rgb(61,61,61)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1787,
+      "p": {
+        "displayName": "display",
+        "image": "symbols/html/display.json",
+        "position": {
+          "x": 894.89038,
+          "y": 1746.87654
+        },
+        "width": 1641.10128,
+        "height": 1000
+      },
+      "s": {
+        "2d.movable": false,
+        "select.width": 0
+      },
+      "a": {
+        "displayURL": "displays/industry/power.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1788,
+      "p": {
+        "displayName": "scene",
+        "image": "symbols/html/scene.json",
+        "position": {
+          "x": 2637.74402,
+          "y": 1746.87654
+        },
+        "width": 1641.10128,
+        "height": 1000
+      },
+      "s": {
+        "select.width": 0,
+        "2d.movable": false
+      },
+      "a": {
+        "eye": [
+          1000,
+          400,
+          400
+        ],
+        "center": [
+          0,
+          100,
+          0
+        ],
+        "sceneURL": "scenes/wc.json"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1789,
+      "p": {
+        "displayName": "貨輪",
+        "image": "symbols/basic/貨輪.json",
+        "position": {
+          "x": 1226.67449,
+          "y": 805.9474
+        },
+        "width": 663.56823,
+        "height": 663.56823
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1790,
+      "p": {
+        "displayName": "fan_delta",
+        "image": "symbols/demo/fan/fan_delta.json",
+        "position": {
+          "x": 2946.12482,
+          "y": 809.88474
+        },
+        "width": 544.22835,
+        "height": 669.8195
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1791,
+      "p": {
+        "displayName": "飞机",
+        "image": "symbols/basic/飞机.json",
+        "rotation": 5.7989,
+        "position": {
+          "x": 1367.85744,
+          "y": 983.42241
+        },
+        "width": 228.50724,
+        "height": 228.50724
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 1792,
+      "p": {
+        "displayName": "pv-box",
+        "image": "symbols/demo/pv/pv-box.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 3386.91386,
+          "y": 807.27368
+        },
+        "width": 666.22079,
+        "height": 142.7616
+      }
+    }
+  ],
+  "modified": "Sat Sep 14 2019 13:10:59 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": 74.33974,
+    "y": 474.16302,
+    "width": 3383.95614,
+    "height": 1772.71352
+  }
+}

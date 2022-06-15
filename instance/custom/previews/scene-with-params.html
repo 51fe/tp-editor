@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scene with Params</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-modeling.js'></script>
+  <script src='libs/plugin/ht-obj.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+
+  <script>
+    dataModel = new ht.DataModel();
+    g3d = new ht.graph3d.Graph3dView(dataModel);
+    g3d.enableToolTip();
+
+    window.addEventListener('load', function () {
+      g3d.addToDOM();
+
+      var url = getParam('tag') || 'previews/scene.json';
+      g3d.deserialize(url);
+    });
+
+    function getParam(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null)
+        return decodeURIComponent(r[2]);
+      return null;
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

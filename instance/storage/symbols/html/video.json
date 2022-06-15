@@ -1,0 +1,15 @@
+{
+  "dataBindings": [
+    {
+      "attr": "videoURL",
+      "valueType": "URL",
+      "defaultValue": "assets/video/paintschainer.mp4"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_video.json",
+  "renderHTML": "__ht__function(data, gv, cache) {\n    if (!cache.htmlView) {\n        var video = cache.htmlView = document.createElement('video');\n        video.setAttribute(\"controls\",\"controls\")\n        video.layoutHTML = function() {\n            gv.layoutHTML(data, video);\n        };\n    }\n    if (cache.src !== data.a('videoURL')) {\n        cache.htmlView.src = data.a('videoURL');\n        cache.src = data.a('videoURL');\n    }\n    return cache.htmlView;\n}",
+  "width": 100,
+  "height": 100,
+  "pixelPerfect": false,
+  "comps": []
+}

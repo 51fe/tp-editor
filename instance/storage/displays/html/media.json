@@ -1,0 +1,324 @@
+{
+  "v": "7.0.3",
+  "p": {
+    "background": "rgb(22,80,138)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "rotateAsClock": false,
+    "connectActionType": null,
+    "fitContent": true
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 6033,
+      "p": {
+        "displayName": "video",
+        "image": "symbols/html/video.json",
+        "position": {
+          "x": 1276.00836,
+          "y": 1425.46205
+        },
+        "anchor": {
+          "x": 0.55416,
+          "y": 0.5
+        },
+        "width": 536.88204,
+        "height": 319.2358
+      },
+      "a": {
+        "videoURL": "assets/media/chooseseats.mp4"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6034,
+      "p": {
+        "displayName": "sound",
+        "image": "symbols/html/sound.json",
+        "position": {
+          "x": 1246.93083,
+          "y": 1767.49773
+        },
+        "width": 536.88204,
+        "height": 77.75029
+      },
+      "a": {
+        "soundURL": "assets/media/浪子心声.mp3"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6035,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 6.28319,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6036,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 0.5236,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6037,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 1.0472,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6038,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 1.5708,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6039,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 2.0944,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6040,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 2.61799,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6041,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 3.14159,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6042,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 3.66519,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6043,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 4.18879,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6044,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 4.71239,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6045,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 5.23599,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6046,
+      "p": {
+        "displayName": "image",
+        "image": "symbols/html/image.json",
+        "rotation": 5.75959,
+        "position": {
+          "x": 1246.93083,
+          "y": 1536.10851
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 2.77804
+        },
+        "width": 310.88658,
+        "height": 310.88658
+      },
+      "a": {
+        "imageURL": "assets/media/daftpunktocat-thomas.gif"
+      }
+    }
+  ],
+  "modified": "Tue Oct 15 2019 16:11:11 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": 383.27532,
+    "y": 672.45243,
+    "width": 1727.31144,
+    "height": 1727.31185
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "width": 260,
+  "height": 157,
+  "boundExtend": 12,
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgba(1,41,87,0.8)",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,248,251)",
+      "rect": [
+        0.00954,
+        0,
+        260.38358,
+        157.48434
+      ]
+    },
+    {
+      "type": "text",
+      "align": "right",
+      "color": "rgb(0,0,0)",
+      "font": "14px MicrosoftYaHei",
+      "rect": [
+        132.32263,
+        96.03631,
+        75.9693,
+        18.66262
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgb(0,221,255)",
+      "points": [
+        12.28462,
+        -1,
+        0,
+        -1,
+        0,
+        11.94732
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgb(0,221,255)",
+      "rotation": 1.5708,
+      "points": [
+        259.83003,
+        -1,
+        247.54542,
+        -1,
+        247.54542,
+        11.94732
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgb(0,221,255)",
+      "rotation": -3.14159,
+      "points": [
+        262.32204,
+        144.537,
+        250.03742,
+        144.537,
+        250.03742,
+        157.48432
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 4,
+      "borderColor": "rgb(0,221,255)",
+      "rotation": -1.5708,
+      "points": [
+        11.95324,
+        144.20566,
+        -0.33138,
+        144.20566,
+        -0.33138,
+        157.15299
+      ]
+    },
+    {
+      "type": "rect",
+      "borderWidth": 0.5,
+      "borderColor": "#32D3EB",
+      "rect": [
+        6.14231,
+        19.94794,
+        243.89509,
+        130.73138
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(16,91,176)",
+      "borderWidth": 0.5,
+      "borderColor": "#32D3EB",
+      "rect": [
+        13.42485,
+        11.94732,
+        46.69752,
+        16.00125
+      ]
+    },
+    {
+      "type": "text",
+      "text": "节点",
+      "align": "center",
+      "vAlign": "bottom",
+      "color": "rgb(255,255,255)",
+      "font": "14px MicrosoftYaHei",
+      "rect": [
+        18.24209,
+        11.94732,
+        35.70165,
+        16.00125
+      ]
+    },
+    {
+      "type": "text",
+      "text": "位置：",
+      "vAlign": "bottom",
+      "color": "rgb(255,255,255)",
+      "font": "14px MicrosoftYaHei",
+      "rect": [
+        18.76574,
+        76.03542,
+        41.35663,
+        17.04725
+      ]
+    },
+    {
+      "type": "text",
+      "text": "名称：",
+      "vAlign": "bottom",
+      "color": "rgb(255,255,255)",
+      "font": "14px MicrosoftYaHei",
+      "rect": [
+        18.76574,
+        41.92936,
+        41.35663,
+        17.04725
+      ]
+    },
+    {
+      "type": "text",
+      "text": "大小：",
+      "vAlign": "bottom",
+      "color": "rgb(255,255,255)",
+      "font": "14px MicrosoftYaHei",
+      "rect": [
+        18.76574,
+        113.53914,
+        41.35663,
+        17.04725
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@node.name",
+        "value": "XX"
+      },
+      "color": "rgb(0,255,212)",
+      "rect": [
+        60.12237,
+        41.92936,
+        178.30539,
+        17.04725
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@node.position",
+        "value": "XX"
+      },
+      "color": "rgb(0,255,212)",
+      "rect": [
+        60.12237,
+        76.03542,
+        175.91196,
+        17.04725
+      ]
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@node.size",
+        "value": "XX"
+      },
+      "color": "rgb(0,255,212)",
+      "rect": [
+        60.12237,
+        113.53914,
+        178.30539,
+        17.04725
+      ]
+    }
+  ]
+}

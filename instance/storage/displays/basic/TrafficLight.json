@@ -1,0 +1,108 @@
+{
+  "v": "7.0.1",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "rotateAsClock": false,
+    "connectActionType": null
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 4392,
+      "p": {
+        "displayName": "Light",
+        "image": "symbols/demo/light/Light.json",
+        "position": {
+          "x": 160.286,
+          "y": 226.9419
+        }
+      },
+      "a": {
+        "circle.background": "rgb(255,0,0)",
+        "reflect.background": "rgb(247,247,247)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4393,
+      "p": {
+        "displayName": "TrafficLight",
+        "image": "symbols/demo/light/TrafficLight.json",
+        "position": {
+          "x": 215.38724,
+          "y": 259.4419
+        }
+      },
+      "a": {
+        "light1.circle.background": "rgb(255,0,0)",
+        "light2.circle.background": "rgb(255,238,0)",
+        "light3.circle.background": "rgb(0,255,94)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4394,
+      "p": {
+        "displayName": "MultiTrafficLight",
+        "image": "symbols/demo/light/MultiTrafficLight.json",
+        "position": {
+          "x": 324.62003,
+          "y": 259.4419
+        }
+      },
+      "a": {
+        "left.light1.circle.background": "rgb(51,153,255)",
+        "left.light2.circle.background": "#FEB64D",
+        "left.light3.circle.background": "rgb(48,242,120)",
+        "center.light1.circle.background": "rgb(93,217,174)",
+        "center.light2.circle.background": "rgb(204,104,166)",
+        "center.light3.circle.background": "rgb(212,0,0)",
+        "right.light1.circle.background": "rgb(226,250,87)",
+        "right.light2.circle.background": "rgb(124,145,155)",
+        "right.light3.circle.background": "rgb(61,61,61)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4395,
+      "p": {
+        "displayName": "Light",
+        "image": "symbols/demo/light/Light.json",
+        "position": {
+          "x": 160.286,
+          "y": 259.4419
+        }
+      },
+      "a": {
+        "reflect.background": "rgb(247,247,247)",
+        "circle.background": "rgb(255,238,0)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 4396,
+      "p": {
+        "displayName": "Light",
+        "image": "symbols/demo/light/Light.json",
+        "position": {
+          "x": 160.286,
+          "y": 291.9419
+        }
+      },
+      "a": {
+        "reflect.background": "rgb(247,247,247)",
+        "circle.background": "rgb(0,255,94)"
+      }
+    }
+  ],
+  "modified": "Thu May 02 2019 20:33:47 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": 143.286,
+    "y": 209.9419,
+    "width": 246.33403,
+    "height": 99
+  }
+}

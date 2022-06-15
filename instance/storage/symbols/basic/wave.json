@@ -1,0 +1,87 @@
+{
+  "dataBindings": [
+    {
+      "attr": "waveCircle",
+      "valueType": "Boolean",
+      "defaultValue": false,
+      "name": "波浪圆形"
+    },
+    {
+      "attr": "waveRange",
+      "valueType": "Percentage",
+      "name": "波浪水位"
+    },
+    {
+      "attr": "waveWidth",
+      "valueType": "Number",
+      "name": "波浪宽度"
+    },
+    {
+      "attr": "waveHeight",
+      "valueType": "Number",
+      "name": "波浪高度"
+    },
+    {
+      "attr": "wareXOffset",
+      "valueType": "Number",
+      "name": "波浪位移"
+    },
+    {
+      "attr": "waveForeground",
+      "valueType": "ColorArray",
+      "defaultValue": [
+        "#F39C6A",
+        "#FF7C7C"
+      ],
+      "name": "波浪前景色"
+    },
+    {
+      "attr": "waveBackground",
+      "valueType": "Color",
+      "defaultValue": "#F8CDB5",
+      "name": "波浪背景色"
+    }
+  ],
+  "width": 100,
+  "height": 100,
+  "clip": "__ht__function(g, width, height, data, view, image) {\nif (!data || !data.a('waveCircle')) return;\r\nvar R = width <= height ? width : height;\r\nvar lineWidth = 1;\r\nvar r = (R - lineWidth) / 2;\r\ng.lineWidth = lineWidth;\r\n\r\ng.beginPath();\r\ng.arc(width / 2, height / 2, r - 1, 0, 2 * Math.PI);\r\ng.clip();\n}",
+  "comps": [
+    {
+      "type": "components/wave/wave.json",
+      "displayName": "wave",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "waveWidth": {
+        "func": "attr@waveWidth",
+        "value": 0.15
+      },
+      "waveHeight": {
+        "func": "attr@waveHeight",
+        "value": 1.25
+      },
+      "wareXOffset": {
+        "func": "attr@wareXOffset",
+        "value": 0
+      },
+      "waveForeground": {
+        "func": "attr@waveForeground",
+        "value": [
+          "#F39C6A",
+          "#FF7C7C"
+        ]
+      },
+      "waveBackground": {
+        "func": "attr@waveBackground",
+        "value": "#F8CDB5"
+      },
+      "waveRange": {
+        "func": "attr@waveRange",
+        "value": 0.5
+      }
+    }
+  ]
+}

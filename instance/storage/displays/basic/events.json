@@ -1,0 +1,104 @@
+{
+  "v": "6.2.5",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "connectActionType": null,
+    "previewURL": "display-events.html"
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 3183,
+      "p": {
+        "displayName": "alarm",
+        "image": "symbols/basic/events.json",
+        "position": {
+          "x": 56.89389,
+          "y": 58.7337
+        }
+      },
+      "s": {
+        "interactive": true,
+        "shape.dash.width": 1,
+        "select.width": 0
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3184,
+      "p": {
+        "displayName": "alarm",
+        "image": "symbols/basic/events.json",
+        "position": {
+          "x": 197.26582,
+          "y": 58.7337
+        }
+      },
+      "s": {
+        "interactive": true,
+        "shape.dash.width": 1,
+        "select.width": 0
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3185,
+      "p": {
+        "displayName": "alarm",
+        "image": "symbols/basic/events.json",
+        "position": {
+          "x": 337.63775,
+          "y": 58.7337
+        }
+      },
+      "s": {
+        "interactive": true,
+        "shape.dash.width": 1,
+        "select.width": 0
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3186,
+      "p": {
+        "displayName": "alarm",
+        "image": "symbols/basic/events.json",
+        "position": {
+          "x": 478.00968,
+          "y": 58.7337
+        }
+      },
+      "s": {
+        "interactive": true,
+        "shape.dash.width": 1,
+        "select.width": 0
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 3187,
+      "p": {
+        "displayName": "alarm",
+        "image": "symbols/basic/events.json",
+        "position": {
+          "x": 618.3816,
+          "y": 58.7337
+        }
+      },
+      "s": {
+        "interactive": true,
+        "shape.dash.width": 1,
+        "select.width": 0
+      }
+    }
+  ],
+  "contentRect": {
+    "x": 6.89389,
+    "y": 8.7337,
+    "width": 661.48771,
+    "height": 100
+  }
+}

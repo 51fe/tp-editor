@@ -1,0 +1,98 @@
+{
+  "v": "7.0.7-dev1",
+  "p": {
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": false
+  },
+  "a": {
+    "rotateAsClock": false,
+    "connectActionType": "host",
+    "previewURL": "display-tank.html",
+    "width": 0,
+    "height": 0
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 680,
+      "p": {
+        "tag": "tank1",
+        "image": "symbols/basic/tank.json",
+        "position": {
+          "x": 62.52455,
+          "y": 150
+        },
+        "width": -1,
+        "height": -1
+      },
+      "a": {
+        "tank.volume": 0.12,
+        "tank.background": "#3498DB",
+        "tank.alarm": 100
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 681,
+      "p": {
+        "tag": "tank2",
+        "image": "symbols/basic/tank.json",
+        "position": {
+          "x": 187.50818,
+          "y": 150
+        },
+        "width": -1,
+        "height": -1
+      },
+      "a": {
+        "tank.volume": 0.38,
+        "tank.background": "#3498DB",
+        "tank.alarm": 400
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 682,
+      "p": {
+        "tag": "tank3",
+        "image": "symbols/basic/tank.json",
+        "position": {
+          "x": 312.49182,
+          "y": 150
+        },
+        "width": -1,
+        "height": -1
+      },
+      "a": {
+        "tank.volume": 0.55,
+        "tank.background": "#3498DB"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 683,
+      "p": {
+        "tag": "tank4",
+        "image": "symbols/basic/tank.json",
+        "position": {
+          "x": 437.47545,
+          "y": 150
+        },
+        "width": -1,
+        "height": -1
+      },
+      "a": {
+        "tank.volume": 0.91,
+        "tank.background": "#3498DB",
+        "tank.alarm": 500
+      }
+    }
+  ],
+  "modified": "Sat Jan 25 2020 21:51:30 GMT+0800 (China Standard Time)",
+  "contentRect": {
+    "x": 12.52455,
+    "y": 100,
+    "width": 474.9509,
+    "height": 100
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test Events</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+
+  <script src='libs/core/ht.js'></script>
+
+  <script>
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
+      // graphView.getView().addEventListener('contextmenu', function(e) { e.preventDefault(); }, false);
+
+      window.addEventListener('resize', function (e) { graphView.fitContent(); }, false);
+
+      graphView.mi(function (event) {
+        var data = event.data;
+        var kind = event.kind;
+        var type = event.type;
+        var comp = event.comp;
+        if (type === 'data') {
+          if (kind === 'onEnter') {
+            ht.Default.startAnim({
+              duration: 100,
+              action: function (v, t) {
+                var scale = 1 + 0.1 * v;
+                data.setScale(scale, scale);
+              }
+            });
+          }
+          else if (kind === 'onLeave') {
+            ht.Default.startAnim({
+              duration: 100,
+              action: function (v, t) {
+                var scale = 1.1 - 0.1 * v;
+                data.setScale(scale, scale);
+              }
+            });
+          }
+        }
+        else if (type === 'comp') {
+          if (comp.displayName === 'round') {
+            if (kind === 'onEnter') {
+              data.a('roundBackground', 'yellow');
+            }
+            else if (kind === 'onLeave') {
+              data.a('roundBackground', undefined);
+            }
+          }
+          if (comp.displayName === 'star') {
+            if (kind === 'onEnter') {
+              data.a('starBackground', 'red');
+              ht.Default.startAnim({
+                duration: 100,
+                action: function (v, t) {
+                  var scale = 1 + 0.1 * v;
+                  data.a('starScale', scale);
+                }
+              });
+            }
+            else if (kind === 'onLeave') {
+              data.a('starBackground', undefined);
+              ht.Default.startAnim({
+                duration: 100,
+                action: function (v, t) {
+                  var scale = 1.1 - 0.1 * v;
+                  data.a('starScale', scale);
+                }
+              });
+            }
+          }
+        }
+      });
+
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+        graphView.fitContent(true);
+      });
+    }
+
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
+</html>

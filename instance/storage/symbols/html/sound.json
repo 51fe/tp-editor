@@ -1,0 +1,15 @@
+{
+  "dataBindings": [
+    {
+      "attr": "soundURL",
+      "valueType": "URL",
+      "defaultValue": "assets/media/浪子心声.mp3"
+    }
+  ],
+  "snapshotURL": "symbols/basic/snapshot_sound.json",
+  "renderHTML": "__ht__function(data, gv, cache) {\n    if (!cache.htmlView) {\n        var sound = cache.htmlView = document.createElement('audio');\n        sound.setAttribute(\"controls\",\"controls\")\n        sound.layoutHTML = function() {\n            gv.layoutHTML(data, sound);\n        };\n    }\n    if (cache.src !== data.a('soundURL')) {\n        cache.htmlView.src = data.a('soundURL');\n        cache.src = data.a('soundURL');\n    }\n    return cache.htmlView;\n}",
+  "width": 100,
+  "height": 100,
+  "pixelPerfect": false,
+  "comps": []
+}

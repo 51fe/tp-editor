@@ -1,0 +1,170 @@
+{
+  "modified": "Tue Feb 04 2020 21:13:01 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "tank.volume",
+      "valueType": "Percentage",
+      "name": "TankVolume",
+      "defaultValue": 0.679,
+      "description": "油量百分比",
+      "extraInfo": {
+        "dataBinding": true
+      }
+    },
+    {
+      "attr": "tank.background",
+      "valueType": "Color",
+      "name": "TankColor",
+      "defaultValue": "#3498DB",
+      "description": "油量颜色",
+      "bindable": true
+    },
+    {
+      "attr": "tank.alarm",
+      "valueType": "AlarmSeverity",
+      "defaultValue": 0,
+      "name": "TankAlarm",
+      "description": "左下角圆圈告警内容"
+    }
+  ],
+  "width": 100,
+  "height": 100,
+  "fitSize": true,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgb(107,99,99)",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgb(255,255,255)",
+      "rect": [
+        15.75236,
+        10.72153,
+        70,
+        78.22746
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(33,26,26)",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgb(255,255,255)",
+      "rect": [
+        7.9226,
+        84.24716,
+        86,
+        10
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgb(33,26,26)",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "gradient": "spread.horizontal",
+      "gradientColor": "rgb(255,255,255)",
+      "rect": [
+        7.9226,
+        5.6662,
+        86,
+        10
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "points": [
+        60.8877,
+        23.82562,
+        77.68687,
+        23.90365
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "points": [
+        60.8877,
+        50.86581,
+        77.3935,
+        50.81391
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "points": [
+        60.8877,
+        77.90601,
+        77.78602,
+        77.94316
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "points": [
+        60.8877,
+        37.34572,
+        69.68765,
+        37.41244
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "points": [
+        60.8877,
+        64.38591,
+        70.02269,
+        64.32706
+      ]
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "rect": [
+        42.56516,
+        22.45827,
+        13.62225,
+        56.78038
+      ],
+      "direction": "v",
+      "value": {
+        "func": "attr@tank.volume",
+        "value": 0.8
+      },
+      "valueVisible": false,
+      "foreColor": {
+        "func": "attr@tank.background",
+        "value": "#04FDFF"
+      },
+      "background": "rgb(0,0,0)",
+      "borderColor": "rgb(0,0,0)",
+      "borderWidth": 1
+    },
+    {
+      "type": "oval",
+      "background": {
+        "func": "__ht__function(data, view) {\nif (data.a('tank.blink')) return undefined;\nvar alarm = data.a('tank.alarm');\nif (alarm === 0) return '#00FF00';\nif (alarm === 100) return '#C800FF';\nif (alarm === 200) return '#00FFFF';\nif (alarm === 300) return '#FFFF00';\nif (alarm === 400) return '#FFA000';\nif (alarm === 500) return '#FF0000';\nreturn undefined;\n}",
+        "value": "#D8D8D8"
+      },
+      "borderWidth": 1,
+      "borderColor": "rgb(255,255,255)",
+      "rect": [
+        22.97463,
+        67.92459,
+        10,
+        10
+      ]
+    }
+  ]
+}

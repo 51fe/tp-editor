@@ -1,0 +1,181 @@
+{
+  "v": "5.3.2",
+  "p": {
+    "autoAdjustIndex": false
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 730,
+      "p": {
+        "name": "厦门图扑软件科技有限公司",
+        "position": {
+          "x": 525,
+          "y": 436
+        },
+        "width": 208,
+        "height": 258
+      },
+      "s": {
+        "shape": "circle",
+        "shape.background": "rgb(0,200,255)",
+        "shape.gradient": "radial.center",
+        "label.max": 178,
+        "label.position": 17,
+        "label.font": "15px Arial",
+        "note": "Drag me to rotate label",
+        "label.rotation": -0.6806784082777885,
+        "label.color": "rgb(186,35,35)"
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 731,
+      "p": {
+        "name": "HT",
+        "source": {
+          "__i": 734
+        },
+        "target": {
+          "__i": 735
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.background": "yellow"
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 732,
+      "p": {
+        "name": "HT for Web",
+        "source": {
+          "__i": 734
+        },
+        "target": {
+          "__i": 735
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.background": "yellow"
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 733,
+      "p": {
+        "name": "www.hightopo.com",
+        "source": {
+          "__i": 734
+        },
+        "target": {
+          "__i": 735
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.background": "yellow"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 734,
+      "p": {
+        "name": "source",
+        "position": {
+          "x": 500,
+          "y": 100
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 735,
+      "p": {
+        "name": "target",
+        "position": {
+          "x": 300,
+          "y": 200
+        }
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 736,
+      "p": {
+        "name": "HT",
+        "source": {
+          "__i": 739
+        },
+        "target": {
+          "__i": 740
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.position.fixed": true,
+        "label.background": "pink"
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 737,
+      "p": {
+        "name": "HT for Web",
+        "source": {
+          "__i": 739
+        },
+        "target": {
+          "__i": 740
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.position.fixed": true,
+        "label.background": "pink"
+      }
+    },
+    {
+      "c": "ht.Edge",
+      "i": 738,
+      "p": {
+        "name": "www.hightopo.com",
+        "source": {
+          "__i": 739
+        },
+        "target": {
+          "__i": 740
+        }
+      },
+      "s": {
+        "edge.gap": 30,
+        "label.position.fixed": true,
+        "label.background": "pink"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 739,
+      "p": {
+        "name": "source",
+        "position": {
+          "x": 800,
+          "y": 100
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 740,
+      "p": {
+        "name": "target",
+        "position": {
+          "x": 600,
+          "y": 200
+        }
+      }
+    }
+  ]
+}

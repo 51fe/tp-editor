@@ -1,0 +1,250 @@
+{
+  "background": "rgb(255,255,255)",
+  "dataBindings": [
+    {
+      "attr": "value",
+      "valueType": "Percentage",
+      "name": "PBValue"
+    }
+  ],
+  "width": 380,
+  "height": 40,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "#277cf3",
+      "borderCap": "square",
+      "points": [
+        144.94774,
+        8,
+        144.94774,
+        14
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(0,0,0)",
+      "fillRule": "evenodd",
+      "points": [
+        380,
+        0,
+        380,
+        31.15291,
+        60.13875,
+        31.15291,
+        53.34643,
+        23.96392,
+        24.42183,
+        23.96392,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "rect": [
+        20.68665,
+        1.07751,
+        340.49136,
+        30.0754
+      ],
+      "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('value', Math.max(0, Math.min(1, point.x/width)));\n}",
+      "background": "rgb(15,38,84)",
+      "foreColor": "rgb(44,124,222)",
+      "value": {
+        "func": "attr@value",
+        "value": 0.5
+      },
+      "valueVisible": false,
+      "valueColor": "rgb(255,255,255)"
+    },
+    {
+      "type": "shape",
+      "background": "rgb(0,0,0)",
+      "fillRule": "evenodd",
+      "displayName": "不规则图形",
+      "points": [
+        1,
+        32.75307,
+        1,
+        0,
+        20.91042,
+        0,
+        36.87658,
+        17.32798,
+        50.94875,
+        17.32798,
+        65.02697,
+        32.75307
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 1,
+      "borderColor": "rgb(0,0,0)",
+      "borderJoin": "bevel",
+      "points": [
+        20.13006,
+        13.82203,
+        52.69067,
+        13.82203,
+        60.94678,
+        23,
+        319.20087,
+        23,
+        326.79879,
+        14.7541,
+        368.76403,
+        14.7541
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "scaleX": -1,
+      "rotation": 6.28319,
+      "points": [
+        42.33905,
+        27.14545,
+        57.17809,
+        27.14545,
+        52.23173,
+        32.09179,
+        37.39271,
+        32.09179,
+        42.33905,
+        27.14545,
+        42.33905,
+        27.14545
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "scaleX": -1,
+      "rotation": 6.28319,
+      "points": [
+        24.63877,
+        27.14545,
+        39.47781,
+        27.14545,
+        34.53145,
+        32.09179,
+        19.69242,
+        32.09179,
+        24.63877,
+        27.14545,
+        24.63877,
+        27.14545
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "scaleX": -1,
+      "rotation": 6.28319,
+      "points": [
+        6.93848,
+        27.14545,
+        21.77752,
+        27.14545,
+        16.83116,
+        32.09179,
+        1.99214,
+        32.09179,
+        6.93848,
+        27.14545,
+        6.93848,
+        27.14545
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(0,0,0)",
+      "fillRule": "evenodd",
+      "displayName": "不规则图形",
+      "scaleX": -1,
+      "points": [
+        315.97303,
+        33.83058,
+        315.97303,
+        1.07751,
+        335.88345,
+        1.07751,
+        351.8496,
+        18.40549,
+        365.92178,
+        18.40549,
+        380,
+        33.83058
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "rotation": 6.28319,
+      "points": [
+        363.76493,
+        27.80672,
+        378.60396,
+        27.80672,
+        373.65761,
+        32.75307,
+        358.81858,
+        32.75307,
+        363.76493,
+        27.80672,
+        363.76493,
+        27.80672
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "rotation": 6.28319,
+      "points": [
+        346.06464,
+        27.80672,
+        360.90368,
+        27.80672,
+        355.95732,
+        32.75307,
+        341.11829,
+        32.75307,
+        346.06464,
+        27.80672,
+        346.06464,
+        27.80672
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgb(44,198,222)",
+      "fillRule": "evenodd",
+      "rotation": 6.28319,
+      "points": [
+        328.36435,
+        27.80672,
+        343.20339,
+        27.80672,
+        338.25703,
+        32.75307,
+        323.41801,
+        32.75307,
+        328.36435,
+        27.80672,
+        328.36435,
+        27.80672
+      ]
+    }
+  ]
+}

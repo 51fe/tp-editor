@@ -1,0 +1,98 @@
+{
+  "modified": "Sun Jan 20 2019 12:14:10 GMT+0800 (China Standard Time)",
+  "dataBindings": [
+    {
+      "attr": "circle.background",
+      "valueType": "Color",
+      "name": "圆形背景",
+      "group": "灯光"
+    },
+    {
+      "attr": "reflect.background",
+      "valueType": "Color",
+      "name": "反光背景"
+    }
+  ],
+  "width": 30,
+  "height": 30,
+  "boundExtend": 2,
+  "attachStyle": "close",
+  "comps": [
+    {
+      "type": "circle",
+      "background": "rgb(124,145,155)",
+      "borderWidth": 1,
+      "borderColor": "rgb(112,95,59)",
+      "gradient": "radial.center",
+      "gradientColor": "rgb(247,247,247)",
+      "prefix": "circle",
+      "shadowColor": "#FEB64D",
+      "shadowBlur": 18,
+      "shadowOffsetX": 0,
+      "shadowOffsetY": 0,
+      "rect": [
+        2.5,
+        2.5,
+        25,
+        25
+      ]
+    },
+    {
+      "type": "shape",
+      "background": "rgba(255,255,255,0.57)",
+      "borderColor": "#979797",
+      "gradient": "linear.east",
+      "gradientColor": "rgba(255,255,255,0.00)",
+      "prefix": "reflect",
+      "points": [
+        10.10185,
+        6.76951,
+        10.10185,
+        5.10574,
+        13.56013,
+        4.00457,
+        14.07886,
+        5.63116,
+        10.60851,
+        7.53844,
+        14.07886,
+        6.22674,
+        14.07886,
+        7.53844,
+        16.59528,
+        8.4999,
+        20.06346,
+        10.05269,
+        22.46997,
+        13.0811,
+        24.41939,
+        13.0811,
+        24.41939,
+        8.4999,
+        21.83809,
+        5.49549,
+        15.2825,
+        4.00457,
+        16.59528,
+        8.4999
+      ],
+      "segments": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ]
+}

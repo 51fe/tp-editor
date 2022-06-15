@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Open By Json</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+  <!-- ht config -->
+  <script src='custom/configs/htconfig.js'></script>
+
+  <!-- configuration for editor -->
+  <script src='custom/configs/config.js'></script>
+
+  <!-- ht core -->
+  <script src='libs/core/ht.js'></script>
+
+  <!-- ht plugins -->
+  <script src="libs/plugin/ht-cssanimation.js"></script>
+  <script src='libs/plugin/ht-contextmenu.js'></script>
+  <script src='libs/plugin/ht-dialog.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+  <script src='libs/plugin/ht-form.js'></script>
+  <script src='libs/plugin/ht-overview.js'></script>
+  <script src="libs/plugin/ht-autolayout.js"></script>
+  <script src="libs/plugin/ht-obj.js"></script>
+  <script src="libs/plugin/ht-historymanager.js"></script>
+
+  <!-- socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script>
+
+    displays = [
+      { "v": "6.2.1", "p": { "autoAdjustIndex": true, "hierarchicalRendering": true }, "a": { "gridBlockSize": 40, "gridThickLinesEvery": 10, "gridThickColor": "rgb(191, 191, 191)", "gridLightColor": "rgba(191, 191, 191, 0.4)", "gridAngle": 1.5708, "gridRotation": 0, "gridZoomThreshold": 0.25 }, "d": [{ "c": "ht.Node", "i": 3129, "p": { "image": "symbols/basic/node.json", "rotation": 0.5236, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3130, "p": { "image": "symbols/basic/node.json", "rotation": 1.0472, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3131, "p": { "image": "symbols/basic/node.json", "rotation": 1.5708, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3132, "p": { "image": "symbols/basic/node.json", "rotation": 2.0944, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3133, "p": { "image": "symbols/basic/node.json", "rotation": 2.61799, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3134, "p": { "image": "symbols/basic/node.json", "rotation": 3.14159, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3135, "p": { "image": "symbols/basic/node.json", "rotation": 3.66519, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3136, "p": { "image": "symbols/basic/node.json", "rotation": 4.18879, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3137, "p": { "image": "symbols/basic/node.json", "rotation": 4.71239, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3138, "p": { "image": "symbols/basic/node.json", "rotation": 5.23599, "position": { "x": 21.11079, "y": 113.0048 }, "anchor": { "x": 0.10128, "y": 0.15635 } } }, { "c": "ht.Node", "i": 3139, "p": { "image": "symbols/basic/node.json", "rotation": 5.75959, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }, { "c": "ht.Node", "i": 3140, "p": { "image": "symbols/basic/node.json", "rotation": 6.28319, "position": { "x": 179.15764, "y": 185.37738 }, "anchor": { "x": 0.5, "y": 4.71053 } } }] },
+      { "v": "6.2.1", "p": { "autoAdjustIndex": false, "hierarchicalRendering": false }, "a": { "gridBlockSize": 40, "gridThickLinesEvery": 10, "gridThickColor": "rgb(191, 191, 191)", "gridLightColor": "rgba(191, 191, 191, 0.4)", "gridAngle": 1.5708, "gridRotation": 0, "gridZoomThreshold": 0.25 }, "d": [{ "c": "ht.Node", "i": 3189, "p": { "name": "厦门图扑软件科技有限公司", "position": { "x": 525, "y": 436 }, "width": 208, "height": 258 }, "s": { "shape": "circle", "shape.background": "rgb(0,200,255)", "shape.gradient": "radial.center", "label.max": 178, "label.position": 17, "label.font": "15px Arial", "note": "Drag me to rotate label", "label.rotation": -0.68068, "label.color": "rgb(186,35,35)" } }, { "c": "ht.Edge", "i": 3190, "p": { "name": "HT", "source": { "__i": 3193 }, "target": { "__i": 3194 } }, "s": { "edge.gap": 30, "label.background": "yellow" } }, { "c": "ht.Edge", "i": 3191, "p": { "name": "HT for Web", "source": { "__i": 3193 }, "target": { "__i": 3194 } }, "s": { "edge.gap": 30, "label.background": "yellow" } }, { "c": "ht.Edge", "i": 3192, "p": { "name": "www.hightopo.com", "source": { "__i": 3193 }, "target": { "__i": 3194 } }, "s": { "edge.gap": 30, "label.background": "yellow" } }, { "c": "ht.Node", "i": 3193, "p": { "name": "source", "position": { "x": 500, "y": 100 } } }, { "c": "ht.Node", "i": 3194, "p": { "name": "target", "position": { "x": 300, "y": 200 } } }, { "c": "ht.Edge", "i": 3195, "p": { "name": "HT", "source": { "__i": 3198 }, "target": { "__i": 3199 } }, "s": { "edge.gap": 30, "label.position.fixed": true, "label.background": "pink" } }, { "c": "ht.Edge", "i": 3196, "p": { "name": "HT for Web", "source": { "__i": 3198 }, "target": { "__i": 3199 } }, "s": { "edge.gap": 30, "label.position.fixed": true, "label.background": "pink" } }, { "c": "ht.Edge", "i": 3197, "p": { "name": "www.hightopo.com", "source": { "__i": 3198 }, "target": { "__i": 3199 } }, "s": { "edge.gap": 30, "label.position.fixed": true, "label.background": "pink" } }, { "c": "ht.Node", "i": 3198, "p": { "name": "source", "position": { "x": 800, "y": 100 } } }, { "c": "ht.Node", "i": 3199, "p": { "name": "target", "position": { "x": 600, "y": 200 } } }] },
+      { "v": "6.2.1", "p": { "autoAdjustIndex": true, "hierarchicalRendering": false }, "a": { "gridBlockSize": 40, "gridThickLinesEvery": 10, "gridThickColor": "rgb(191, 191, 191)", "gridLightColor": "rgba(191, 191, 191, 0.4)", "gridAngle": 1.5708, "gridRotation": 0, "gridZoomThreshold": 0.25 }, "d": [{ "c": "ht.Group", "i": 3212, "p": { "name": "HT for Web 5.2", "position": { "x": 160, "y": 110 }, "expanded": true } }, { "c": "ht.Edge", "i": 3213, "p": { "name": "Hello World\nwww.hightopo.com", "parent": { "__i": 3212 }, "source": { "__i": 3215 }, "target": { "__i": 3214 } }, "s": { "label.color": "white", "label.background": "#3498DB" } }, { "c": "ht.Node", "i": 3214, "p": { "name": "World", "parent": { "__i": 3212 }, "position": { "x": 260, "y": 80 } }, "s": { "note": "HT for your imagination", "note.expanded": false, "border.color": "red" } }, { "c": "ht.Node", "i": 3215, "p": { "name": "Hello", "parent": { "__i": 3212 }, "position": { "x": 60, "y": 140 } }, "s": { "note": "I love HT", "note.background": "#FFA000" } }, { "c": "ht.Node", "i": 3216, "p": { "name": "Learn More", "toolTip": "SplitView<br>AccordionView<br>TabView<br>PropertyView<br>ListView<br>TreeView<br>TableView<br>TreeTableView<br>TableHeader<br>TablePane<br>TreeTablePane<br>Toolbar<br>BorderPane<br>...", "image": "symbols/basic/sunrise.json", "position": { "x": 430, "y": 130 }, "width": 160, "height": 100 }, "s": { "note": "TreeView,TableView,\nSplitView,AccordionView,\nPropertyView,...", "note.max": 200, "select.type": "shadow" } }] }
+    ];
+
+    symbols = [
+      { "gridBlockSize": 5, "width": 200, "height": 50, "disableSelectedBorder": true, "comps": [{ "type": "roundRect", "background": "rgb(41,40,40)", "borderColor": "rgb(240,240,240)", "borderCap": "square", "borderJoin": "bevel", "cornerRadius": 0, "shadowColor": "rgba(255,255,255,0.4)", "shadowBlur": 0, "shadowOffsetX": 0, "shadowOffsetY": 2, "rect": [0, 0, 200, 50] }, { "type": "rect", "borderColor": "#979797", "displayName": "透明交互区域", "rect": [0, 0, 50, 50], "onDown": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.color1', '#FFC826');\ndata.a('logo.color2', '#F24D63');\ndata.a('logo.color3','#48F4E8');\ndata.a('logo.color4','rgb(105,196,245)');\ndata.a('logo.text.color', '#45C4F9');\ndata.a('logo.text.color', 'white');\nht.Default.startAnim({\n    duration: 200,\n    easing: function (t) {\n        return 1 - (--t) * t * t * t;\n    },\n    action: function(v, t){ \n        data.a('logo.clip', 0.4 + 0.6 * v);\n    }\n});\n}", "onUp": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.color1', undefined);\ndata.a('logo.color2', undefined);\ndata.a('logo.color3', undefined);\ndata.a('logo.color4', undefined);\ndata.a('logo.text.color', undefined);\nht.Default.startAnim({\n    duration: 200,\n    easing: function (t) {\n        return 1 - (--t) * t * t * t;\n    },\n    action: function(v, t){ \n        data.a('logo.clip', 1 - 0.6 * v);\n    }\n});\n}", "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.scale', 0.58);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('logo.scale', 0.5);\n}" }, { "type": "roundRect", "background": "rgb(235,80,80)", "borderColor": "#979797", "cornerRadius": { "func": "attr@light1.radius", "value": 1 }, "shadow": { "func": "attr@light1.shadow", "value": false }, "shadowColor": "rgb(235,80,80)", "shadowOffsetX": 0, "shadowOffsetY": 0, "scaleX": { "func": "attr@light1.scale", "value": 1 }, "scaleY": { "func": "attr@light1.scale", "value": 1 }, "rect": [185, 5, 10, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light1.scale', 1.2);\ndata.a('light1.radius', 3);\ndata.a('light1.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light1.scale', undefined);\ndata.a('light1.radius', undefined);\ndata.a('light1.shadow', undefined);\n}" }, { "type": "roundRect", "background": "rgb(80,165,235)", "borderColor": "#979797", "cornerRadius": { "func": "attr@light2.radius", "value": 1 }, "shadow": { "func": "attr@light2.shadow", "value": false }, "shadowColor": "rgb(80,165,235)", "shadowOffsetX": 0, "shadowOffsetY": 0, "scaleX": { "func": "attr@light2.scale", "value": 1 }, "scaleY": { "func": "attr@light2.scale", "value": 1 }, "rect": [185, 20, 10, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light2.scale', 1.2);\ndata.a('light2.radius', 3);\ndata.a('light2.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light2.scale', undefined);\ndata.a('light2.radius', undefined);\ndata.a('light2.shadow', undefined);\n}" }, { "type": "roundRect", "background": "rgb(80,235,173)", "borderColor": "#979797", "cornerRadius": { "func": "attr@light3.radius", "value": 1 }, "shadow": { "func": "attr@light3.shadow", "value": false }, "shadowColor": "rgb(80,235,173)", "shadowOffsetX": 0, "shadowOffsetY": 0, "scaleX": { "func": "attr@light3.scale", "value": 1 }, "scaleY": { "func": "attr@light3.scale", "value": 1 }, "rect": [185, 35, 10, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('light3.scale', 1.2);\ndata.a('light3.radius', 3);\ndata.a('light3.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('light3.scale', undefined);\ndata.a('light3.radius', undefined);\ndata.a('light3.shadow', undefined);\n}" }, { "type": "image", "name": "symbols/basic/水印.json", "clipPercentage": { "func": "attr@logo.clip", "value": 0.4 }, "clipDirection": "right", "displayName": "水印", "anchorX": 0.17674, "anchorY": 0.52326, "scaleX": { "func": "attr@logo.scale", "value": 0.5 }, "scaleY": { "func": "attr@logo.scale", "value": 0.5 }, "rect": [-12.41389, -10.81395, 200, 70] }, { "type": "components/progressBar/progressBar.json", "shadow": { "func": "attr@h1.shadow", "value": false }, "shadowColor": "rgba(77,196,247,0.5)", "shadowOffsetX": 0, "shadowOffsetY": 0, "displayName": "progressBar", "rect": [140, 5, 40, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.shadow', undefined);\n}", "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h1.value', Math.max(0, Math.min(1, point.x/width)));\n}", "background": "#141414", "foreColor": "#F5E39B", "value": { "func": "attr@h1.value", "value": 0.5 }, "valueVisible": false }, { "type": "components/progressBar/progressBar.json", "shadow": { "func": "attr@v1.shadow", "value": false }, "shadowColor": "rgba(77,196,247,0.5)", "shadowOffsetX": 0, "shadowOffsetY": 0, "displayName": "progressBar", "rect": [125, 5, 10, 40], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.shadow', undefined);\n}", "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}", "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}", "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('v1.value', Math.max(0, Math.min(1, 1-point.y/height)));\n}", "background": "#141414", "foreColor": "#FC5C36", "value": { "func": "attr@v1.value", "value": 0.7 }, "valueVisible": false, "direction": "v" }, { "type": "components/progressBar/progressBar.json", "shadow": { "func": "attr@h2.shadow", "value": false }, "shadowColor": "rgba(77,196,247,0.5)", "shadowOffsetX": 0, "shadowOffsetY": 0, "displayName": "progressBar", "rect": [140, 20, 40, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.shadow', undefined);\n}", "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h2.value', Math.max(0, Math.min(1, point.x/width)));\n}", "background": "#141414", "foreColor": "#F5E39B", "value": { "func": "attr@h2.value", "value": 0.7 }, "valueVisible": false }, { "type": "components/progressBar/progressBar.json", "shadow": { "func": "attr@h3.shadow", "value": false }, "shadowColor": "rgba(77,196,247,0.5)", "shadowOffsetX": 0, "shadowOffsetY": 0, "displayName": "progressBar", "rect": [140, 35, 40, 10], "onEnter": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.shadow', true);\n}", "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.shadow', undefined);\n}", "onBeginDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}", "onEndDrag": "__ht__function(event, data, view, point, width, height) {\ndata.a('h3.value', Math.max(0, Math.min(1, point.x/width)));\n}", "background": "#141414", "foreColor": "#F5E39B", "value": { "func": "attr@h3.value", "value": 0.3 }, "valueVisible": false }] },
+      { "width": 100, "height": 100, "comps": [{ "type": "shape", "background": "rgb(242,83,75)", "rotation": 5.49779, "points": [10.41361, 40.81926, 10.41361, 18.9476, 28.18162, 1.21689, 50, 1.21689, 50, 1.21689, 71.86253, 1.21689, 89.58639, 18.9849, 89.58639, 40.80328, 89.58639, 40.80328, 89.58639, 62.6658, 71.81838, 80.38967, 50, 80.38967, 10.41361, 80.38967, 10.41361, 40.84743], "segments": [1, 4, 2, 4, 2, 4, 2, 2] }, { "type": "circle", "background": "rgb(255,255,255)", "borderColor": "#979797", "rect": [22.74863, 12.59725, 54.50273, 56.41206] }, { "type": "shape", "background": "rgb(242,83,75)", "borderColor": "#979797", "closePath": true, "points": [54.46995, 63.49727, 54.46995, 53.34604, 43.91257, 53.34604, 43.91257, 63.49727, 43.91257, 48.50113, 54.46995, 48.73184, 58.60109, 19.43169, 40.69945, 19.43169], "segments": [1, 2, 2, 2, 1, 2, 2, 2] }] },
+      { "width": 800, "height": 200, "comps": [{ "type": "pieChart", "label": "__ht__function (value, i, sum, data){return value + '%';}", "labelColor": "white", "values": [56.15, 19.15, 17.17, 5.55, 1.98], "colors": ["#E74C3C", "#E2E2E2", "#34495E", "#3498DB", "#1ABC9C"], "rect": [5, 5, 190, 190] }, { "type": "pieChart", "label": true, "labelColor": "white", "hollow": true, "startAngle": 0.7854, "values": [56.15, 19.15, 17.17, 5.55, 1.98], "colors": ["#E74C3C", "#E2E2E2", "#34495E", "#3498DB", "#1ABC9C"], "rect": [205, 5, 190, 190] }, { "type": "pieChart", "label": "__ht__function (value, index, sum, data){return ['IE', 'Firefox', 'Chrome', 'Safari', 'Other'][index];}", "labelColor": "white", "labelFont": "11px Arial", "values": [56.15, 19.15, 17.17, 5.55, 1.98], "rect": [405, 5, 190, 190] }, { "type": "pieChart", "hollow": true, "startAngle": -0.7854, "values": [56.15, 19.15, 17.17, 5.55, 1.98], "rect": [605, 5, 190, 190] }] }
+    ];
+
+    components = [
+      { "width": 100, "height": 30, "func": "__ht__function(g, rect, comp, data, view) {\nvar x = rect.x;\nvar y = rect.y;\nvar width = rect.width;\nvar height = rect.height;\n\nvar borderColor = comp.getValue('borderColor');\nvar borderWidth = comp.getValue('borderWidth');\nvar background = comp.getValue('background');\nvar value = comp.getValue('value');\nvar foreColor = comp.getValue('foreColor');\nvar valueVisible = comp.getValue('valueVisible');\nvar valueColor = comp.getValue('valueColor');\nvar valueFont = comp.getValue('valueFont');\nvar gradientColor = comp.getValue('gradientColor');\nvar direction = comp.getValue('direction');\n\nif (value < 0) value = 0;\nif (value > 1) value = 1;\n\n// draw background\nif (background) {\n    g.fillStyle = background;\n    g.beginPath();\n    g.rect(x, y, width, height);\n    g.fill();\n}\n\nif (gradientColor) {\n    if (direction === 'v') {\n        var t = g.createLinearGradient(x, y, x+width, y);\n    }\n    else {\n        var t = g.createLinearGradient(x, y, x, y+height);\n    }    \n    t.addColorStop(0, foreColor);\n    t.addColorStop(0.5, gradientColor);\n    t.addColorStop(1, foreColor);\n    g.fillStyle = t;\n}\nelse {\n    g.fillStyle = foreColor;\n}\n\ng.beginPath();\nif (direction === 'v') {\n    g.rect(x, y+height * (1 - value), width, height * value);\n }\nelse {\n    g.rect(x, y, width * value, height);\n}  \ng.fill();\n\n// draw border\nif (borderWidth && borderColor) {\n    ht.Default.drawBorder(g, borderColor, x, y, width, height, borderWidth);\n}\n\nif (valueVisible) {\n    ht.Default.drawText(g, parseInt(value * 100) + '%', valueFont, valueColor, x, y, width, height, 'center', 'middle');\n}\n}", "properties": { "background": { "valueType": "Color", "defaultValue": "#20384A", "name": "PBBackground" }, "borderColor": { "valueType": "Color", "defaultValue": "rgb(255,255,255)", "name": "PBBorderColor" }, "borderWidth": { "valueType": "Number", "defaultValue": 0, "name": "PBBorderWidth" }, "foreColor": { "valueType": "Color", "defaultValue": "#6EFE9F", "name": "PBForeColor", "description": "进度条渐进色描述" }, "value": { "valueType": "Percentage", "defaultValue": 0.7, "name": "PBValue" }, "valueVisible": { "valueType": "Boolean", "defaultValue": true, "name": "PBValueVisible" }, "valueColor": { "valueType": "Color", "defaultValue": "#88CFFF", "name": "PBValueColor" }, "valueFont": { "valueType": "String", "defaultValue": "12px arial", "name": "PBValueFont" }, "gradientColor": { "valueType": "Color", "defaultValue": null, "name": "PBGradientColor" }, "direction": { "valueType": "Direction", "defaultValue": "h", "name": "PBDirection" } } },
+      { "width": 100, "height": 60, "func": "__ht__function(g, rect, comp, data, view) {\nvar x = rect.x;\nvar y = rect.y;\nvar width = rect.width;\nvar height = rect.height;\n\nvar borderColor = comp.getValue('borderColor');\nvar borderWidth = comp.getValue('borderWidth');\nvar background = comp.getValue('background');\nvar rowCount = comp.getValue('rowCount');\nvar columnCount = comp.getValue('columnCount');\nvar rowLineColor = comp.getValue('rowLineColor');\nvar columnLineColor = comp.getValue('columnLineColor');\nvar rowLineWidth = comp.getValue('rowLineWidth');\nvar columnLineWidth = comp.getValue('columnLineWidth');\n\n// draw background\nif (background) {\n    g.fillStyle = background;\n    g.beginPath();\n    g.rect(x, y, width, height);\n    g.fill();\n}\n\n// draw border\nif (borderWidth) {\n    ht.Default.drawBorder(g, borderColor, x, y, width, height, borderWidth);\n}\n\nx += borderWidth;\ny += borderWidth;\nwidth -= borderWidth * 2;\nheight -= borderWidth * 2;\n\nvar rowHeight = height / rowCount;\nvar columnWidth = width / columnCount;\n\n// draw row lines\nif (rowLineWidth && rowCount > 1) {\n    g.beginPath();\n    for (var i = 1; i < rowCount ; i++) {\n        g.moveTo(x, y + rowHeight * i);\n        g.lineTo(x + width, y + rowHeight * i);\n    }\n    g.strokeStyle = rowLineColor;\n    g.lineWidth = rowLineWidth;\n    g.stroke();\n}\n\n// draw column lines\nif (columnLineWidth && columnCount > 1) {\n    g.beginPath();\n    for (var i = 1; i < columnCount ; i++) {\n        g.moveTo(x + columnWidth * i, y);\n        g.lineTo(x + columnWidth * i, y + height);\n    }\n    g.strokeStyle = columnLineColor;\n    g.lineWidth = columnLineWidth;\n    g.stroke();\n}\n}", "properties": { "borderColor": { "valueType": "Color", "defaultValue": "#6EF99A", "name": "GridBorderColor" }, "borderWidth": { "valueType": "PositiveNumber", "defaultValue": 1, "name": "GridBorderWidth" }, "background": { "valueType": "Color", "defaultValue": "#3D4E63", "name": "GridBackground" }, "rowCount": { "valueType": "Number", "defaultValue": 2, "name": "GridRowCount" }, "columnCount": { "valueType": "Number", "defaultValue": 3, "name": "GridColumnCount" }, "rowLineColor": { "valueType": "Color", "defaultValue": "#6EF99A", "name": "GridRowLineColor" }, "columnLineColor": { "valueType": "Color", "defaultValue": "#6EF99A", "name": "GridColumnLineColor" }, "rowLineWidth": { "valueType": "Int", "defaultValue": 1, "name": "GridRowLineWidth" }, "columnLineWidth": { "valueType": "Int", "defaultValue": 1, "name": "GridColumnLineWidth" } } },
+      { "width": 100, "height": 100, "func": "__ht__function(g, rect, comp, data, view) {\n// get current time\nvar hours = comp.getValue('hours');\nvar minutes = comp.getValue('minutes');\nvar seconds = comp.getValue('seconds');\nhours = hours > 12 ? hours - 12 : hours;\nvar hour = hours + minutes / 60;\nvar minute = minutes + seconds / 60;\nvar clockRadius = Math.min(rect.width/2, rect.height/2);\n\n// save current context\ng.save();\n\ng.translate(rect.x + rect.width/2, rect.y+ rect.height/2);\ng.beginPath();\n\n// draw numbers\nif (comp.getValue('numberVisible')) {\n    g.font = comp.getValue('numberFont');\n    g.fillStyle = comp.getValue('numberColor');\n    g.textAlign = 'center';\n    g.textBaseline = 'middle';\n    for (var n = 1; n <= 12; n++) {\n        var theta = (n - 3) * (Math.PI * 2) / 12;\n        var x = clockRadius * 0.75 * Math.cos(theta);\n        var y = clockRadius * 0.75 * Math.sin(theta);\n        g.fillText(n, x, y);\n    }\n}\n\n// draw hour\ng.save();\nvar theta = (hour - 3) * 2 * Math.PI / 12;\ng.rotate(theta);\ng.beginPath();\ng.moveTo(-15, -5);\ng.lineTo(-15, 5);\ng.lineTo(clockRadius * 0.5, 1);\ng.lineTo(clockRadius * 0.5, -1);\ng.fillStyle = comp.getValue('hourColor');\ng.fill();\ng.restore();\n\n// draw minute\ng.save();\nvar theta = (minute - 15) * 2 * Math.PI / 60;\ng.rotate(theta);\ng.beginPath();\ng.moveTo(-15, -4);\ng.lineTo(-15, 4);\ng.lineTo(clockRadius * 0.8, 1);\ng.lineTo(clockRadius * 0.8, -1);\ng.fillStyle = comp.getValue('minuteColor');\ng.fill();\ng.restore();\n\n// draw second\ng.save();\nvar theta = (seconds - 15) * 2 * Math.PI / 60;\ng.rotate(theta);\ng.beginPath();\ng.moveTo(-15, -3);\ng.lineTo(-15, 3);\ng.lineTo(clockRadius * 0.9, 1);\ng.lineTo(clockRadius * 0.9, -1);\ng.fillStyle = comp.getValue('secondColor');\ng.fill();\ng.restore();\n\ng.restore();\n}", "properties": { "hours": { "valueType": "Int", "defaultValue": 2, "name": "ClockHours" }, "minutes": { "valueType": "Int", "defaultValue": 37, "name": "ClockMinutes" }, "seconds": { "valueType": "Int", "defaultValue": 16, "name": "ClockSeconds" }, "hourColor": { "valueType": "Color", "defaultValue": "#82BEED", "name": "ClockHourColor" }, "minuteColor": { "valueType": "Color", "defaultValue": "#82BEED", "name": "ClockMinuteColor" }, "secondColor": { "valueType": "Color", "defaultValue": "#73F8A7", "name": "ClockSecondColor" }, "numberColor": { "valueType": "Color", "defaultValue": "#84EBAD", "name": "ClockNumberColor" }, "numberFont": { "valueType": "String", "defaultValue": "10px Arial", "name": "ClockNumberFont" }, "numberVisible": { "valueType": "Boolean", "defaultValue": true, "name": "ClockNumberVisible" } } }
+    ];
+
+    function init() {
+      var urls = tpeditor_config.subConfigs || [];
+      urls.push('client.js');
+      ht.Default.loadJS(urls, function () {
+        urls = [
+          'locales/' + tpeditor.config.locale + '.js',
+          'custom/locales/' + tpeditor.config.locale + '.js'
+        ];
+        urls.push(tpeditor.init);
+        if (tpeditor.config.libs) {
+          urls = urls.concat(tpeditor.config.libs);
+        }
+        urls.push('vs/loader.js');
+        urls.push('vs/editor/editor.main.nls.js');
+        urls.push('vs/editor/editor.main.js');
+        ht.Default.loadJS(urls, function () {
+          window.editor = tpeditor.createEditor({
+            container: null,
+            onEditorCreated: function (editor) {
+              handleEditorCreated(editor);
+            }
+          });
+        });
+      });
+    }
+    function handleEditorCreated(editor) {
+      document.body.style.background = '#272822';
+
+      editor.mainSplitView.setLeftView(editor.mainTabView);
+
+      var view = editor.mainPane.getView();
+      view.style.left = '220px';
+      view.style.top = '20px';
+      view.style.right = '20px';
+      view.style.bottom = '20px';
+      view.style.background = 'white';
+      document.body.appendChild(view);
+
+      listView = new ht.widget.ListView();
+      view = listView.getView();
+      view.style.left = '20px';
+      view.style.top = '20px';
+      view.style.width = '180px';
+      view.style.bottom = '20px';
+      view.style.background = 'white';
+      document.body.appendChild(view);
+
+      listView.onDataDoubleClicked = function (data) {
+        var type = data.a('type');
+        var url = data.getTag();
+        var name = data.getName();
+        var json = data.a('content');
+        editor.openByJSON(type, url, name, json);
+      };
+
+      displays.forEach(function (json, index) {
+        var data = new ht.Data();
+        data.a('content', json);
+        data.a('type', 'display');
+        data.setName(' Display - ' + index);
+        data.setTag(data.getName());
+        listView.dm().add(data);
+      });
+      symbols.forEach(function (json, index) {
+        var data = new ht.Data();
+        data.a('content', json);
+        data.a('type', 'symbol');
+        data.setName(' Symbol - ' + index);
+        data.setTag(data.getName());
+        listView.dm().add(data);
+      });
+      components.forEach(function (json, index) {
+        var data = new ht.Data();
+        data.a('content', json);
+        data.a('type', 'component');
+        data.setName(' Component - ' + index);
+        data.setTag(data.getName());
+        listView.dm().add(data);
+      });
+
+      window.addEventListener('resize', function () {
+        editor.mainPane.iv();
+        listView.iv();
+      });
+
+      editor.addEventListener(function (event) {
+        var params = event.params;
+        if (event.type === 'displayViewSaving') {
+          var data = listView.dm().getDataByTag(params.url);
+          data.a('content', params.displayView.content);
+          data.setIcon(tpeditor.snapshot(params.displayView.graphView));
+          params.preventDefault = true;
+          params.displayView.dirty = false;
+        }
+        if (event.type === 'symbolViewSaving') {
+          var data = listView.dm().getDataByTag(params.url);
+          data.a('content', params.symbolView.content);
+          data.setIcon(tpeditor.snapshot(params.symbolView.graphView));
+          params.preventDefault = true;
+          params.symbolView.dirty = false;
+        }
+        if (event.type === 'componentViewSaving') {
+          var data = listView.dm().getDataByTag(params.url);
+          data.a('content', params.componentView.content);
+          data.setIcon(tpeditor.snapshot(params.componentView.graphView));
+          params.preventDefault = true;
+          params.componentView.hide();
+        }
+      });
+    }
+  </script>
+</head>
+
+<body onload='init()'>
+</body>
+
+</html>

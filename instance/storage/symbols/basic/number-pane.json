@@ -1,0 +1,83 @@
+{
+  "dataBindings": [
+    {
+      "attr": "ht.value",
+      "valueType": "String",
+      "name": "NumPaneContent"
+    },
+    {
+      "attr": "ht.textAlign",
+      "valueType": "Align",
+      "name": "TBTextAlign"
+    },
+    {
+      "attr": "ht.gap",
+      "valueType": "PositiveNumber",
+      "name": "NumPaneGap"
+    },
+    {
+      "attr": "ht.color",
+      "valueType": "Color",
+      "name": "TBColor"
+    },
+    {
+      "attr": "ht.digit",
+      "valueType": "PositiveNumber",
+      "name": "NumPaneDigitCount"
+    }
+  ],
+  "width": 200,
+  "height": 24,
+  "boundExtend": 20,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "components/textBox/numberPane.json",
+      "displayName": "numberPane",
+      "rect": [
+        0,
+        0,
+        200,
+        24
+      ],
+      "imgMap": {
+        "45": "symbols/demo/number/-.json",
+        "46": "symbols/demo/number/p.json",
+        "48": "symbols/demo/number/0.json",
+        "49": "symbols/demo/number/1.json",
+        "50": "symbols/demo/number/2.json",
+        "51": "symbols/demo/number/3.json",
+        "52": "symbols/demo/number/4.json",
+        "53": "symbols/demo/number/5.json",
+        "54": "symbols/demo/number/6.json",
+        "55": "symbols/demo/number/7.json",
+        "56": "symbols/demo/number/8.json",
+        "57": "symbols/demo/number/9.json",
+        "58": "symbols/demo/number/colon.json",
+        "8451": "symbols/demo/number/℃.json"
+      },
+      "value": {
+        "func": "attr@ht.value",
+        "value": "9277.0"
+      },
+      "textAlign": {
+        "func": "attr@ht.textAlign",
+        "value": "center"
+      },
+      "gap": {
+        "func": "attr@ht.gap",
+        "value": 2
+      },
+      "color": {
+        "func": "attr@ht.color",
+        "value": "#32D3EB"
+      },
+      "iconHeight": 18,
+      "digitCount": {
+        "func": "attr@ht.digit",
+        "value": 0
+      },
+      "fixed": 0
+    }
+  ]
+}

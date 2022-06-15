@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Embeded</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
+  <!-- ht config -->
+  <script src='custom/configs/htconfig.js'></script>
+
+  <!-- configuration for editor -->
+  <script src='custom/configs/config.js'></script>
+
+  <!-- ht core -->
+  <script src='libs/core/ht.js'></script>
+
+  <!-- ht plugins -->
+  <script src="libs/plugin/ht-cssanimation.js"></script>
+  <script src='libs/plugin/ht-contextmenu.js'></script>
+  <script src='libs/plugin/ht-dialog.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+  <script src='libs/plugin/ht-form.js'></script>
+  <script src='libs/plugin/ht-overview.js'></script>
+  <script src="libs/plugin/ht-autolayout.js"></script>
+  <script src="libs/plugin/ht-obj.js"></script>
+  <script src="libs/plugin/ht-historymanager.js"></script>
+
+  <!-- socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script>
+    function init() {
+      var urls = tpeditor_config.subConfigs || [];
+      urls.push('client.js');
+      ht.Default.loadJS(urls, function () {
+        urls = [
+          'locales/' + tpeditor.config.locale + '.js',
+          'custom/locales/' + tpeditor.config.locale + '.js'
+        ];
+        urls.push(tpeditor.init);
+        if (tpeditor.config.libs) {
+          urls = urls.concat(tpeditor.config.libs);
+        }
+        urls.push('vs/loader.js');
+        urls.push('vs/editor/editor.main.nls.js');
+        urls.push('vs/editor/editor.main.js');
+        ht.Default.loadJS(urls, function () {
+          tpeditor_config.leftSplitViewPosition = 100;
+          tpeditor_config.rightSplitViewPosition = 0.5;
+          tpeditor_config.mainSplitViewPosition = -100;
+          tpeditor_config.explorerSplitViewPosition = 0.5;
+
+          editor1 = tpeditor.createEditor({
+            container: [50, 100, 500, 400],
+            open: 'displays/industry/lighting.json'
+          });
+          editor2 = tpeditor.createEditor({
+            container: 'editor2Div',
+            open: 'symbols/basic/ht.json'
+          });
+
+          editor3 = tpeditor.createEditor({
+            container: document.getElementById('editor3Div'),
+            open: 'newdisplay'
+          });
+
+          editor4 = tpeditor.createEditor({
+            container: null,
+            onEditorCreated: function (editor) {
+              document.body.appendChild(editor.mainPane.getView());
+              editor.mainPane.layout(600, 550, 500, 400);
+              editor.mainPane.validate();
+              editor.newSymbolView();
+            }
+          });
+        });
+      });
+
+      for (var i = 0; i < 5; i++) {
+        var div = ht.Default.createDiv();
+        div.style.background = 'yellow';
+        div.innerHTML = i;
+        div.style.width = '50px';
+        div.style.height = '50px';
+        div.style.left = (100 + 100 * i) + 'px';
+        div.style.top = '20px';
+        div.setAttribute('draggable', true);
+        div.addEventListener('dragstart', function (event) {
+          event.dataTransfer.setData('hightopo', 'HT-' + event.target.innerHTML);
+        }, false);
+        document.body.appendChild(div);
+      }
+      tpeditor_config.onDisplayViewOutsideDropping = function (editor, params) {
+        var value = params.event.dataTransfer.getData('hightopo');
+        if (value != null) {
+          console.log(value);
+          params.preventDefault = true;
+
+          var position = params.displayView.graphView.lp(params.event);
+          var node = new ht.Node();
+          node.setName(value);
+          node.p(position);
+          params.displayView.dm.add(node);
+        }
+      }
+
+    }
+  </script>
+</head>
+
+<body onload='init()'>
+  <div id='editor2Div' style="position:absolute;left:600px;top:100px;width:500px;height:400px"></div>
+  <div id='editor3Div' style="position:absolute;left:50px;top:550px;width:500px;height:400px"></div>
+  <iframe src="index.html?tpeditor=displays/industry/lighting.json"
+    style="margin:50px;position:absolute;left:50px;top:1000px;width:1000px;height:500px"></iframe>
+</body>
+
+</html>

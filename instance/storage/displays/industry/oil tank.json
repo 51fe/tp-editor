@@ -1,0 +1,622 @@
+{
+  "v": "6.2.0",
+  "p": {
+    "background": "rgb(43,43,43)",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true
+  },
+  "a": {
+    "gridAngle": 2.0944,
+    "gridRotation": 0.5236,
+    "previewURL": "display-oil.html"
+  },
+  "d": [
+    {
+      "c": "ht.Shape",
+      "i": 2707,
+      "p": {
+        "position": {
+          "x": 675.49981,
+          "y": 290
+        },
+        "width": 311.76915,
+        "height": 180,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 554.25626,
+              "y": 200
+            },
+            {
+              "x": 519.61524,
+              "y": 220
+            },
+            {
+              "x": 796.74337,
+              "y": 380
+            },
+            {
+              "x": 831.38439,
+              "y": 360
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "#979797",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2708,
+      "p": {
+        "position": {
+          "x": 690.01662,
+          "y": 317.38185
+        },
+        "width": 25.15865,
+        "height": 15.78582,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 678.09504,
+              "y": 318.20403
+            },
+            {
+              "x": 688.12561,
+              "y": 309.48894
+            },
+            {
+              "x": 702.59595,
+              "y": 320.01282
+            },
+            {
+              "x": 694.70304,
+              "y": 325.27476
+            },
+            {
+              "x": 677.4373,
+              "y": 318.03959
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": "rgba(43,43,43,0.69)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2709,
+      "p": {
+        "position": {
+          "x": 836.93237,
+          "y": 234.48227
+        },
+        "width": 415.69219,
+        "height": 240,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 629.08628,
+              "y": 354.48227
+            },
+            {
+              "x": 681.87094,
+              "y": 324.00703
+            },
+            {
+              "x": 681.87094,
+              "y": 316.53859
+            },
+            {
+              "x": 698.16604,
+              "y": 306.68633
+            },
+            {
+              "x": 698.16604,
+              "y": 314.59905
+            },
+            {
+              "x": 1044.77847,
+              "y": 114.48227
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(194,120,0)",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2710,
+      "p": {
+        "position": {
+          "x": 571.57677,
+          "y": 349.45062
+        },
+        "width": 311.76915,
+        "height": 181.09876,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 415.69219,
+              "y": 280
+            },
+            {
+              "x": 450.33321,
+              "y": 258.90124
+            },
+            {
+              "x": 727.46134,
+              "y": 418.90124
+            },
+            {
+              "x": 692.82032,
+              "y": 440
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(194,120,0)",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2711,
+      "p": {
+        "position": {
+          "x": 433.0127,
+          "y": 430
+        },
+        "width": 311.76915,
+        "height": 180,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 311.76915,
+              "y": 340
+            },
+            {
+              "x": 277.12813,
+              "y": 360
+            },
+            {
+              "x": 554.25626,
+              "y": 520
+            },
+            {
+              "x": 588.89727,
+              "y": 500
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "#979797",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2712,
+      "p": {
+        "position": {
+          "x": 814.06388,
+          "y": 209.45062
+        },
+        "width": 311.76915,
+        "height": 181.09876,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 658.17931,
+              "y": 140
+            },
+            {
+              "x": 692.82032,
+              "y": 118.90124
+            },
+            {
+              "x": 969.94845,
+              "y": 278.90124
+            },
+            {
+              "x": 935.30744,
+              "y": 300
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "rgb(194,120,0)",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2713,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 312.87576,
+          "y": 380
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2714,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 511.82705,
+          "y": 496.60289
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2715,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 489.76578,
+          "y": 281.69856
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2716,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 688.71707,
+          "y": 398.30144
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2717,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 545.7945,
+          "y": 233.69856
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2718,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 744.74579,
+          "y": 350.30144
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2719,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 740.64431,
+          "y": 147.17977
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2720,
+      "p": {
+        "displayName": "阀门开关",
+        "image": "symbols/demo/Oil tank/阀门开关.json",
+        "position": {
+          "x": 939.5956,
+          "y": 263.78266
+        }
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2721,
+      "p": {
+        "position": {
+          "x": 517.72559,
+          "y": 296.97075
+        },
+        "width": 25.15865,
+        "height": 15.78582,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 505.80401,
+              "y": 297.79293
+            },
+            {
+              "x": 515.83458,
+              "y": 289.07784
+            },
+            {
+              "x": 530.30492,
+              "y": 299.60172
+            },
+            {
+              "x": 522.41201,
+              "y": 304.86366
+            },
+            {
+              "x": 505.14626,
+              "y": 297.6285
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": "rgba(43,43,43,0.69)",
+        "shape.border.color": "#979797"
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 2722,
+      "p": {
+        "position": {
+          "x": 329.08965,
+          "y": 410
+        },
+        "width": 519.61524,
+        "height": 300,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 69.28203,
+              "y": 560
+            },
+            {
+              "x": 510.885,
+              "y": 305.04041
+            },
+            {
+              "x": 510.885,
+              "y": 298.01415
+            },
+            {
+              "x": 529.81318,
+              "y": 287.13941
+            },
+            {
+              "x": 529.81318,
+              "y": 294.11222
+            },
+            {
+              "x": 588.89727,
+              "y": 260
+            }
+          ]
+        }
+      },
+      "s": {
+        "shape.background": null,
+        "shape.border.color": "#979797",
+        "shape.border.width": 4,
+        "shape.border.cap": "round"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2723,
+      "p": {
+        "displayName": "压力计",
+        "image": "symbols/demo/Oil tank/压力计.json",
+        "position": {
+          "x": 258.12813,
+          "y": 446.35988
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2724,
+      "p": {
+        "displayName": "压力计",
+        "image": "symbols/demo/Oil tank/压力计.json",
+        "position": {
+          "x": 196.71087,
+          "y": 480.60289
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2725,
+      "p": {
+        "displayName": "pot",
+        "tag": "T102",
+        "image": "symbols/demo/Oil tank/pot_msg.json",
+        "position": {
+          "x": 619.43729,
+          "y": 407.38156
+        }
+      },
+      "a": {
+        "title": "T102",
+        "subtitle": "2号罐",
+        "pb.value": 0.47
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2726,
+      "p": {
+        "displayName": "pot",
+        "tag": "T104",
+        "image": "symbols/demo/Oil tank/pot_msg.json",
+        "position": {
+          "x": 872.06388,
+          "y": 271.99986
+        }
+      },
+      "a": {
+        "subtitle": "4号罐",
+        "title": "T104"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2727,
+      "p": {
+        "displayName": "pot",
+        "tag": "T103",
+        "image": "symbols/demo/Oil tank/pot_msg.json",
+        "position": {
+          "x": 600.1793,
+          "y": 113.87673
+        }
+      },
+      "a": {
+        "subtitle": "3号罐",
+        "title": "T103"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2728,
+      "p": {
+        "displayName": "pot",
+        "tag": "T101",
+        "image": "symbols/demo/Oil tank/pot_msg.json",
+        "position": {
+          "x": 352.20447,
+          "y": 249.45062
+        }
+      },
+      "a": {
+        "title": "T101",
+        "subtitle": "1号罐"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2729,
+      "p": {
+        "displayName": "pa_msg",
+        "image": "symbols/demo/Oil tank/msg.json",
+        "position": {
+          "x": 160.40511,
+          "y": 415.46505
+        }
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 2730,
+      "p": {
+        "displayName": "pa_msg",
+        "image": "symbols/demo/Oil tank/msg.json",
+        "position": {
+          "x": 296.87576,
+          "y": 507.38156
+        }
+      }
+    }
+  ]
+}

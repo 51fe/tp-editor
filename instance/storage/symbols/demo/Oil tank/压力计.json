@@ -1,0 +1,58 @@
+{
+  "width": 38,
+  "height": 74,
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": "#D8D8D8",
+      "borderWidth": 2,
+      "borderColor": "rgb(89,89,89)",
+      "cornerRadius": 16,
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        3,
+        2.19375,
+        32,
+        69.61251
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(51,51,51)",
+      "borderColor": "#979797",
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        4,
+        21.80428,
+        30,
+        31.37363
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgba(126,212,34,0.34)",
+      "borderColor": "#979797",
+      "cornerRadius": 0,
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        8.00972,
+        22.63186,
+        21.15153,
+        28.49975
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "#7ED321",
+      "borderColor": "#979797",
+      "cornerRadius": 0,
+      "shadowColor": "#1ABC9C",
+      "rect": [
+        5.66621,
+        34.38057,
+        25.99028,
+        5.23886
+      ]
+    }
+  ]
+}

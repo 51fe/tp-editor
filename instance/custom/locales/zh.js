@@ -167,7 +167,7 @@ tpeditor.customStrings = {
     NumPaneDigitCount: '字数',
     NumPaneDigitFixed: '小数位',
 
-    'editor.title': 'TP 编辑器',
+    'editor.title': '拓扑编辑器',
 
     'editor.align.cluster': '成串均分',
     'editor.showaxis': '显示编辑轴',

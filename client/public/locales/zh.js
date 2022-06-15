@@ -224,7 +224,7 @@ tpeditor.strings = {
     "editor.onedimensionalcolumnchart": "单维柱状图",
     "editor.columnchart": "柱状图",
     "editor.linechart": "曲线图",
-    "editor.title": "TP 编辑器",
+    "editor.title": "拓扑编辑器",
     "editor.displays": "图纸",
     "editor.symbols": "图标",
     "editor.components": "组件",

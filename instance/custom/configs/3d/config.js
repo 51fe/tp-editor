@@ -1,6 +1,6 @@
 window.tpeditor_config = {
   // port: 4000,
-  locale: 'en',
+  locale: 'zh',
   promptBeforeClosing: true,
   indent: 110,
   imageSize: 400,

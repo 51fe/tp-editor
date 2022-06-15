@@ -4,7 +4,7 @@ window.tpeditor_config = {
   //color_select: '#FF7733',
   // explorerMode: 'accordion',
   // port: 4000,
-  locale: 'en',
+  locale: 'zh',
   // rotateAsClock: true,
   // filterDisplayViewEnabled: false,
   // filterSymbolViewEnabled: true,

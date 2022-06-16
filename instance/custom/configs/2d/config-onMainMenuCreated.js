@@ -28,14 +28,14 @@
         ]
       },
       {
-        label: S('Hightopo'),
+        label: S('TPEditor'),
         items: [
           {
             label: S('GitHub'),
             action: function () { window.open('https://github.com/51fe'); }
           },
           {
-            label: S('Guide'),
+            label: S('Manual'),
             action: function () { window.open('https://www.yuque.com/riafan/gbr71g/cllgrw'); }
           },
           {

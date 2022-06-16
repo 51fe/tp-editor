@@ -27,7 +27,7 @@
             action: function () { window.open('http://www.hightopo.com/blog'); }
           },
           {
-            label: S('Guide'),
+            label: S('Manual'),
             action: function () { window.open('http://www.hightopo.com/guide/readme.html'); }
           }
         ]

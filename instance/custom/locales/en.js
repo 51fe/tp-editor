@@ -46,6 +46,7 @@ tpeditor.customStrings = {
     Blog: 'Blog',
     Guide: 'Guide',
     API: 'API',
+    Manual: 'Manual',
     ContactUs: 'Contact Us',
     Readme: 'Readme',
     GitHub: 'GitHub',

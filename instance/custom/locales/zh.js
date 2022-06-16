@@ -46,6 +46,7 @@ tpeditor.customStrings = {
     Blog: '博客文章',
     Guide: '开发手册',
     API: 'API手册',
+    Manual: '使用手册',
     ContactUs: '联系我们',
     Readme: '使用说明',
     GitHub: 'GitHub',

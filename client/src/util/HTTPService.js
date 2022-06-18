@@ -11,7 +11,7 @@ export default class HTTPService {
     this.fileChangeVersion = String((new Date).getTime());
     const host = tpeditor.config.host || window.location.hostname,
       port = tpeditor.config.port || window.location.port,
-      url = this.url = window.location.protocol + "//" + host + ":" + port;
+      url = this.url = window.location.protocol + "//" + host + ":" + port + '/api';
 
     setTimeout(() => {
       handler({ type: "connected", message: url })

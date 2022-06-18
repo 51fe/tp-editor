@@ -1,16 +1,16 @@
 # tp-editor（ 2D/3D）
-> A topology 2D/3Deditor with nodejs, express, socket.io es6, HT for Web and vite. It's a powerful data visualization tool with low-code.
+> A topology 2D/3D editor with nodejs, express, socket.io es6, HT for Web and vite. It's a powerful large-screen data visualization tool with low-code.
 
 ## Features
 
 - Graphic drawing and editing by dar ang drop;
 - Displays, symbols and compoents creating and exporting;
 - 2D assets and 3D models importing;
-- SVG, CAD importing and Displays, symbols converting;
+- SVG, CAD importing and displays, symbols converting;
 - Obj, mtl, UVW 3D support;
-- Displays, symbols preview;
-- Attribute, styles, field dataBinding;
-- Themes, menus, tabs and functions custom configuration and definition;
+- Displays, symbols, scenes preview;
+- Attributes, styles, fields dataBinding;
+- Themes, menus, tabs and functions configuration and customization;
 - I18n support;
 - Http(s) and websocket support;
 - Third party data visualization libs support (Echarts).
@@ -24,7 +24,9 @@
 ## Run
 
 ### Develpment
+
 - Edit the configuration file
+
 ```shell
 // server/config.ini
 [Dev]
@@ -37,18 +39,17 @@ clientDir = ../client
 customDir = ../instance/custom
 storageDir = ../instance/storage
 ```
-- Run the client development
+- Run the development client
 
 ```shell
 cd tp-editor\client
 npm run dev
 ```
-
-- Run the server development with nodemon
+- Run the development server with nodemon
 
 ```shell
 cd tp-editor\server
-npm run start
+npm run dev
 ```
 
 ### Production
@@ -57,7 +58,7 @@ npm run start
 ```shell
 // server/config.ini
 [Pro]
-port = 5000
+port = 3000
 autoOpen = true
 storagePrefix =
 urlPrefix =
@@ -66,7 +67,7 @@ clientDir = public
 customDir = ../instance/custom
 storageDir = ../instance/storage
 ```
-- Build the client production
+- Build the production client
 ```shell
 cd tp-editor\client
 npm run build

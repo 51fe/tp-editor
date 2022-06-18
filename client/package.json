@@ -12,9 +12,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "vite": "^2.7.2"
+    "vite": "^2.9.12"
   },
   "dependencies": {
-    "canvg": "^2.0.0"
+    "canvg": "^2.0.0",
+    "monaco-editor": "^0.33.0"
   }
 }

@@ -12,7 +12,7 @@ const base64Reg = /^\s*data:([a-z]+\/[a-z0-9-+.]+(;[a-z-]+=[a-z0-9-]+)?)?(;base6
 
 function createApp(app, config) {
   const storageDir = config.storageDir;
-  app.get("/explore/:dir", function (req, res) {
+  app.get("/api/explore/:dir", function (req, res) {
     const dir = req.params.dir;
     let p = storageDir
     try {
@@ -26,7 +26,7 @@ function createApp(app, config) {
     }
   });
 
-  app.post("/export", multipartMiddleware, function (req, res) {
+  app.post("/api/export", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body) {
       const src = body.dir.split(","),
@@ -43,7 +43,7 @@ function createApp(app, config) {
     }
   });
 
-  app.post("/import", multipartMiddleware, function (req, res) {
+  app.post("/api/import", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body) {
       const storageDir = storageDir,
@@ -56,7 +56,7 @@ function createApp(app, config) {
     }
     res.send(true);
   });
-  app.get("/locate", function (req, res) {
+  app.get("/api/locate", function (req, res) {
     const dir = req.query.dir;
     if (dir) {
       const p = path.join(storageDir, dir);
@@ -64,7 +64,7 @@ function createApp(app, config) {
     }
     res.end();
   });
-  app.post("/mkdir", multipartMiddleware, function (req, res) {
+  app.post("/api/mkdir", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body && body.path) {
       const p = path.join(storageDir, body.path);
@@ -74,7 +74,7 @@ function createApp(app, config) {
     }
     res.send(false);
   });
-  app.get("/open", function (req, res) {
+  app.get("/api/open", function (req, res) {
     const url = req.query.url;
     if (url) {
       const url = path.join(storageDir, url);
@@ -83,7 +83,7 @@ function createApp(app, config) {
     res.end();
   });
 
-  app.post("/paste", multipartMiddleware, function (req, res) {
+  app.post("/api/paste", multipartMiddleware, function (req, res) {
     const body = req.body,
       fileList = body.fileList;
     if (Array.isArray(fileList)) {
@@ -94,7 +94,7 @@ function createApp(app, config) {
     }
   });
 
-  app.post("/remove", multipartMiddleware, function (req, res) {
+  app.post("/api/remove", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body) {
       const p = path.join(storageDir, body.path);
@@ -111,7 +111,7 @@ function createApp(app, config) {
     res.send(true);
   });
 
-  app.post("/rename", multipartMiddleware, function (req, res) {
+  app.post("/api/rename", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body) {
       const oldPath = path.join(storageDir, body.oldPath),
@@ -140,7 +140,7 @@ function createApp(app, config) {
     }
   });
 
-  app.post("/source", multipartMiddleware, (function (req, res) {
+  app.post("/api/source", multipartMiddleware, (function (req, res) {
     const body = req.body;
     let str = "";
     if (body) {
@@ -167,7 +167,7 @@ function createApp(app, config) {
     res.end(str);
   }));
 
-  app.post("/upload", multipartMiddleware, function (req, res) {
+  app.post("/api/upload", multipartMiddleware, function (req, res) {
     const body = req.body;
     if (body) {
       let content = body.content;
@@ -190,7 +190,7 @@ function createApp(app, config) {
     res.end();
   });
 
-  app.get("/fileVersion/:version", function (req, res) {
+  app.get("/api/fileVersion/:version", function (req, res) {
     let version = req.params.version,
       values = {};
     if (version) {
@@ -204,7 +204,7 @@ function createApp(app, config) {
     res.end(JSON.stringify(values))
   });
 
-  app.get("/getInstance", function (req, res) {
+  app.get("/api/getInstance", function (req, res) {
     var sections = global.sections || {},
       value = [];
     Object.keys(sections).forEach((function (name) {
@@ -215,7 +215,7 @@ function createApp(app, config) {
     res.end(JSON.stringify(value))
   });
 
-  app.post("/createInstance", multipartMiddleware, function (req, res) {
+  app.post("/api/createInstance", multipartMiddleware, function (req, res) {
     var body = req.body;
     if (body) {
       var name = body.name;
@@ -231,7 +231,7 @@ function createApp(app, config) {
     res.send(false);
   });
 
-  app.get("/delete/:name", function (req, res) {
+  app.get("/api/delete/:name", function (req, res) {
     const name = req.params.name;
     instance.delete(name);
     res.end(JSON.stringify({ code: 0 }))

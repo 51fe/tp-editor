@@ -1,12 +1,12 @@
 const path = require('path');
-const readConfig = require('./readConfig')
-const repl = require('./repl');
-const { setLanguage } = require('./i18n');
-const { toAbsolute } = require('./utils');
-const logger = require('./logger');
-const Server = require('./Server');
+const readConfig = require('./src/readConfig')
+const repl = require('./src/repl');
+const { setLanguage } = require('./src/i18n');
+const { toAbsolute } = require('./src/utils');
+const logger = require('./src/logger');
+const Server = require('./src/Server');
 
-const rootDir = path.join(path.normalize(__dirname), "../"),
+const rootDir = path.join(path.normalize(__dirname), "./"),
   config = readConfig(path.join(rootDir, "config.ini"));
 global.globalConfig = config.global;
 config.global && config.global.locale && setLanguage(config.global.locale);

@@ -32,14 +32,9 @@
   <script src="libs/plugin/ht-autolayout.js"></script>
   <script src="libs/plugin/ht-obj.js"></script>
   <script src="libs/plugin/ht-historymanager.js"></script>
-
-  <!-- socket.io -->
-  <script src="/socket.io/socket.io.js"></script>
-
+  
   <script>
-    function init() {
-      var urls = tpeditor_config.subConfigs || [];
-      urls.push('client.js');
+     var urls = tpeditor_config.subConfigs || [];
       ht.Default.loadJS(urls, function () {
         urls = [
           'locales/' + tpeditor.config.locale + '.js',
@@ -111,12 +106,11 @@
           params.displayView.dm.add(node);
         }
       }
-
-    }
   </script>
 </head>
 
-<body onload='init()'>
+<body>
+  <script type="module" src="src/index.js"></script>
   <div id='editor2Div' style="position:absolute;left:600px;top:100px;width:500px;height:400px"></div>
   <div id='editor3Div' style="position:absolute;left:50px;top:550px;width:500px;height:400px"></div>
   <iframe src="index.html?tpeditor=displays/industry/lighting.json"

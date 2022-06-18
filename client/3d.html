@@ -38,12 +38,14 @@
     var urls = tpeditor_config.subConfigs || [];
     ht.Default.loadJS(urls, function () {
       tpeditor_config.indent = 90;
+      var lang =  tpeditor_config.locale,
+      libs = tpeditor_config.libs
       urls = [
-        'locales/' + tpeditor_config.locale + '.js',
-        'custom/locales/' + tpeditor_config.locale + '.js'
+        'locales/' + lang + '.js',
+        'custom/locales/' + lang + '.js'
       ];
-      if (tpeditor_config.libs) {
-        urls = urls.concat(tpeditor_config.libs);
+      if (libs) {
+        urls = urls.concat(libs);
       }
       urls.push('vs/loader.js', 'vs/editor/editor.main.js');
 

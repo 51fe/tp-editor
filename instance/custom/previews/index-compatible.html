@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HT for Web</title>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='user-scalable=no'>
-        <link rel="shortcut icon" href="custom/images/favicon.ico" />
-        <style>
-            html, body {
-                padding: 0px;
-                margin: 0px;
-            }
-        </style>
 
-        <!-- ht config -->
-        <script src='custom/configs/htconfig.js'></script>
+<head>
+  <title>Compatible</title>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='user-scalable=no'>
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
 
-        <!-- configuration for editor -->
-        <script src='custom/configs/config.js'></script>
+  <!-- ht config -->
+  <script src='custom/configs/htconfig.js'></script>
 
-        <!-- ht core -->
-        <script src='libs/core/ht.js'></script>
-        <!-- ht plugins -->
-        <script src='libs/plugin/ht-cssanimation.js'></script>
-        <script src='libs/plugin/ht-contextmenu.js'></script>
-        <script src='libs/plugin/ht-dialog.js'></script>
-        <script src='libs/plugin/ht-edgetype.js'></script>
-        <script src='libs/plugin/ht-form.js'></script>
-        <script src='libs/plugin/ht-overview.js'></script>
-        <script src='libs/plugin/ht-autolayout.js'></script>
-        <script src='libs/plugin/ht-historymanager.js'></script>
+  <!-- configuration for editor -->
+  <script src='custom/configs/config.js'></script>
 
-        <!-- socket.io -->
-        <script src='/socket.io/socket.io.js'></script>
+  <!-- ht core -->
+  <script src='libs/core/ht.js'></script>
+  <!-- ht plugins -->
+  <script src='libs/plugin/ht-cssanimation.js'></script>
+  <script src='libs/plugin/ht-contextmenu.js'></script>
+  <script src='libs/plugin/ht-dialog.js'></script>
+  <script src='libs/plugin/ht-edgetype.js'></script>
+  <script src='libs/plugin/ht-form.js'></script>
+  <script src='libs/plugin/ht-overview.js'></script>
+  <script src='libs/plugin/ht-autolayout.js'></script>
+  <script src='libs/plugin/ht-historymanager.js'></script>
 
-        <script>
-            function init() {
-                var urls = tpeditor_config.subConfigs || [];
-                urls.push('libs/client.js');
-                ht.Default.loadJS(urls, function(){
-                    urls = [
-                        'locales/' + tpeditor.config.locale + '.js',
-                        'custom/locales/' + tpeditor.config.locale + '.js'
-                    ];
+  <script>
+    var urls = tpeditor_config.subConfigs || [];
+    ht.Default.loadJS(urls, function () {
+      urls = [
+        'locales/' + tpeditor.config.locale + '.js',
+        'custom/locales/' + tpeditor.config.locale + '.js'
+      ];
 
-                    if (tpeditor.config.libs) {
-                        urls = urls.concat(tpeditor.config.libs);
-                    }
+      if (tpeditor.config.libs) {
+        urls = urls.concat(tpeditor.config.libs);
+      }
 
-                    if (typeof ArrayBuffer !== 'undefined') {
-                        urls.push('libs/plugin/ht-modeling.js', 'libs/plugin/ht-obj.js');
-                    }
+      if (typeof ArrayBuffer !== 'undefined') {
+        urls.push('libs/plugin/ht-modeling.js', 'libs/plugin/ht-obj.js');
+      }
 
-                    // Don't use code editor on IE
-                    var userAgent = navigator.userAgent;
-                    if (!(userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1) || (userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1)) {
-                        urls.push('vs/loader.js', 'vs/editor/editor.main.js');
-                    }
+      // Don't use code editor on IE
+      var userAgent = navigator.userAgent;
+      if (!(userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1) || (userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1)) {
+        urls.push('vs/loader.js', 'vs/editor/editor.main.js');
+      }
 
-                    ht.Default.loadJS(urls, function(){
-                        tpeditor.init();
+      ht.Default.loadJS(urls, function () {
+        tpeditor.init();
 
-                        window.editor = tpeditor.createEditor();
-                    });
-                });
-            }
-        </script>
-    </head>
-    <body onload='init()'>
-    </body>
+        window.editor = tpeditor.createEditor();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <script type="module" src="src/index.js"></script>
+  <script type="module" src="src/3d/index.js"></script>
+</body>
+
 </html>

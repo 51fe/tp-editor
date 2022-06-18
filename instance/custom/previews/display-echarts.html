@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Echarts</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <link rel="shortcut icon" href="custom/images/favicon.ico" />
-        <style>
-            html, body {
-                padding: 0px;
-                margin: 0px;
-            }
-        </style>
 
-        <script src='custom/libs/echarts.js'></script>
-        <script src='custom/configs/htconfig.js'></script>
-        <script src='libs/core/ht.js'></script>
-        <script src='libs/plugin/ht-obj.js'></script>
+<head>
+  <title>Echarts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="custom/images/favicon.ico" />
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+  </style>
 
-        <script>
-            function init() {
-                dataModel = new ht.DataModel();
-                graphView = new ht.graph.GraphView(dataModel);
-                graphView.addToDOM();
+  <script src='custom/libs/echarts.js'></script>
+  <script src='custom/configs/htconfig.js'></script>
+  <script src='libs/core/ht.js'></script>
+  <script src='libs/plugin/ht-obj.js'></script>
 
-                ht.Default.xhrLoad('previews/display.json', function(text) {
-                    var json = ht.Default.parse(text);
-                    if(json.title) document.title = json.title;
-                    dataModel.deserialize(json);
-                    graphView.fitContent(true);
+  <script>
+    function init() {
+      dataModel = new ht.DataModel();
+      graphView = new ht.graph.GraphView(dataModel);
+      graphView.addToDOM();
 
-                    var lineData1 = [120, 132, 101, 134, 90, 230, 210, 399, 499, 599];
-                    var lineData2 = [220, 182, 191, 234, 290, 330, 310, 200, 540, 100];
-                    var xAxisData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-                    var chart2 = dataModel.getDataByTag('chart2');
-                    chart2.a({
-                        lineData1: lineData1,
-                        lineData2: lineData2,
-                        xAxisData: xAxisData
-                    })
-                    var count = xAxisData.length;
-                    setInterval(function () {
-                        lineData1.shift();
-                        lineData1.push(Math.floor(Math.random() * 600));
-                        lineData2.shift();
-                        lineData2.push(Math.floor(Math.random() * 600));
-                        xAxisData.shift();
-                        xAxisData.push(++count);
-                        chart2.iv();
-                    }, 1200);
+      ht.Default.xhrLoad('previews/display.json', function (text) {
+        var json = ht.Default.parse(text);
+        if (json.title) document.title = json.title;
+        dataModel.deserialize(json);
+        graphView.fitContent(true);
 
-                });
-            }
+        var lineData1 = [120, 132, 101, 134, 90, 230, 210, 399, 499, 599];
+        var lineData2 = [220, 182, 191, 234, 290, 330, 310, 200, 540, 100];
+        var xAxisData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var chart2 = dataModel.getDataByTag('chart2');
+        chart2.a({
+          lineData1: lineData1,
+          lineData2: lineData2,
+          xAxisData: xAxisData
+        })
+        var count = xAxisData.length;
+        setInterval(function () {
+          lineData1.shift();
+          lineData1.push(Math.floor(Math.random() * 600));
+          lineData2.shift();
+          lineData2.push(Math.floor(Math.random() * 600));
+          xAxisData.shift();
+          xAxisData.push(++count);
+          chart2.iv();
+        }, 1200);
 
-        </script>
-    </head>
-    <body onload='setTimeout(init, 300)'>
-    </body>
+      });
+    }
+
+  </script>
+</head>
+
+<body onload='setTimeout(init, 300)'>
+</body>
+
 </html>

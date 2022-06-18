@@ -1,8 +1,9 @@
-const { resolve } = require('path');
-const { defineConfig } = require('vite');
-const port = 4000;
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+
 export default defineConfig(({ command, mode }) => {
   if (command === 'serve') {
+    const target = 'http://localhost:4000';
     return {
       base: '/',
       server: {
@@ -11,22 +12,22 @@ export default defineConfig(({ command, mode }) => {
         proxy: {
           // api
           '/socket.io': {
-            target: `ws://localhost:${port}`,
-            changeOrigin: true
-          },
-          // assets
-          '^/.+\.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!\.js)': {
-            target: `ws://localhost:${port}`,
+            target: `${target}`,
             changeOrigin: true
           },
           // custom and upload
           '^/custom': {
-            target: `ws://localhost:${port}`,
+            target: `${target}`,
+            changeOrigin: true
+          },
+          // assets
+          '^/.+\.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!\.js)': {
+            target: `${target}`,
             changeOrigin: true
           },
           // preview
           '^/.+\.html?.+json$': {
-            target: `ws://localhost:${port}`,
+            target: `${target}`,
             changeOrigin: true
           }
         }

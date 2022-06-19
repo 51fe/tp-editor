@@ -22,7 +22,7 @@ class DNDTree3d extends DNDTree {
   }
 
   getLabel(data) {
-    var label = super.getLabel(data);
+    let label = super.getLabel(data);
     if (!label) {
       let name = data.s("shape3d");
       if (data instanceof ht.Block) {
@@ -80,13 +80,13 @@ class DNDTree3d extends DNDTree {
               return "editor.floor";
             }
             if (shape instanceof ht.Node) {
-              var shape3d = shape.s("shape3d");
+              const shape3d = shape.s("shape3d");
               if (shape3d) {
                 if (isString(shape3d) && isJSON(shape3d)) {
                   return shape3d.substr(0, shape3d.length - 4) + "png";
                 }
-                if ("sphere" === shape3d) return "editor.sphere";
-                if ("cylinder" === shape3d) return "editor.cylinder";
+                if (shape3d === "sphere") return "editor.sphere";
+                if (shape3d === "cylinder") return "editor.cylinder";
               }
               return "editor.cube";
             }

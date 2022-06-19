@@ -8,7 +8,7 @@ export default class SphereInspector extends CylinderInspector {
 
   addEffectProperties() {
     super.addEffectProperties();
-    var items = [];
+    const items = [];
     this.addLabelRange(items, getString("editor.resolution"),
       getter("s", "shape3d.resolution"),
       setter("s", "shape3d.resolution"), 0, 200, 1, "int")

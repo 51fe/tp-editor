@@ -140,7 +140,7 @@ export default class FileList extends ExplorerView {
     serializer.isSerializable = data => {
       return target[data._id]
     };
-    var content = serializer.serialize();
+    const content = serializer.serialize();
     getInput(getString("editor.inputnewdisplayname") + " [" + targetData.url + "]",
       view.getLabel(view.draggingData), {
       nullable: false,
@@ -314,7 +314,7 @@ export default class FileList extends ExplorerView {
   }
 
   adjustTranslateY(y) {
-    var h = this.getHeight() - this._fileRect.height;
+    const h = this.getHeight() - this._fileRect.height;
     y < h && (y = h);
     return y > 0 ? 0 : Math.round(y);
   }

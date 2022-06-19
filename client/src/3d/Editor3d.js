@@ -60,7 +60,7 @@ export default class Editor3d {
     this._clones = [];
     this.modelDialogs = {};
     this.body = params.body;
-    var Service = ht.Default.getClass(config.serviceClass || WebSocketService);
+    const Service = ht.Default.getClass(config.serviceClass || WebSocketService);
     this.service = new Service(this.handleServiceEvent.bind(this), this);
     ht.Default.handleModelLoaded = () => {
       this.inspector && this.inspector.updateProperties();
@@ -69,10 +69,10 @@ export default class Editor3d {
     serializer.isSerializable = data => {
       return this.scene.sm().contains(data)
     };
-    const getProperties = this.serializer.getProperties;
-    serializer.getProperties = function (R) {
-      var e = getProperties.call(serializer, R);
-      return config.cloneTag || delete e.tag, e
+    serializer.getProperties = (name) => {
+      const prop = this.serializer.getProperties(name);
+      config.cloneTag || delete prop.tag;
+      return prop;
     };
     this.editable = true;
   }
@@ -180,9 +180,9 @@ export default class Editor3d {
       this.batchView = new BatchView(this);
       addTab(this.rightBottomTabView, getString("editor.batch"), this.batchView);
     }
-    var sm = this.rightBottomTabView.getTabModel().sm();
+    const sm = this.rightBottomTabView.getTabModel().sm();
     sm.ms(() => {
-      var ld = sm.ld();
+      const ld = sm.ld();
       this.dataView.visible = ld?.getView() === this.dataView;
     });
     this.alignPane = new AlignPane(this);
@@ -574,7 +574,7 @@ export default class Editor3d {
   open(fileNode) {
     ht.Default.isString(fileNode) && (fileNode = this.getFileNode(fileNode));
     if (!fileNode?.tag) {
-      var url = fileNode.url;
+      const url = fileNode.url;
       if (fileNode.fileType === "scene") {
         this.newScene(url);
       } else if (fileNode.fileType === "model") {
@@ -609,7 +609,7 @@ export default class Editor3d {
       scene.far && dm.a("sceneFar", scene.far);
       if (scene.shadow === undefined && scene.shadowParams) {
         dm.a("sceneShadowEnabled", scene.shadow);
-        var params = scene.shadowParams;
+        const params = scene.shadowParams;
         for (const key in params) {
           const value = params[key];
           if (value !== undefined) {
@@ -703,7 +703,7 @@ export default class Editor3d {
               }
             });
             if (found) {
-              var buttons = [{
+              const buttons = [{
                 label: getString("editor.ok"),
                 action: function () {
                   dialog.hide();
@@ -1077,7 +1077,7 @@ export default class Editor3d {
   }
 
   fitSelection() {
-    var sm = this.dm.sm().getSelection();
+    let sm = this.dm.sm().getSelection();
     if (sm.length === 0) {
       sm = null;
     }
@@ -1166,7 +1166,7 @@ export default class Editor3d {
       const sel = this.dm.sm().getSelection();
       if (sel.length) {
         this.beginTransaction();
-        var block = new ht.Block;
+        const block = new ht.Block;
         sel.forEach(item => {
           item.setParent(block);
         });
@@ -1179,7 +1179,7 @@ export default class Editor3d {
   unblock() {
     if (this.editable) {
       this.beginTransaction();
-      var items = [];
+      const items = [];
       this.sm.toSelection().each(data => {
         if (data instanceof ht.Block && !(data instanceof ht.RefGraph)) {
           const parent = data.getParent();

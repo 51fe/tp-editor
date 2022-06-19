@@ -87,18 +87,18 @@ export default class Shape extends ht.Shape {
     updateValue(prop, "closePath", this.a("closePath"), this.isClosePath(), false);
     updateValue(prop, "points", this.a("points"), toPoints(this.getPoints()));
     if (this.getSegments()) {
-      var segments = this.getSegments().toArray();
+      const segments = this.getSegments().toArray();
       if (segments.length) {
-        var hasSegment = segments[0] === 1;
+        let hasSegment = segments[0] === 1;
         if (hasSegment) {
           for (let i = 1; i < segments.length; i++)
             if (segments[i] !== 2) {
               hasSegment = false;
-              break
+              break;
             }
         }
+        hasSegment || updateValue(prop, "segments", this.a("segments"), segments);
       }
-      hasSegment || updateValue(prop, "segments", this.a("segments"), segments);
     }
     return prop;
   }

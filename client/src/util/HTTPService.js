@@ -211,7 +211,7 @@ export default class HTTPService {
     uri += "?url=" + url;
     uri += "&sid=" + sid;
     this.send("GET", uri, null, e => {
-      var target = e.target;
+      const target = e.target;
       if ([200, 0].includes(target.status)) {
         this.handleRespone(index, true)
       }
@@ -226,7 +226,7 @@ export default class HTTPService {
     fd.append("encoding", params.encoding);
     fd.append("prefix", params.prefix);
     this.send("POST", url, fd, e => {
-      var target = e.target;
+      const target = e.target;
       if ([200, 0].includes(target.status)) {
         const data = target.response || target.responseText;
         this.handleRespone(index, data)
@@ -255,16 +255,16 @@ export default class HTTPService {
     fd.append("destDir", file.destDir);
     fd.append("fileList", file.fileList);
     this.send("POST", url, fd, e => {
-      var target = e.target;
+      const target = e.target;
       if ([200, 0].includes(target.status)) {
-        var data = target.response || target.responseText;
+        const data = target.response || target.responseText;
         this.handleRespone(index, data);
       }
     })
   }
 
   send(method, url, data, callback) {
-    var request = new ht.Request,
+    const request = new ht.Request,
       xhr = {};
     xhr.url = encodeURI(url);
     xhr.method = method;

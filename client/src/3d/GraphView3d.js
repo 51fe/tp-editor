@@ -52,7 +52,7 @@ export default class GraphView3d extends ht.graph.GraphView {
     };
     const isSelectedAll = () => {
       for (let i = 0; i < this.sm().size(); i++) {
-        var sel = this.sm().getSelection().get(i);
+        const sel = this.sm().getSelection().get(i);
         if (sel instanceof ht.Block && !(sel instanceof ht.RefGraph)) return true;
       }
       return false;

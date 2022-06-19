@@ -23,8 +23,8 @@ export default class DrawInteractor3d extends ht.graph.Interactor {
   }
 
   getNodeAt(e) {
-    var e = this.getDataAt(e);
-    return e instanceof ht.Node ? e : null;
+    const data = this.getDataAt(e);
+    return data instanceof ht.Node ? data : null;
   }
 
   setUp() {

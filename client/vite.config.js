@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(({ command }) => {
   if (command === 'serve') {
     const target = 'http://localhost:4000';
     return {
@@ -21,12 +21,12 @@ export default defineConfig(({ command, mode }) => {
             changeOrigin: true
           },
           // assets
-          '^/.+\.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!\.js)': {
+          '^/.+.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!.js)': {
             target: `${target}`,
             changeOrigin: true
           },
           // preview
-          '^/.+\.html?.+json$': {
+          '^/.+.html?.+.json$': {
             target: `${target}`,
             changeOrigin: true
           }
@@ -41,8 +41,8 @@ export default defineConfig(({ command, mode }) => {
         assetsDir: '',
         rollupOptions: {
           input: {
-            test: resolve(__dirname, 'index.html') ,
-            index3d: resolve(__dirname, '3d.html')
+            test: resolve('index.html') ,
+            index3d: resolve('3d.html')
           }
         }
       }

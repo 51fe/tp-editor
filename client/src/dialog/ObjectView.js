@@ -13,7 +13,7 @@ export default class ObjectView extends Dialog {
       id: "object",
       element: createCodeEditor()
     }], [.1], .1);
-    var btns = [];
+    const btns = [];
     btns.push({
       label: getString("editor.ok"), action: () => {
         this.ok()

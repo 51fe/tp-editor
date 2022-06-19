@@ -73,7 +73,7 @@ export default class DataInspector extends Inspector3d {
     items = [];
     this.addLabelComboBoxURL(items, getString("editor.type"),
       (node) => {
-        var url = node.s("shape3d");
+        const url = node.s("shape3d");
         if (isImage(url)) {
           const fileNode = this.editor.getFileNode(url);
           return fileNode ? fileNode.url : url
@@ -151,8 +151,9 @@ export default class DataInspector extends Inspector3d {
     this.addRow(items, [this.indent, .1, this.indent2, .1]);
     items = [];
     const _getter = function (node) {
-      var e = node.s("fixSizeOnScreen");
-      return null == e && (e = node.s("shape3d.fixSizeOnScreen")), !!e
+      let value = node.s("fixSizeOnScreen");
+      value === undefined && (value = node.s("shape3d.fixSizeOnScreen"));
+      return !!value;
     };
     this.addLabelCheckBox(items, getString("editor.fitsize"), _getter,
       function (node, value) {
@@ -175,7 +176,7 @@ export default class DataInspector extends Inspector3d {
     this.addLabelCheckBox(items, getString("editor.alwaysontop"),
       function (node) {
         if (node.getRenderLayer) return "top" === node.getRenderLayer();
-        var value = node.s("alwaysOnTop");
+        let value = node.s("alwaysOnTop");
         value === undefined && (value = node.s("shape3d.alwaysOnTop"));
         return value;
       },
@@ -189,7 +190,7 @@ export default class DataInspector extends Inspector3d {
       });
     const autorotate = this.addLabelComboBox(items, getString("editor.autorotate"),
       function (node) {
-        var value = node.s("autorotate");
+        let value = node.s("autorotate");
         value === undefined && (value = node.s("shape3d.autorotate"));
         return value;
       },
@@ -412,7 +413,7 @@ export default class DataInspector extends Inspector3d {
 
   addWireframeProperties() {
     this.addTitle("TitleWireFrame");
-    var items = [];
+    let items = [];
     this.addLabelComboBox(items, getString("editor.visible"), getter("s", "wf.visible"),
       function (node, value) {
         node.s("wf.visible", value);
@@ -447,7 +448,7 @@ export default class DataInspector extends Inspector3d {
 
   addShadowProperties() {
     this.addTitle("TitleShadow");
-    var items = [];
+    const items = [];
     this.addLabelCheckBox(items, getString("editor.shadow.cast"),
       getter("s", "shadow.cast"), setter("s", "shadow.cast"));
     this.addLabelCheckBox(items, getString("editor.shadow.receive"),

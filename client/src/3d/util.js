@@ -1,5 +1,5 @@
 export function addTab(tabView, name, view, selected) {
-  var tab = new ht.Tab;
+  const tab = new ht.Tab;
   tab.setName(name);
   tab.setView(view);
   tabView.getTabModel().add(tab);
@@ -36,7 +36,7 @@ export function getV(name) {
 
 export function setV(name) {
   return function (data, y) {
-    var value = data.s(name);
+    let value = data.s(name);
     value || (value = data.s("all.uv.scale"));
     data.s(name, [value?.[0] ?? 1, y])
   }

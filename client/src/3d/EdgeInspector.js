@@ -35,7 +35,7 @@ export default class EdgeInspector extends DataInspector {
       }, function (url, value) {
         url.a("navigate", value)
       }, function (shape, valie) {
-        var data = valie.view.draggingData;
+        const data = valie.view.draggingData;
         return data && ("scene" === data.fileType || "display" === data.fileType)
       });
     this.addLabelInput(items,
@@ -45,9 +45,9 @@ export default class EdgeInspector extends DataInspector {
     this.addRow(items, [this.indent, .1, this.indent2, .1]);
     items = [];
     this.addLabelComboBoxURL(items, getString("editor.type"), shape => {
-      var shape3d = shape.s("shape3d");
+      const shape3d = shape.s("shape3d");
       if (isJSON(shape3d)) {
-        var node = this.editor.getFileNode(shape3d);
+        const node = this.editor.getFileNode(shape3d);
         return node ? node.url : shape3d
       }
       return shape3d;
@@ -127,7 +127,7 @@ export default class EdgeInspector extends DataInspector {
 
   addEdgeBasicProperties() {
     this.addTitle("TitleEdgeBasic");
-    var items = [];
+    let items = [];
     this.addLabelComboBox(items,
       getString("editor.type"),
       getter("s", "edge.type"),
@@ -164,10 +164,10 @@ export default class EdgeInspector extends DataInspector {
       setter("s", "edge.center"));
     this.addRow(items, [this.indent, .1, this.indent2, .1]);
     items = [];
-    var image = getter("s", "shape3d.image");
+    const image = getter("s", "shape3d.image");
     this.addLabelImage(items,
       getString("editor.image"), value => {
-        var url = image(value), fileNode = this.editor.getFileNode(url);
+        const url = image(value), fileNode = this.editor.getFileNode(url);
         return fileNode ? fileNode.url : url
       }, setter("s", "shape3d.image"));
     this.addRow(items, [this.indent, .1, 20]);
@@ -185,13 +185,13 @@ export default class EdgeInspector extends DataInspector {
     this.addLabelInput(items, "U", shape => {
       return (shape.s("shape3d.uv.offset") || [0, 0])[0];
     }, (shape, value) => {
-      var offset = shape.s("shape3d.uv.offset") || [];
+      const offset = shape.s("shape3d.uv.offset") || [];
       shape.s("shape3d.uv.offset", [value, offset[1]])
     }, "number", .1);
     this.addLabelInput(items, "V", shape => {
       return (shape.s("shape3d.uv.offset") || [0, 0])[1]
     }, (shape, value) => {
-      var offset = shape.s("shape3d.uv.offset") || [];
+      const offset = shape.s("shape3d.uv.offset") || [];
       shape.s("shape3d.uv.offset", [offset[0], value])
     }, "number", .1);
     this.addRow(items, [this.indent - 20 - 8, 20, 20, .1, 20, .1])
@@ -203,7 +203,7 @@ export default class EdgeInspector extends DataInspector {
   addEdgeSourceNodeProperties() {
     const numberPrecision = config.numberPrecision;
     this.addTitle("TitleEdgeSourceNode");
-    var items = [];
+    let items = [];
     this.addLabelData(items, getString("editor.node"), getter("p", "source"),
       function (shape, source) {
         if (shape instanceof ht.Edge) {
@@ -237,7 +237,7 @@ export default class EdgeInspector extends DataInspector {
       shape instanceof ht.Edge && shape.s("edge.source.anchor.x", parseFloat(value))
     }, type, precision);
     this.addLabelInput(items, "Y", function (shape) {
-      var elevation = shape.s("edge.source.anchor.elevation");
+      let elevation = shape.s("edge.source.anchor.elevation");
       if (elevation == null) {
         elevation = .5
       }
@@ -256,9 +256,9 @@ export default class EdgeInspector extends DataInspector {
   }
 
   addEdgeTargetNodeProperties() {
-    var numberPrecision = config.numberPrecision;
+    const numberPrecision = config.numberPrecision;
     this.addTitle("TitleEdgeTargetNode");
-    var items = [];
+    let items = [];
     this.addLabelData(items,
       getString("editor.node"),
       getter("p", "target"), function (shape, value) {

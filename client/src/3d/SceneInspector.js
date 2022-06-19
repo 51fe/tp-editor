@@ -22,7 +22,7 @@ export default class SceneInspector extends Inspector3d {
     this.addLabelCheckBox(items, getString("editor.debugTip"), () => {
       return this.editor.scene.isDebugTipShowing()
     }, (node, value) => {
-      var scene = this.editor.scene;
+      const scene = this.editor.scene;
       value ? scene.showDebugTip() : scene.hideDebugTip()
     });
     this.addRow(items, [this.indent, .1]);
@@ -45,8 +45,8 @@ export default class SceneInspector extends Inspector3d {
     this.addLabelInput(items, "Y", () => {
       return parseFloat(this.editor.scene.getEye()[1])
     }, (e, t) => {
-      var l = this.editor.scene.getEye();
-      this.editor.scene.setEye(l[0], t, l[2])
+      const eyes = this.editor.scene.getEye();
+      this.editor.scene.setEye(eyes[0], t, eyes[2])
     }, "int", 1);
     this.addLabelInput(items, "Z", () => {
       return parseFloat(this.editor.scene.getEye()[2])
@@ -144,7 +144,7 @@ export default class SceneInspector extends Inspector3d {
 
   addBloomProperties() {
     this.addTitle("TitleBloom");
-    var items = [];
+    let items = [];
     this.addLabelCheckBox(items, getString("editor.bloom"), function (dm) {
       return dm.a("sceneBloom");
     }, function (dm, value) {
@@ -172,7 +172,7 @@ export default class SceneInspector extends Inspector3d {
 
   addDofProperties() {
     this.addTitle("TitleDOF");
-    var items = [];
+    let items = [];
     this.addLabelCheckBox(items, getString("editor.dof"), function (dm) {
       return dm.a("sceneDof")
     }, function (dm, value) {
@@ -196,7 +196,7 @@ export default class SceneInspector extends Inspector3d {
 
   addHighlightProperties() {
     this.addTitle("TitleHighlight");
-    var items = [];
+    let items = [];
     this.addLabelRange(items, getString("editor.width"), function (dm) {
       return dm.a("sceneHighlightWidth");
     }, function (dm, value) {

@@ -65,7 +65,7 @@ class Editor {
     this.params = params;
     this.body = this.params.body;
     this._eventNotifier = new ht.Notifier;
-    var Service = ht.Default.getClass(config.serviceClass) || WebSocketService;
+    const Service = ht.Default.getClass(config.serviceClass) || WebSocketService;
     this.service = new Service(e => {
       this.handleServiceEvent(e);
       this.fireEvent(e.type, e)
@@ -99,7 +99,7 @@ class Editor {
 
   fireEvent(type, params = {}) {
     config.handleEvent?.(this, type, params);
-    var name = "on" + type.charAt(0).toUpperCase() + type.slice(1);
+    const name = "on" + type.charAt(0).toUpperCase() + type.slice(1);
     config[name]?.(this, params);
     this.params[name]?.(this, params);
     this._eventNotifier.fire({
@@ -174,7 +174,7 @@ class Editor {
     this.fireEvent("rightToolbarCreated");
     const value = this.params.open || getQueryString("tpeditor");
     if (value) {
-      var handler = config.paramHandlers[value];
+      const handler = config.paramHandlers[value];
       if (handler && !handler(this)) return;
       if (isJSON(value)) {
         this._pendingOpenJSON = value;
@@ -336,9 +336,9 @@ class Editor {
   getFileNode(url) {
     const list = this.leftTopTabView.getTabModel().getDatas();
     for (let i = 0; i < list.size(); i++) {
-      var data = list.get(i);
+      const data = list.get(i);
       if (data.getView() instanceof Explorer) {
-        var fileNode = data.getView().findFileNode(url);
+        const fileNode = data.getView().findFileNode(url);
         if (fileNode) {
           return fileNode
         }
@@ -461,7 +461,7 @@ class Editor {
     if (fileNode?.a("editable") !== false && !fileNode._tag && !parent?._tag) {
       let params = { data: fileNode, url: fileNode.url, parent };
       if (this.fireEvent("fileMoving", params), !params.preventDefault) {
-        var data = fileNode.getParent();
+        const data = fileNode.getParent();
         fileNode.setParent(parent);
         if (data !== fileNode.getParent()) {
           fileNode._tag = parent.url + "/" + fileNode.getName();
@@ -844,7 +844,7 @@ class Editor {
     const files = e.dataTransfer.files;
     const url = file.url;
     for (let i = 0; i < files.length; i++) {
-      var fileName = files[i].name;
+      const fileName = files[i].name;
       if (!config.checkFileName(fileName, url + "/" + fileName)) {
         createAlert(getString("editor.invalidfilename"), fileName);
         return false;
@@ -1418,11 +1418,11 @@ class Editor {
             datas[i].clone(jsonArray[i], gv, info);
           }
           if (config.pasteToLastSelectedIndex && info.sourceView === gv) {
-            var dm = gv.dm(),
+            const dm = gv.dm(),
               ld = info.lastData,
               parent = ld.getParent(),
-              index = dm.getSiblings(ld).indexOf(ld) + 1,
               length = datas.length;
+            let index = dm.getSiblings(ld).indexOf(ld) + 1;
             for (let i = 0; i < length; i++) {
               let data = jsonArray[i];
               if (!info[data.parent]) {
@@ -1434,7 +1434,7 @@ class Editor {
           }
         } else {
           info?.jsonArray?.forEach?.((item, index) => {
-            var popup = item[0],
+            const popup = item[0],
               json = item[1],
               func = info.funcArray[index][2];
             if (info.type === "symbol" && !this.symbolView && func.clazz === CompType) {
@@ -1451,8 +1451,8 @@ class Editor {
           });
         }
         ht.Default.setIsolating(false);
-        var offset = config.pasteOffset,
-          x = 0,
+        const offset = config.pasteOffset;
+        let x = 0,
           z = 0,
           y = 0;
         if (isNumber(offset)) {
@@ -1645,7 +1645,7 @@ class Editor {
   folder() {
     if (this.editable && this.displayView) {
       this.beginTransaction();
-      var data = new ht.Data;
+      const data = new ht.Data;
       data.s("editor.folder", true);
       this.dm.add(data);
       this.list.getTopRowOrderSelection().each(child => {
@@ -1680,7 +1680,7 @@ class Editor {
 
   saveImage(url, path, callback, uuid, parent_uuid, root_dir) {
     const handler = () => {
-      var params = { uuid, path, content: snapshot(url), parent_uuid, root_dir };
+      const params = { uuid, path, content: snapshot(url), parent_uuid, root_dir };
       this.request("upload", params, callback)
     };
     if (isString(url) && !ht.Default.getImage(url)) {
@@ -1743,10 +1743,10 @@ class Editor {
               return false;
             }
             if (this.tab) {
-              var el = this.tab.getView();
+              const el = this.tab.getView();
               [el.graphView, el.g3d].forEach(gv => {
                 if (gv) {
-                  var interactors = gv?.getInteractors();
+                  const interactors = gv?.getInteractors();
                   interactors?.each?.(interactor => {
                     !interactor.disabled && interactor?.cancel(event)
                   })

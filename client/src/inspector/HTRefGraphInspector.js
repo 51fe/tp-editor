@@ -28,7 +28,7 @@ export default class HTRefGraphInspector extends HTBlockInspector {
           }
         },
         getDroppable = (e, info) => {
-          var data = info.view.draggingData;
+          const data = info.view.draggingData;
           if (data) {
             return this.editor.url !== data.url &&
                 data.fileType === FILE_TYPE_DISPLAY

@@ -170,22 +170,22 @@ class ExplorerView extends GraphView {
   handleDragAndDrop(e, state) {
     if ("prepare" === state) return void this._clearDragInfo();
     if ("begin" === state) {
-      var l = this.draggingData;
-      l.fileType === FILE_TYPE_DISPLAY ? ht.ui && ht.ui.DragHelper.doDrag(this, {
+      const data = this.draggingData;
+      data.fileType === FILE_TYPE_DISPLAY ? ht.ui && ht.ui.DragHelper.doDrag(this, {
         "a:clazz": "ht.ui.UIGraphView",
-        "a:initProps": { disableInit: true, url: l.url }
+        "a:initProps": { disableInit: true, url: data.url }
       }, {
         width: 10,
         height: 0,
         comps: []
-      }, 0, 0) : l.fileType === FILE_TYPE_SCENE ? ht.ui && ht.ui.DragHelper.doDrag(this, {
+      }, 0, 0) : data.fileType === FILE_TYPE_SCENE ? ht.ui && ht.ui.DragHelper.doDrag(this, {
         "a:clazz": "ht.ui.UIGraph3dView",
-        "a:initProps": { disableInit: true, url: l.url }
+        "a:initProps": { disableInit: true, url: data.url }
       }, {
         width: 10,
         height: 0,
         comps: []
-      }, 0, 0) : l.fileType === FILE_TYPE_UI && ht.ui && ht.ui.DragHelper.doDrag(this, { "a:clazz": l.url }, {
+      }, 0, 0) : data.fileType === FILE_TYPE_UI && ht.ui && ht.ui.DragHelper.doDrag(this, { "a:clazz": data.url }, {
         width: 10,
         height: 0,
         comps: []
@@ -280,7 +280,7 @@ class ExplorerView extends GraphView {
         targetData = this.dm().sm().ld();
       }
       if (targetData) {
-        var view = info.view;
+        const view = info.view;
         if (this.explorer.rootDir === "displays" && view instanceof DisplayTree) {
           this.handleDisplayTreeDrop(view, targetData);
         }

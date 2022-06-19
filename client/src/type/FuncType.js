@@ -25,7 +25,7 @@ export default class FuncType extends ht.Node {
   }
 
   toJSON() {
-    var prop = {};
+    const prop = {};
     prop.type = this.a("type");
     updateBaseProperty(this, prop);
     return prop;

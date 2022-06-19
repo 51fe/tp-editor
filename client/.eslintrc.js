@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     browser: true,
@@ -12,7 +13,6 @@ module.exports = {
   },
   root: true,
   ignorePatterns: [
-    '*.js',
     '/**/node_modules/*',
     '/public/*',
     '/src/util/SvgConverter.js'

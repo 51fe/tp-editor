@@ -201,8 +201,8 @@ export function parse(json, reviver) {
 
 export function trimExtension(filename) {
   if (!filename) return "";
-  var r = filename.lastIndexOf(".");
-  return -1 === r ? filename : filename.substr(0, r)
+  const index = filename.lastIndexOf(".");
+  return index === -1 ? filename : filename.substr(0, index)
 }
 
 export function fileNameToDisplayName(filename) {
@@ -265,7 +265,7 @@ export function drawBorder(g, borderColor, x, y, w, h, borderWidth) {
 
 export function initContext(canvas, x = 0, y = 0, scale = 1,
   rect, ratio = ht.Default.devicePixelRatio) {
-  var ctx = canvas.getContext("2d");
+  const ctx = canvas.getContext("2d");
   ctx.save();
   ctx.translate(x * ratio, y * ratio);
   scale *= ratio;
@@ -400,10 +400,10 @@ export function compareEqual(src, target) {
     return false
   }
   if (isObject(src) && isObject(target)) {
-    var keys = Object.keys(src);
+    const keys = Object.keys(src);
     if (keys.length === Object.keys(target).length) {
       for (let i = 0; i < keys.length; i++) {
-        var key = keys[i];
+        const key = keys[i];
         if (!compareEqual(src[key], target[key])) return false
       }
       return true
@@ -424,10 +424,10 @@ export function updateValue(prop, name, func, src, target) {
   const equal = compareEqual(src, target);
   if (func) {
     const dataBinding = prop[name] = { func };
-    if(!equal) {
+    if (!equal) {
       dataBinding.value = serializeDM(src);
     }
-  } else if(!equal && src !== undefined) {
+  } else if (!equal && src !== undefined) {
     prop[name] = serializeDM(src);
   }
 }
@@ -467,7 +467,7 @@ export function drawSnapshot(gv) {
           }
           if (bounds && bounds.width && bounds.height) {
             g.save();
-            var ratio = Math.min(1, 16 / Math.max(bounds.width, bounds.height));
+            const ratio = Math.min(1, 16 / Math.max(bounds.width, bounds.height));
             g.translate(-bounds.x * ratio + (16 - bounds.width * ratio) / 2,
               -bounds.y * ratio + (16 - bounds.height * ratio) / 2);
             g.scale(ratio, ratio);
@@ -522,7 +522,7 @@ export function isInput(target) {
 }
 
 export function createItem(id, toolTip, name, callback) {
-  var item = { unfocusable: true, id, toolTip },
+  const item = { unfocusable: true, id, toolTip },
     image = ht.Default.getImage(name),
     w = image ? image.width : 16,
     h = image ? image.height : 16;
@@ -552,7 +552,7 @@ export function createItem(id, toolTip, name, callback) {
 }
 
 export function createLabel(innerHTML, textAlign, font = ht.Default.labelFont) {
-  var el = ht.Default.createDiv(true);
+  const el = ht.Default.createDiv(true);
   el.style.font = font;
   el.style.color = ht.Default.labelColor;
   el.style.paddingLeft = "4px";
@@ -603,9 +603,9 @@ export function createButton(label, toolTip, icon, onClicked) {
 }
 
 export function createIconButton(name, onSelect) {
-  var image = ht.Default.getImage(name);
+  const image = ht.Default.getImage(name);
   if (!image) throw name;
-  var prop = {
+  const prop = {
     width: image.width,
     height: image.height,
     fitSize: image.fitSize,
@@ -693,7 +693,7 @@ export function snapshot(view) {
     return view.toCanvas(view.dm().getBackground(), w, h).toDataURL("image/png", 1)
   }
   if (ht.ui && view instanceof ht.ui.View) {
-    var width = view.getWidth(),
+    const width = view.getWidth(),
       height = view.getHeight(),
       max = Math.max(width, height);
     let min = Math.min(1, tpeditor.config.imageSize / max);
@@ -714,7 +714,7 @@ export function snapshot(view) {
           } else {
             const root = item.getRootCanvas();
             if (root) {
-              var rect2 = root.getBoundingClientRect();
+              const rect2 = root.getBoundingClientRect();
               ctx.drawImage(root, 0, 0, root.width, root.height, (rect2.left - rect1.left) / i * w,
                 (rect2.top - rect1.top) / height * h, root.width / i * w, root.height / height * h)
             }
@@ -736,8 +736,10 @@ export function snapshot(view) {
     handler(list);
     return canvas.toDataURL("image/png", 1)
   }
-  var D = ht.Default.getImage(view), C = Math.max(D.width, D.height), x = Math.min(1, tpeditor.config.imageSize / C);
-  return ht.Default.toCanvas(view, D.width * x, D.height * x).toDataURL("image/png", 1)
+  const img = ht.Default.getImage(view),
+    _max = Math.max(img.width, img.height),
+    _min = Math.min(1, tpeditor.config.imageSize / _max);
+  return ht.Default.toCanvas(view, img.width * _min, img.height * _min).toDataURL("image/png", 1)
 }
 
 export function getDataBindingMap(items, map, binding) {
@@ -751,7 +753,7 @@ export function getDataBindingMap(items, map, binding) {
       const item = items[key];
       if (!isObject(item)) continue;
       if (isString(item.func) && BINDING.test(item.func)) {
-        var name = item.func.slice(5);
+        const name = item.func.slice(5);
         map?.[name] === undefined && (map[name] = key);
         binding?.[name] === undefined && (binding[name] = item.value);
       } else {
@@ -805,8 +807,13 @@ export function initImageIcon(image, editor) {
 }
 
 export function initInputDND(input, isDroppable, callback) {
-  var el = input.getElement ? input.getElement() : input.getView ? input.getView() : input,
-    border = undefined;
+  let el = input;
+  if (input.getElement) {
+    el = input.getElement();
+  } else if (input.getView) {
+    input.getView();
+  }
+  let border = undefined;
   input.isDroppable = isDroppable;
   input.handleCrossDrag = (e, state, info) => {
     if (state === "enter") {
@@ -828,7 +835,7 @@ export function getTip(view) {
   if (data) {
     tip = view.getLabel(data);
     if (view.isSelected(data)) {
-      var size = view.sm().size();
+      const size = view.sm().size();
       tip += size > 1 ? " (+" + size + ") " : ""
     }
 

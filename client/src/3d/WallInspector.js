@@ -18,7 +18,7 @@ export default class WallInspector extends CubeInspector {
 
   addTransformProperties() {
     super.addTransformProperties(this);
-    var items = [];
+    const items = [];
     this.addLabelRange(items,
       getString("editor.uvlength"),
       getter("s", "repeat.uv.length"),

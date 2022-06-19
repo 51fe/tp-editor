@@ -1,10 +1,11 @@
 import { clone, createIconButton, parse, stringify } from "./util/index.js";
 import SvgConverter from "./util/SvgConverter.js";
 
-var ht = window.ht, Default = ht.Default;
+const ht = window.ht,
+  Default = ht.Default;
 Default.getInternal().addMethod(Default, {
   svgToShape: function (svg, conf) {
-    var converter = new SvgConverter(conf);
+    const converter = new SvgConverter(conf);
     return { converter, output: converter.toShape(svg) }
   }
 });
@@ -399,9 +400,9 @@ setConfig("isDataBound", function (data, accessType, name) {
 });
 setConfig("checkFileName", function (name) {
   name = name.trim();
-  if(!name) {
+  if (!name) {
     return false;
-  } else if(!/[!@?#$%^&*/]/.test(name)) {
+  } else if (!/[!@?#$%^&*/]/.test(name)) {
     return name;
   }
   return false;

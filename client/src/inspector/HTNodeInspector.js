@@ -75,10 +75,10 @@ export default class HTNodeInspector extends HTDataInspector {
   addLabelState(items, state) {
     const cb = new ht.widget.ComboBox,
       O = function (p) {
-        var _state = p.s("state");
+        let _state = p.s("state");
         if (_state) return _state;
         if (p.getImage) {
-          var img = ht.Default.getImage(p.getImage());
+          const img = ht.Default.getImage(p.getImage());
           return img ? img.state : undefined
         }
       },
@@ -89,8 +89,8 @@ export default class HTNodeInspector extends HTDataInspector {
     };
     this.updateHandlers.push(() => {
       if (!items.hidden) {
-        var stateEnum = this.getStateEnum();
-        if (!stateEnum || 0 === !stateEnum) {
+        const stateEnum = this.getStateEnum();
+        if (!stateEnum) {
           return undefined
         }
         if (cb?.getValues().length) {

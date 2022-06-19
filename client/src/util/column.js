@@ -88,7 +88,7 @@ export function setColumn(editor, tableView) {
 
 export function setExtraInfoColumn(editor, tableView) {
   tableView.getColumnModel().getDataByTag("extraInfo").isCellEditable = data => {
-    var title = getString("editor.extrainfo") + " " + (data.a("property") || "");
+    const title = getString("editor.extrainfo") + " " + (data.a("property") || "");
     editor.objectView.open(data.a("extraInfo"), value => {
       data.a("extraInfo", value)
     }, title);

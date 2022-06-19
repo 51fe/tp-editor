@@ -55,7 +55,7 @@ export default class CodeEditor {
         clearTimeout(this._timer);
         delete this._timer;
       }
-      var layer = this._editableLayer;
+      const layer = this._editableLayer;
       if (editable) {
         layer.parentNode && layer.parentNode.removeChild(layer);
       } else {
@@ -75,7 +75,7 @@ export default class CodeEditor {
 
   get monacoEditor() {
     if (!this._monacoEditor && window.monaco) {
-      const convertCodeEditorOption = tpeditor.config.convertCodeEditorOption, 
+      const convertCodeEditorOption = tpeditor.config.convertCodeEditorOption,
       config = this.config || {
         value: "",
         language: "javascript",

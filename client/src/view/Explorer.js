@@ -231,7 +231,7 @@ export default class Explorer extends SplitView {
   deleteSelection(fileList) {
     const items = [];
     fileList.sm().getTopSelection().forEach(data => {
-      var params = { data, url: data.url };
+      const params = { data, url: data.url };
       this.editor.fireEvent("fileDeleting", params);
       params.preventDefault || items.push(data);
     });

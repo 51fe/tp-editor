@@ -140,7 +140,7 @@ export default class Inspector3d extends Inspector {
     const rows = this.dataBindingRows;
     rows?.length > 0 && this.removeRows(rows);
     this.dataBindingRows = [];
-    var handlers = this.dataBindingHandlers;
+    const handlers = this.dataBindingHandlers;
     handlers?.forEach?.(e => {
       this.removeUpdateHandler(e)
     });
@@ -214,7 +214,7 @@ export default class Inspector3d extends Inspector {
 
   addLabelData(items, label, getter, setter) {
     const input = this.addLabelInput(items, label, name => {
-      var node = getter(name);
+      const node = getter(name);
       return node ? node.toLabel() || node.getClassName() : "";
     }),
       el = input.getElement();
@@ -250,7 +250,7 @@ export default class Inspector3d extends Inspector {
       }
       this.updateHandlers.push(() => {
         if (!items.hidden) {
-          var data = Image.data;
+          const data = Image.data;
           Image.data = this.getValue(data);
           Image.fp("data", label, Image.data);
         }
@@ -263,7 +263,7 @@ export default class Inspector3d extends Inspector {
     const image = new ht.widget.Image;
     image.vectorDataBindingDisabled = true;
     const _getIcon = getIcon || function (url) {
-      var img = ht.Default.getImage(url);
+      const img = ht.Default.getImage(url);
       return img && img.snapshotURL ? img.snapshotURL : url
     };
     this.updateHandlers.push(() => {

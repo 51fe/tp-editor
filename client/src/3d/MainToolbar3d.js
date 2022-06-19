@@ -79,7 +79,7 @@ export default class MainToolbar3d extends ht.widget.Toolbar {
     return this.editor.createSceneItem("doorWindow",
       getString("editor.doorwindow"), "editor.doorWindow",
       new CreateNodeInteractor3d(this.editor, function () {
-        var dw = new ht.DoorWindow;
+        const dw = new ht.DoorWindow;
         dw.s({ "all.color": config.color_data_background });
         return dw;
       }, true));
@@ -159,7 +159,7 @@ export default class MainToolbar3d extends ht.widget.Toolbar {
     return this.editor.createSceneItem("sphere",
       getString("editor.sphere"), "editor.sphere",
       new CreateNodeInteractor3d(this.editor, function () {
-        var node = new ht.Node;
+        const node = new ht.Node;
         node.s({
           shape3d: "sphere",
           "shape3d.color": config.color_data_background

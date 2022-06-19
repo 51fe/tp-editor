@@ -96,9 +96,9 @@ export default class Dialog3d extends ht.widget.Dialog {
   }
 
   ok(callback) {
-    var json = this.toJSON();
+    let json = this.toJSON();
     if (json) {
-      var url = this.formPane.v("url");
+      let url = this.formPane.v("url");
       if (!url) {
         return false;
       }
@@ -151,7 +151,7 @@ export default class Dialog3d extends ht.widget.Dialog {
   update() {
     let json = this.json;
     if (this.url) {
-      var ld = this.editor.models.ld,
+      const ld = this.editor.models.ld,
         label = ld.s("label");
       this.formPane.getViewById("url").setEditable(false), this.formPane.v("url", label);
       const model = ht.Default.getShape3dModel(this.url);
@@ -178,7 +178,7 @@ export default class Dialog3d extends ht.widget.Dialog {
     this.formPane.v("sX", s3[0]);
     this.formPane.v("sY", s3[1]);
     this.formPane.v("sZ", s3[2]);
-    var r3 = json.r3 || [0, 0, 0];
+    const r3 = json.r3 || [0, 0, 0];
     this.formPane.v("rX", r3[0]);
     this.formPane.v("rY", r3[1]);
     this.formPane.v("rZ", r3[2]);
@@ -285,7 +285,7 @@ export default class Dialog3d extends ht.widget.Dialog {
       textField: { type: "number" }
     }
     ], [60, .1, .1, .1]);
-    var numberPrecision = config.numberPrecision,
+    const numberPrecision = config.numberPrecision,
       rotation = numberPrecision.rotation || 0;
     pane.addRow([getString("editor.rotation"), {
       id: "rX",
@@ -424,7 +424,7 @@ export default class Dialog3d extends ht.widget.Dialog {
 
   showError(type) {
     if (!this.__error__) {
-      var title = undefined;
+      let title = undefined;
       if (type === "name") {
         title = getString("editor.error.name");
       } else if (["obj", "mtl"].includes(type)) {
@@ -457,7 +457,7 @@ export default class Dialog3d extends ht.widget.Dialog {
   }
 
   clearInput() {
-    var pane = this.formPane;
+    const pane = this.formPane;
     pane.v("obj", "");
     pane.v("mtl", "");
     pane.v("prefix", "");

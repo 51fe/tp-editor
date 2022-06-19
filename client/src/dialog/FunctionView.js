@@ -55,7 +55,7 @@ export default class FunctionView extends Dialog {
 
   parse(str) {
     if (str) {
-      var head = this.parseFunctionHead();
+      const head = this.parseFunctionHead();
       str = str.trim();
       if (head) {
         str = "" + head + str + "}";

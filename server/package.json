@@ -2,9 +2,9 @@
   "name": "tpserver",
   "version": "1.0.0",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon index.js",
     "start": "node app.js",
-    "build": "webpack && node server.js"
+    "build": "webpack && node index.js"
   },
   "dependencies": {
     "archiver": "^5.3.1",

@@ -8,7 +8,7 @@ export default class AlignPane extends FormPane {
     super()
     this.editor = editor;
     this.buttons = {};
-    var items = [];
+    const items = [];
     items.push(this.createAlignBtn("cluster",
       getString("editor.align.cluster"), [{
         type: "shape",
@@ -112,7 +112,7 @@ export default class AlignPane extends FormPane {
         segments: [1, 2],
         borderWidth: 1
       }, { type: "shape", points: [5, 3, 5, 11, 11, 11, 11, 8], segments: [1, 2, 1, 2], borderWidth: 3 }]));
-    var ratio = .1,
+    const ratio = .1,
       ratios = [ratio, ratio, ratio, ratio, ratio, ratio, ratio, ratio, ratio];
     this.addRow(items, ratios);
     this.updateItems();
@@ -140,9 +140,9 @@ export default class AlignPane extends FormPane {
   }
 
   updateItems() {
-    var items = [];
-    this.editor.sm.each(function (e) {
-      e instanceof ht.Node && items.push(e);
+    const items = [];
+    this.editor.sm.each(function (data) {
+      data instanceof ht.Node && items.push(data);
     });
     if (items.length > 2) {
       this.buttons.cluster.setDisabled(false);
@@ -193,7 +193,7 @@ export default class AlignPane extends FormPane {
   }
 
   cluster() {
-    var selection = this.selection;
+    const selection = this.selection;
     if (selection.length) {
       this.editor.beginTransaction();
       this.align("Horizontal");
@@ -232,7 +232,7 @@ export default class AlignPane extends FormPane {
   }
 
   get selection() {
-    var items = [];
+    const items = [];
     this.editor.sm.each(item => {
       if (item instanceof ht.Node) {
         if (!this.hasSelectedGroupParent(item.getParent()) && !this.hasSelectedHost(item)) {

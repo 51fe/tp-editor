@@ -165,7 +165,7 @@ export default class BatchView extends FormPane {
   }
 
   get keys() {
-    var arr = [undefined];
+    const arr = [];
     this.dm.each(item => {
       return arr.push(item.a("name"));
     })

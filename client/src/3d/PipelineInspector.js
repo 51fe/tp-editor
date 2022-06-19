@@ -8,7 +8,7 @@ export default class PipelineInspector extends Shape3dInspector {
 
   addTransformProperties() {
     super.addTransformProperties();
-    var items = [];
+    const items = [];
     this.addLabelRange(items,
       getString("editor.uvlength"),
       getter("s", "repeat.uv.length"),

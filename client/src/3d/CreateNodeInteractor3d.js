@@ -36,7 +36,7 @@ export default class CreateNodeInteractor3d extends DrawInteractor3d {
     ht.Default.preventDefault(e);
     if (this.p1) {
       this.p2 = this.lp(e);
-      var rect = ht.Default.unionPoint(this.p1, this.p2);
+      const rect = ht.Default.unionPoint(this.p1, this.p2);
       if (this.node) {
         this.node.setRect(rect);
       } else {

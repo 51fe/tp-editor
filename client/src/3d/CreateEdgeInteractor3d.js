@@ -40,8 +40,8 @@ export default class CreateEdgeInteractor3d extends DrawInteractor3d {
       } else {
         const point = this.lp(e);
         if (this.points.length) {
-          var t = this.points[this.points.length - 1];
-          if (Math.abs(t.x - point.x) < .01 && Math.abs(t.y - point.y) < .01) return;
+          const lp = this.points[this.points.length - 1];
+          if (Math.abs(lp.x - point.x) < .01 && Math.abs(lp.y - point.y) < .01) return;
         }
         this.points.push(point);
         this.segments.push(this.nextPoint ? 2 : 1);

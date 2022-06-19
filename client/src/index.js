@@ -199,7 +199,7 @@ const tpeditor = {
     items.forEach(function (item) {
       const instance = getInstance(item);
       if (instance) {
-        var json = toJson(instance),
+        const json = toJson(instance),
           data = toNode(json, popup);
         data && datas.push(data)
       }

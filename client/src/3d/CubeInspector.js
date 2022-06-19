@@ -13,16 +13,15 @@ export default class CubeInspector extends DataInspector {
   }
 
   addCubeProperties() {
-    var _this = this;
     this.addTitle("TitleFace");
     let pane = new ht.widget.FormPane,
       items = undefined,
       h = 0;
     const view = new ht.widget.TabView,
       POSITIONS = ["all", "front", "back", "left", "right", "top", "bottom"],
-      _getter = function (position, name, selectedAll) {
+      _getter = (position, name, selectedAll) => {
         return function (node) {
-          var value = node.s(position + "." + name);
+          const value = node.s(position + "." + name);
           if (selectedAll && value === undefined) {
             return node.s("all." + name)
           } else {
@@ -33,13 +32,13 @@ export default class CubeInspector extends DataInspector {
     for (let i = 0; i < POSITIONS.length; i++) {
       const image = POSITIONS[i] + ".image";
       items = [];
-      _this.addLabelImage(items, getString("editor.face." + POSITIONS[i]),
+      this.addLabelImage(items, getString("editor.face." + POSITIONS[i]),
         node => {
           const url = _getter(POSITIONS[i], "image")(node),
-            fileNode = _this.editor.getFileNode(url);
+            fileNode = this.editor.getFileNode(url);
           return fileNode ? fileNode.url : url
         }, setter("s", image));
-      pane.addRow(items, [_this.indent, .1, 20]);
+      pane.addRow(items, [this.indent, .1, 20]);
     }
     addTab(view, getString("editor.image"), pane, true);
     pane.validateImpl();
@@ -102,7 +101,7 @@ export default class CubeInspector extends DataInspector {
     addTab(view, getString("editor.reversecolor"), pane), pane.validateImpl();
     h = Math.max(h, pane.getScrollHeight());
     pane = new ht.widget.FormPane;
-    for (var i = 0; i < POSITIONS.length; i++) {
+    for (let i = 0; i < POSITIONS.length; i++) {
       const flip = POSITIONS[i] + ".reverse.flip";
       items = [];
       this.addLabelCheckBox(items, getString("editor.face." + POSITIONS[i]),
@@ -114,7 +113,7 @@ export default class CubeInspector extends DataInspector {
     h = Math.max(h, pane.getScrollHeight());
     pane = new ht.widget.FormPane;
     for (let i = 0; i < POSITIONS.length; i++) {
-      var cull = POSITIONS[i] + ".reverse.cull";
+      const cull = POSITIONS[i] + ".reverse.cull";
       items = [];
       this.addLabelCheckBox(items, getString("editor.face." + POSITIONS[i]),
         _getter(POSITIONS[i], "reverse.cull", true), setter("s", cull));

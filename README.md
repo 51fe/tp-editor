@@ -1,24 +1,24 @@
-# tp-editor（ 2D/3D）
+# tp-editor（2D/3D）[中文说明](https://github.com/51fe/tp-editor/blob/master/README_zh.md)
 > A topology 2D/3D editor with nodejs, express, socket.io es6, HT for Web and vite. It's a powerful large-screen data visualization tool with low-code.
 
 ## Features
 
-- Graphic drawing and editing by dar ang drop;
-- Displays, symbols and compoents creating and exporting;
+- Graphic drawing and editing by darg ang drop;
+- Displays, symbols and compoents importing（darg ang drop） and exporting（content menu）;
 - 2D assets and 3D models importing;
 - SVG, CAD importing and displays, symbols converting;
 - Obj, mtl, UVW 3D support;
 - Displays, symbols, scenes preview;
 - Attributes, styles, fields dataBinding;
-- Themes, menus, tabs and functions configuration and customization;
+- Themes, menus, tabs and control functions configuration and customization;
 - I18n support;
 - Http(s) and websocket support;
 - Third party data visualization libs support (Echarts).
 
 ## Snapshots
-- 2D Editor (default)
+- [2D Editor](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/) (default)
 ![2D](https://www.riafan.com/github/tp-editor/2d.png)
-- 3D Editor
+- [3D Editor](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/3d.html)
 ![3D](https://www.riafan.com/github/tp-editor/3d.png)
 
 ## Run
@@ -53,6 +53,7 @@ npm run dev
 ```
 
 ### Production
+
 - Edit the configuration file
 
 ```shell

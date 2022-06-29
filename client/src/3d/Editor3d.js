@@ -439,50 +439,11 @@ export default class Editor3d {
 
   updateInspector() {
     this.inspector = null;
-    const data = this.ld;
+    this.inspector = null;
+    var data = this.ld;
     if (data) {
       const shape = data.s("shape3d");
-      if (data instanceof ht.Block) {
-        this.inspector = this.blockInspector;
-      } else if (data instanceof ht.Polyline) {
-        this.inspector = this.polylineInspector
-      } else if (data instanceof ht.Shape) {
-        if (shape === "cylinder") {
-          this.inspector = this.pipelineInspector;
-        } else if (data.getThickness() > 0) {
-          this.inspector = this.wallInspector;
-        } else {
-          this.inspector = this.floorInspector;
-        }
-      } else if (data instanceof ht.Node) {
-        if (shape) {
-          if (isJSON(shape)) {
-            this.inspector = this.modelInspector;
-          } else if (["billboard", "plane"].includes(shape)) {
-            this.inspector = this.billboardInspector;
-          }
-          if (shape === "cube") {
-            this.inspector = this.cubeInspector;
-          } else if (shape === "cone") {
-            this.inspector = this.coneInspector;
-          } else if (shape === "cylinder") {
-            this.inspector = this.cylinderInspector;
-          } else if (shape === "roundRect") {
-            this.inspector = this.roundRectInspector;
-          } else if (shape === "sphere") {
-            this.inspector = this.sphereInspector;
-          } else if (shape === "torus") {
-            this.inspector = this.torusInspector;
-          } else if (shape === "triangle") {
-            this.inspector = this.triangleInspector;
-          } else {
-            this.inspector = this.cubeInspector;
-          }
-        }
-      } else if (data instanceof ht.Edge) {
-        this.inspector = this.edgeInspector;
-      }
-      this.inspector || (this.inspector = this.dataInspector)
+      data instanceof ht.Block ? this.inspector = this.blockInspector : data instanceof ht.Polyline ? this.inspector = this.polylineInspector : data instanceof ht.Shape ? "cylinder" === shape ? this.inspector = this.pipelineInspector : data.getThickness() > 0 ? this.inspector = this.wallInspector : this.inspector = this.floorInspector : data instanceof ht.Node ? shape ? tpeditor.isJSON(shape) ? this.inspector = this.modelInspector : "billboard" === shape || "plane" === shape ? this.inspector = this.billboardInspector : "cube" === shape ? this.inspector = this.cubeInspector : "cone" === shape ? this.inspector = this.coneInspector : "cylinder" === shape ? this.inspector = this.cylinderInspector : "roundRect" === shape ? this.inspector = this.roundRectInspector : "sphere" === shape ? this.inspector = this.sphereInspector : "torus" === shape ? this.inspector = this.torusInspector : "triangle" === shape && (this.inspector = this.triangleInspector) : this.inspector = this.cubeInspector : data instanceof ht.Edge && (this.inspector = this.edgeInspector), this.inspector || (this.inspector = this.dataInspector)
     } else {
       this.inspector = this.sceneInspector;
     }
@@ -494,7 +455,7 @@ export default class Editor3d {
   }
 
   reset(needReload) {
-    if(!needReload) {
+    if (!needReload) {
       this.url = null;
     }
     const dm = this.dm;

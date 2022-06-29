@@ -21,7 +21,7 @@ export default defineConfig(({ command }) => {
             changeOrigin: true
           },
           // assets
-          '^/.+.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!.js)': {
+          '^\/(?!(libs)|(vs)).+.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!.js)': {
             target: `${target}`,
             changeOrigin: true
           },

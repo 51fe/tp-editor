@@ -16,9 +16,9 @@
 - Third party data visualization libs support (Echarts).
 
 ## Snapshots
-- [2D Editor](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/) (default)
+- [2D Editor](http://159.75.3.240:8080) (default)
 ![2D](https://www.riafan.com/github/tp-editor/2d.png)
-- [3D Editor](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/3d.html)
+- [3D Editor](http://159.75.3.240:8080/3d.html)
 ![3D](https://www.riafan.com/github/tp-editor/3d.png)
 
 ## Run

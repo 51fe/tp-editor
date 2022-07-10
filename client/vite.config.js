@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
         hmr: true,
         proxy: {
           // api
-          '/socket.io': {
+          '^/socket.io': {
             target: `${target}`,
             changeOrigin: true
           },
@@ -21,7 +21,7 @@ export default defineConfig(({ command }) => {
             changeOrigin: true
           },
           // assets
-          '^\/(?!(libs)|(vs)).+.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!.js)': {
+          '^/(?!(libs)|(vs)).+.(png|jpg|gif|jpeg|bmp|ico|svg|json|obj|mtl|mp3|mp4|zip)(?!.js)': {
             target: `${target}`,
             changeOrigin: true
           },
@@ -41,7 +41,7 @@ export default defineConfig(({ command }) => {
         assetsDir: '',
         rollupOptions: {
           input: {
-            test: resolve('index.html') ,
+            test: resolve('index.html'),
             index3d: resolve('3d.html')
           }
         }

@@ -3,7 +3,7 @@ const logger = require('./logger');
 const sid = require('./sid');
 const commands = require('./commands');
 
-map = {},
+const map = {},
   handler = function (socket, eventName) {
     socket.on(eventName, function (count, dir, data) {
       executeCommand(socket, eventName, count, dir, data)
@@ -49,7 +49,7 @@ module.exports = {
   executeCommand,
   sendMessage,
   enableTrace: function (key, enabled) {
-    if(enabled) {
+    if (enabled) {
       delete map[key];
     } else {
       map[key] = true;

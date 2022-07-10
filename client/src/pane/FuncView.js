@@ -1,7 +1,7 @@
 import { BINDING } from "../constants.js";
 import config from "../config.js";
 import FuncType from "../type/FuncType.js";
-import { createButton, getFunc, getString, getWindowInfo, isFunction, isString, parseString, removeHTML } from "../util/index.js";
+import { createButton, getFunc, getString, getWindowInfo, isFunction, isString, parseFunction, parseString, removeHTML } from "../util/index.js";
 import { createCodeEditor } from "../util/CodeEditor.js";
 import FormPane from "./FormPane.js";
 
@@ -47,7 +47,8 @@ export default class FuncView extends FormPane {
       const btn = createButton("...", undefined, undefined, () => {
         this.smartClose = false, config.dataBindingsForSymbol.onButtonClicked(this, this.v("compProperty"), this.editor)
       });
-      btns.push(btn), layout.push(20)
+      btns.push(btn);
+      layout.push(20);
     }
     this.addRow(btns, layout);
     if (!config.dataBindingsForSymbol.getComboBoxValues) {
@@ -186,38 +187,35 @@ export default class FuncView extends FormPane {
     }
   }
 
-  hide(saved = false) {
+  hide(needSave = false) {
     const el = this.getView();
     if (el.parentNode) {
       removeHTML(el);
-      if (saved) {
-        const type = this.v("type"),
-          prop = this.v("property");
-        let result = undefined;
-        if (type === "func") {
-          let str = this.v("func").trim();
+      if (needSave) {
+        var type = this.v("type"),
+          prop = this.v("property"),
+          result = undefined;
+        if ("func" === type) {
+          var str = this.v("func").trim();
           if (str || this.inspector.data instanceof FuncType && "type" === this.name) {
-            result = getFunc(this.v("head") + "\n" + str + "\n}")
+            result = parseFunction(this.v("head") + "\n" + str + "\n}");
           }
-        } else if (prop && type === "attr") {
+        } else if (prop && "attr" === type) {
           result = "attr@" + prop;
         }
         if (this.setter) {
           this.setter(result)
-        } else {
-          if (this.inspector.global) {
-            if (this.name === "clip") {
-              this.inspector.dataModel.a("clip", result);
-            } else {
-              this.inspector.dataModel.a(this.name + "_func", result);
-            }
+        } else if (this.inspector.global) {
+          if (this.name === "clip") {
+            this.inspector.dataModel.a("clip", result);
           } else {
-            this.inspector.setValue((node, value) => {
-              node.a(this.name, value)
-            })
+            this.inspector.dataModel.a(this.name + "_func", result);
           }
+        } else {
+          this.inspector.setValue((node, value) => {
+            node.a(this.name, value);
+          }, result)
         }
-        return result;
       }
     }
   }

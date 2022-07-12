@@ -16,9 +16,9 @@
 - 支持整合第三方数据可视化库（Echarts）。
 
 ## 截图
-- [2D编辑器](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/) (默认)
+- [2D编辑器](http://159.75.3.240:8080) (默认)
 ![2D](https://www.riafan.com/github/tp-editor/2d.png)
-- [3D编辑器](http://tpeditor-env.eba-hytcx9mr.ap-east-1.elasticbeanstalk.com/3d.html)
+- [3D编辑器](http://159.75.3.240:8080/3d.html)
 ![3D](https://www.riafan.com/github/tp-editor/3d.png)
 
 ## 运行
@@ -79,4 +79,4 @@ npm run build
 
 - [HT使用手册](https://www.hightopo.com/guide/guide/core/treetableview/examples/example_structure.html)
 - [HT API](https://www.hightopo.com/guide/doc/index.html)
-- [TP编辑器使用手册](https://www.yuque.com/riafan/gbr71g/cllgrw)
+- [TP编辑器使用手册](https://www.yuque.com/docs/share/0200221e-0f40-427a-9793-8a61c93e283b?# 《拓扑编辑器使用手册》)

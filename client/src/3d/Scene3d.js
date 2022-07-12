@@ -1,6 +1,5 @@
-import config from "./config3d.js";
-import { isImage, positionImg } from "../util/index.js";
 import config3d from "./config3d";
+import { isImage, positionImg } from "../util/index.js";
 
 export default class Scene3d extends ht.graph3d.Graph3dView {
   constructor(editor) {
@@ -40,21 +39,21 @@ export default class Scene3d extends ht.graph3d.Graph3dView {
     if (kind === "enter") {
       this._view.insertBefore(this.topDiv, this._scrollBarDiv);
       ht.Default.layout(this.topDiv, 0, 0, this.getWidth(), this.getHeight());
-      this.topDiv.style.border = "solid " + config.color_select_dark + " 2px";
+      this.topDiv.style.border = "solid " + config3d.color_select_dark + " 2px";
       if (!this.dragImage && ["model", "symbol", "image"].includes(data?.fileType) &&
         ht.Default.getImage(data?.getImage()) !== ht.Default.getImage("editor.unknown")) {
-        const size = config.dragImageSize;
+        const size = config3d.dragImageSize;
         this.dragImage = ht.Default.toCanvas(data.getImage(), size, size, "centerUniform",
           data, info.view, null, ht.Default.devicePixelRatio);
-        positionImg(e);
-        this.dragImage.style.opacity = config.dragImageOpacity;
+        positionImg(e, this.dragImage);
+        this.dragImage.style.opacity = config3d.dragImageOpacity;
         ht.Default.appendToScreen(this.dragImage);
       }
     } else if (["exit", "cancel"].includes(kind)) {
       ht.Default.removeHTML(this.topDiv);
       this.removeDragImage();
     } else if (kind === "over") {
-      positionImg(e);
+      positionImg(e, this.dragImage);
     } else if (kind === "drop") {
       ht.Default.removeHTML(this.topDiv);
       if (data) {

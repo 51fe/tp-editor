@@ -28,11 +28,11 @@ export default class DND {
 
   crossDrag(e, info) {
     const dropView = this._dropView,
-    target = this.getTargetView(e, info);
-    if(dropView !== target) {
+      target = this.getTargetView(e, info);
+    if (dropView !== target) {
       dropView?.handleCrossDrag(e, "exit", info);
       target?.handleCrossDrag(e, "enter", info);
-    } else if(target) {
+    } else if (target) {
       target.handleCrossDrag(e, "over", info);
     }
     this._dropView = target;
@@ -54,7 +54,7 @@ export default class DND {
 
   getTargetView(e, info) {
     let data = getTargetElement(e);
-    while (data && (!data._ht || !data._ht.isDroppable || info && !data._ht.isDroppable(e, info))){
+    while (data && (!data._ht || !data._ht.isDroppable || info && !data._ht.isDroppable(e, info))) {
       data = data.parentNode;
     }
     return data ? data._ht : null;
@@ -63,7 +63,7 @@ export default class DND {
   get tip() {
     if (!this._tip) {
       this._tip = createDiv();
-      this._tip.className = "ht-editor-dnd-tip";
+      this._tip.className = "tp-editor-dnd-tip";
       let style = this._tip.style;
       style.whiteSpace = "nowrap";
       style.color = tpeditor.config.color_light;

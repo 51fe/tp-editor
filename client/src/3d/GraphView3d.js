@@ -137,26 +137,26 @@ export default class GraphView3d extends ht.graph.GraphView {
     }
   }
 
-  handleCrossDrag(e, kind, info) {
+  handleCrossDrag(e, state, info) {
     const view = info.view,
       fileNode = view.draggingData;
-    if (kind === "enter") {
+    if (state === "enter") {
       this._topDiv.style.border = "solid " + config3d.color_select_dark + " 2px";
       if (!this.dragImage && fileNode && ["model", "symbol", "image"].includes(fileNode.fileType) &&
         ht.Default.getImage(fileNode.getImage()) !== ht.Default.getImage("editor.unknown")) {
         const size = config3d.dragImageSize;
         this.dragImage = ht.Default.toCanvas(fileNode.getImage(), size, size,
           "centerUniform", fileNode, info.view, null, ht.Default.devicePixelRatio);
-        positionImg(e, this.dragImage, config3d.dragImageSize);
+        positionImg(e, this.dragImage);
         this.dragImage.style.opacity = config3d.dragImageOpacity;
         ht.Default.appendToScreen(this.dragImage);
       }
-    } else if (["exit", "cancel"].includes(kind)) {
+    } else if (["exit", "cancel"].includes(state)) {
       this._topDiv.style.border = "";
       this.removeDragImage();
-    } else if (kind === "over") {
-      positionImg(e, this.dragImage, config3d.dragImageSize);
-    } else if (kind === "drop") {
+    } else if (state === "over") {
+      positionImg(e, this.dragImage);
+    } else if (state === "drop") {
       this._topDiv.style.border = "";
       if (fileNode) {
         this.removeDragImage();

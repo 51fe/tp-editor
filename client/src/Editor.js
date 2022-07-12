@@ -1033,96 +1033,103 @@ class Editor {
         this.open(fileNode);
         return;
       }
-      if (this.editable) {
-        const setPosition = (node, point) => {
-          if (point) {
-            node.p(point.x, point.y);
-          } else {
-            const vr = this.gv.getViewRect();
-            vr && node.p(vr.x + vr.width / 2, vr.y + vr.height / 2)
-          }
-        }
-        if (fileNode.fileType !== FILE_TYPE_DISPLAY) {
-          if (this.url !== fileNode.url) {
-            if (fileNode.fileType !== FILE_TYPE_COMPONENT) {
-              if (fileNode.fileType === FILE_TYPE_SYMBOL || isImage(fileNode.url)) {
-                if (this.displayView) {
-                  const node = new ht.Node;
-                  node.setImage(fileNode.getFileUUID());
-                  setPosition(node, lastPoint);
-                  node.setDisplayName(fileNameToDisplayName(fileNode.url));
-                  this.displayView.addData(node)
-                } else if (this.symbolView) {
-                  const img = ht.Default.getImage(fileNode.getFileUUID()),
-                    w = img ? img.width : -1,
-                    h = img ? img.height : -1,
-                    x = lastPoint?.x ?? (this.dm?.a("width") ?? 0) / 2,
-                    y = lastPoint?.y ?? (this.dm?.a("height") ?? 0) / 2,
-                    image = new Image({
-                      type: "image",
-                      name: fileNode.getFileUUID(),
-                      rect: [x - (w > 0 ? w / 2 : 0), y - (h > 0 ? h / 2 : 0), w, h]
-                    });
-                  image.setDisplayName(fileNameToDisplayName(fileNode.url));
-                  this.symbolView.addData(image);
-                } else if (this.sceneView) {
-                  const uuId = fileNode.getFileUUID(),
-                    node = new ht.Node;
-                  node.setAnchor3d(.5, 0, .5);
-                  node.s({
-                    shape3d: "billboard",
-                    "shape3d.image": uuId,
-                    autorotate: true
-                  });
-                  node.a("image2d.url", fileNode.getFileUUID());
-                  setPosition(node, lastPoint);
-                  node.setDisplayName(fileNameToDisplayName(fileNode.url));
-                  this.sceneView.addData(node);
+      if (this.editable && fileNode.fileType !== FILE_TYPE_DISPLAY) {
+        if (this.url !== fileNode.url) {
+          if (fileNode.fileType !== FILE_TYPE_COMPONENT) {
+            if (fileNode.fileType === FILE_TYPE_SYMBOL || isImage(fileNode.url)) {
+              if (this.displayView) {
+                const node = new ht.Node;
+                node.setImage(fileNode.getFileUUID());
+                if (lastPoint) {
+                  node.p(lastPoint.x, lastPoint.y);
+                } else {
+                  const vr = this.gv.getViewRect();
+                  vr && node.p(vr.x + vr.width / 2, vr.y + vr.height / 2)
                 }
+                node.setDisplayName(fileNameToDisplayName(fileNode.url));
+                this.displayView.addData(node);
+              } else if (this.symbolView) {
+                const img = ht.Default.getImage(fileNode.getFileUUID()),
+                  w = img ? img.width : -1,
+                  h = img ? img.height : -1,
+                  x = lastPoint ? lastPoint.x : (this.dm.a("width") || 0) / 2,
+                  y = lastPoint ? lastPoint.y : (this.dm.a("height") || 0) / 2,
+                  image = new Image({
+                    type: "image",
+                    name: fileNode.getFileUUID(),
+                    rect: [x - (w > 0 ? w / 2 : 0), y - (h > 0 ? h / 2 : 0), w, h]
+                  });
+                image.setDisplayName(fileNameToDisplayName(fileNode.url));
+                this.symbolView.addData(image);
+              } else if (this.sceneView) {
+                const uuid = fileNode.getFileUUID(),
+                  node = new ht.Node;
+                node.setAnchor3d(.5, 0, .5);
+                node.s({
+                  shape3d: "billboard",
+                  "shape3d.image": uuid,
+                  autorotate: true
+                });
+                node.a("image2d.url", uuid);
+                if (lastPoint) {
+                  node.p(lastPoint.x, lastPoint.y);
+                } else {
+                  const vr = this.gv.getViewRect();
+                  vr && node.p(vr.x + vr.width / 2, vr.y + vr.height / 2);
+                }
+                node.setDisplayName(fileNameToDisplayName(fileNode.url));
+                this.sceneView.addData(node);
               }
             } else {
               if (fileNode.fileType === FILE_TYPE_SCENE) {
                 if (this.displayView && config.handleInsertSceneFileToDisplayView) {
                   config.handleInsertSceneFileToDisplayView(this.displayView, fileNode, lastPoint);
                 }
-              } else if (this.displayView) {
-                config?.handleInsertModelFileToDisplayView(this.displayView, fileNode, lastPoint);
+                return;
+              }
+              if (this.displayView) {
+                if (config.handleInsertModelFileToDisplayView) {
+                  config.handleInsertModelFileToDisplayView(this.displayView, fileNode, lastPoint);
+                }
               } else if (this.sceneView) {
                 const node = new ht.Node;
                 node.setAnchor3d(.5, 0, .5);
                 node.s({ shape3d: fileNode.getFileUUID() });
-                setPosition(node, lastPoint);
+                if (lastPoint) {
+                  node.p(lastPoint.x, lastPoint.y);
+                } else {
+                  const vr = this.gv.getViewRect();
+                  vr && node.p(vr.x + vr.width / 2, vr.y + vr.height / 2);
+                }
                 node.setDisplayName(fileNameToDisplayName(fileNode.url));
                 this.sceneView.addData(node);
               }
             }
           } else if (this.symbolView) {
-            const comp = new CompType({
+            var comp = new CompType({
               type: fileNode.getFileUUID(),
-              rect: [
-                lastPoint ? lastPoint.x : (this.dm.a("width") || 0) / 2,
-                lastPoint ? lastPoint.y : (this.dm.a("height") || 0) / 2, -1, -1
-              ]
+              rect: [lastPoint ? lastPoint.x : (this.dm.a("width") || 0) / 2,
+              lastPoint ? lastPoint.y : (this.dm.a("height") || 0) / 2, -1, -1]
             }, undefined, undefined, true);
             comp.setDisplayName(fileNameToDisplayName(fileNode.url));
             this.symbolView.addData(comp);
           }
-        } else if (this.displayView) {
-          if (config.insertDisplayViewAsRefGraph) {
-            const refGraph = new ht.RefGraph;
-            refGraph.setRef(fileNode.getFileUUID());
-            refGraph.onPendingUpdated = () => {
-              this.onPendingUpdated = null;
-              this.p(lastPoint);
-            };
-            refGraph.setDisplayName(fileNameToDisplayName(fileNode.url));
-            this.displayView.addData(refGraph);
-          }
-        } else {
-          xhrLoad(fileNode.url, json => {
-            this.initView(json, lastPoint);
-          });
         }
+      } else if (this.displayView) {
+        if (config.insertDisplayViewAsRefGraph) {
+          const rg = new ht.RefGraph;
+          rg.setRef(fileNode.getFileUUID());
+          rg.onPendingUpdated = function () {
+            rg.onPendingUpdated = null;
+            rg.p(lastPoint);
+          };
+          rg.setDisplayName(fileNameToDisplayName(fileNode.url));
+          this.displayView.addData(rg);
+        }
+      } else {
+        xhrLoad(fileNode.url, json => {
+          this.initView(json, lastPoint)
+        })
       }
     }
   }

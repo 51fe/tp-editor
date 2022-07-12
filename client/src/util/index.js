@@ -1,4 +1,5 @@
 import { BINDING, EMPTY_COMPS, PREFIX } from "../constants.js";
+import config from "../config.js";
 
 export function toFunction(value) {
   if (value) {
@@ -21,7 +22,7 @@ export function toNumber(value) {
 }
 
 export function getString(key, value) {
-  if (null != key) return value || !tpeditor.config.traceMissingI18n || tpeditor.customStrings[key] || tpeditor.strings[key] || console.log("i18n missing:[" + key + "]"), value ? tpeditor.customStrings[key] || tpeditor.strings[key] : tpeditor.customStrings[key] || tpeditor.strings[key] || key
+  if (null != key) return value || !config.traceMissingI18n || tpeditor.customStrings[key] || tpeditor.strings[key] || console.log("i18n missing:[" + key + "]"), value ? tpeditor.customStrings[key] || tpeditor.strings[key] : tpeditor.customStrings[key] || tpeditor.strings[key] || key
 }
 
 export function useI18Param(str = "", ...rest) {
@@ -191,7 +192,7 @@ export function getPosition(x, y, z) {
   return ht.Default.getPosition(x, y, z)
 }
 
-export function stringify(obj, replacer, space = tpeditor.config.encodeJSON) {
+export function stringify(obj, replacer, space = config.encodeJSON) {
   return ht.Default.stringify(obj, replacer, space)
 }
 
@@ -534,7 +535,7 @@ export function createItem(id, toolTip, name, callback) {
       type: "rect",
       background: {
         func: function (e, toolbar) {
-          return toolbar.getCurrentItem() === item ? tpeditor.config.color_hover : null;
+          return toolbar.getCurrentItem() === item ? config.color_hover : null;
         }
       }, rect: [0, 0, w + 8, h + 8]
     }, {
@@ -542,7 +543,7 @@ export function createItem(id, toolTip, name, callback) {
       name,
       color: {
         func: function () {
-          return callback && callback() ? tpeditor.config.color_select : tpeditor.config.color_dark;
+          return callback && callback() ? config.color_select : config.color_dark;
         }
       },
       rect: [4, 4, w, h]
@@ -570,7 +571,7 @@ export function createButton(label, toolTip, icon, onClicked) {
   const btn = new ht.widget.Button;
   btn.setLabel(label);
   btn.setLabelColor(ht.Default.labelColor);
-  btn.setLabelSelectColor(tpeditor.config.color_select);
+  btn.setLabelSelectColor(config.color_select);
   btn.setIcon(icon);
   btn.setBackground(null);
   btn.setBorderColor(null);
@@ -582,10 +583,10 @@ export function createButton(label, toolTip, icon, onClicked) {
     btn.enableToolTip();
   }
   btn.getCurrentBackground = function () {
-    return this._hover || this.isPressed() ? tpeditor.config.color_hover : null;
+    return this._hover || this.isPressed() ? config.color_hover : null;
   };
   btn.getCurrentBorderColor = function () {
-    return this.isSelected() ? tpeditor.config.color_select : null;
+    return this.isSelected() ? config.color_select : null;
   };
   btn.getView().addEventListener("mouseenter", function () {
     if (!btn.isDisabled()) {
@@ -615,9 +616,9 @@ export function createIconButton(name, onSelect) {
       color: {
         func: function () {
           if (onSelect && onSelect()) {
-            return tpeditor.config.color_select;
+            return config.color_select;
           }
-          return tpeditor.config.color_dark;
+          return config.color_dark;
         }
       }
     }]
@@ -679,15 +680,15 @@ export function snapshot(view) {
     const rect = view.getContentRect(),
       max = Math.max(rect.width, rect.height),
       min = Math.min(rect.width, rect.height),
-      zoom = Math.max(1 / min, tpeditor.config.imageSize / max);
+      zoom = Math.max(1 / min, config.imageSize / max);
     return view.toDataURL(undefined, undefined, zoom)
   }
   if (view instanceof ht.graph3d.Graph3dView) {
     let w = view.getWidth(),
       h = view.getHeight(),
       max = Math.max(w, h),
-      min = Math.min(1, tpeditor.config.imageSize / max);
-    max < 3 && (min = tpeditor.config.imageSize / max);
+      min = Math.min(1, config.imageSize / max);
+    max < 3 && (min = config.imageSize / max);
     w = Math.floor(w * min);
     h = Math.floor(h * min);
     return view.toCanvas(view.dm().getBackground(), w, h).toDataURL("image/png", 1)
@@ -696,8 +697,8 @@ export function snapshot(view) {
     const width = view.getWidth(),
       height = view.getHeight(),
       max = Math.max(width, height);
-    let min = Math.min(1, tpeditor.config.imageSize / max);
-    max < 3 && (min = tpeditor.config.imageSize / max);
+    let min = Math.min(1, config.imageSize / max);
+    max < 3 && (min = config.imageSize / max);
     const w = Math.floor(width * min),
       h = Math.floor(height * min);
     const root = view.getRootCanvas(),
@@ -738,7 +739,7 @@ export function snapshot(view) {
   }
   const img = ht.Default.getImage(view),
     _max = Math.max(img.width, img.height),
-    _min = Math.min(1, tpeditor.config.imageSize / _max);
+    _min = Math.min(1, config.imageSize / _max);
   return ht.Default.toCanvas(view, img.width * _min, img.height * _min).toDataURL("image/png", 1)
 }
 
@@ -818,7 +819,7 @@ export function initInputDND(input, isDroppable, callback) {
   input.handleCrossDrag = (e, state, info) => {
     if (state === "enter") {
       border = el.style.border;
-      el.style.border = "solid " + tpeditor.config.color_select_dark + " 2px";
+      el.style.border = "solid " + config.color_select_dark + " 2px";
     } else if (["exit", "cancel"].includes(state)) {
       el.style.border = border;
     } else if (["over", "drop"].includes(state)) {
@@ -838,14 +839,14 @@ export function getTip(view) {
       const size = view.sm().size();
       tip += size > 1 ? " (+" + size + ") " : ""
     }
-
   }
   return tip;
 }
 
-export function positionImg(e, dragImage, size) {
+export function positionImg(e, dragImage) {
   if (dragImage) {
-    const point = ht.Default.getPagePoint(e);
+    const size = config.dragImageSize,
+      point = getPagePoint(e);
     dragImage.style.left = point.x - size / 2 + "px";
     dragImage.style.top = point.y - size / 2 + "px";
   }

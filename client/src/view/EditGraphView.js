@@ -225,17 +225,16 @@ export default class EditGraphView extends GraphView {
     if (state === "enter") {
       this._topDiv.style.border = "solid " + config.color_select_dark + " 2px";
       if (!this.dragImage && fileNode) {
-        let dragImage = fileNode.a("dragImage");
-        if (dragImage === undefined) {
-          dragImage = fileNode.getImage();
+        let dragImage = fileNode.getImage();
+        if (fileNode.a("dragImage") !== undefined) {
+          dragImage = fileNode.a("dragImage")
         }
-        if (ht.Default.getImage("dragImage") !== ht.Default.getImage("editor.unknown")) {
-          const size = config.dragImageSize;
-          this.dragImage = ht.Default.toCanvas("dragImage", size, size,
-            "centerUniform", fileNode, info.view, null, ht.Default.devicePixelRatio);
-          positionImg(e, this.dragImage, size);
-          this.dragImage.style.opacity = config.dragImageOpacity;
-          this.dragImage.className = "ht-editor-dnd-image";
+        if (ht.Default.getImage() !== ht.Default.getImage("editor.unknown")) {
+          const size = tpeditor.config.dragImageSize;
+          this.dragImage = ht.Default.toCanvas(dragImage, size, size, "centerUniform", fileNode, info.view, null, ht.Default.devicePixelRatio);
+          positionImg(e, this.dragImage);
+          this.dragImage.style.opacity = tpeditor.config.dragImageOpacity;
+          this.dragImage.className = "tp-editor-dnd-image";
           ht.Default.appendToScreen(this.dragImage);
         }
       }
@@ -243,28 +242,28 @@ export default class EditGraphView extends GraphView {
       this._topDiv.style.border = "";
       this.removeDragImage();
     } else if (state === "over") {
-      positionImg(e, this.dragImage, config.dragImageSize);
+      positionImg(e, this.dragImage);
     } else if (state === "drop") {
       this._topDiv.style.border = "";
       if (fileNode) {
         this.removeDragImage();
         const lp = this.lp(e);
         if (view.isSelected(fileNode)) {
-          view.sm().toSelection().each(item => {
+          view.sm().toSelection().each(fileNode => {
             if (view.handleDropToEditView) {
-              view.handleDropToEditView(this.editView, item, lp, e);
+              view.handleDropToEditView(this.editView, fileNode, lp, e);
             } else {
-              this.editor.addViewData(item, lp);
+              this.editor.addViewData(fileNode, lp);
             }
           })
         } else if (view.handleDropToEditView) {
-          view.handleDropToEditView(this.editView, fileNode, lp, e)
+          view.handleDropToEditView(this.editView, fileNode, lp, e);
         } else {
           this.editor.addViewData(fileNode, lp);
         }
-      } else if (view === this.editor.dndFromOutside) {
-        this.editor.dropLocalFileOnView(e);
       }
+    } else if (view === this.editor.dndFromOutside) {
+      this.editor.dropLocalFileOnView(e)
     }
   }
 

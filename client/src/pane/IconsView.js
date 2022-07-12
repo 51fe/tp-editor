@@ -30,7 +30,7 @@ export default class IconsView extends FormPane {
     ], [.1, 50, 50]);
     this.setWidth(WIDTH);
     this.setHeight(HEIGHT);
-    this.getView().className = "ht-editor-styleicons";
+    this.getView().className = "tp-editor-styleicons";
     this.getView().style.background = config.color_pane;
     this.getView().style.border = config.color_pane_dark + " solid 1px";
     this.getView().style.boxShadow = "0px 0px 3px " + ht.Default.toolTipShadowColor;

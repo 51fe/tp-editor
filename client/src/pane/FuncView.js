@@ -1,7 +1,7 @@
 import { BINDING } from "../constants.js";
 import config from "../config.js";
 import FuncType from "../type/FuncType.js";
-import { createButton, getFunc, getString, getWindowInfo, isFunction, isString, parseFunction, parseString, removeHTML } from "../util/index.js";
+import { createButton, getString, getWindowInfo, isFunction, isString, parseFunction, parseString, removeHTML } from "../util/index.js";
 import { createCodeEditor } from "../util/CodeEditor.js";
 import FormPane from "./FormPane.js";
 
@@ -78,7 +78,7 @@ export default class FuncView extends FormPane {
       }
     }], [.1, 50, 50]);
     this.setWidth(WIDTH), this.setHeight(HEIGHT);
-    this.getView().className = "ht-editor-databinding";
+    this.getView().className = "tp-editor-databinding";
     this.getView().style.background = config.color_pane;
     this.getView().style.border = config.color_pane_dark + " solid 1px";
     this.getView().style.boxShadow = "0px 0px 3px " + ht.Default.toolTipShadowColor;

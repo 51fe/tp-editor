@@ -168,28 +168,38 @@ class ExplorerView extends GraphView {
   }
 
   handleDragAndDrop(e, state) {
-    if ("prepare" === state) return void this._clearDragInfo();
-    if ("begin" === state) {
+    if (state === "prepare") {
+      this._clearDragInfo();
+      return;
+    }
+    if (state === "begin") {
       const data = this.draggingData;
-      data.fileType === FILE_TYPE_DISPLAY ? ht.ui && ht.ui.DragHelper.doDrag(this, {
-        "a:clazz": "ht.ui.UIGraphView",
-        "a:initProps": { disableInit: true, url: data.url }
-      }, {
-        width: 10,
-        height: 0,
-        comps: []
-      }, 0, 0) : data.fileType === FILE_TYPE_SCENE ? ht.ui && ht.ui.DragHelper.doDrag(this, {
-        "a:clazz": "ht.ui.UIGraph3dView",
-        "a:initProps": { disableInit: true, url: data.url }
-      }, {
-        width: 10,
-        height: 0,
-        comps: []
-      }, 0, 0) : data.fileType === FILE_TYPE_UI && ht.ui && ht.ui.DragHelper.doDrag(this, { "a:clazz": data.url }, {
-        width: 10,
-        height: 0,
-        comps: []
-      }, 0, 0), this._dragInfo = { tip: getTip(this), view: this }
+      if (data.fileType === FILE_TYPE_DISPLAY) {
+        ht.ui && ht.ui.DragHelper.doDrag(this, {
+          "a:clazz": "ht.ui.UIGraphView",
+          "a:initProps": { disableInit: true, url: data.url }
+        }, {
+          width: 10,
+          height: 0,
+          comps: []
+        }, 0, 0);
+      } else if (data.fileType === FILE_TYPE_SCENE) {
+        ht.ui && ht.ui.DragHelper.doDrag(this, {
+          "a:clazz": "ht.ui.UIGraph3dView",
+          "a:initProps": { disableInit: true, url: data.url }
+        }, {
+          width: 10,
+          height: 0,
+          comps: []
+        }, 0, 0);
+      } else if (data.fileType === FILE_TYPE_UI) {
+        ht.ui && ht.ui.DragHelper.doDrag(this, { "a:clazz": data.url }, {
+          width: 10,
+          height: 0,
+          comps: []
+        }, 0, 0);
+      }
+      this._dragInfo = { tip: getTip(this), view: this };
     }
     const info = this._dragInfo;
     if (info) {
@@ -214,13 +224,13 @@ class ExplorerView extends GraphView {
           dnd.crossDrop(e, info);
         }
         this._clearDragInfo();
-        return false;
+        return;
       } else if (state === "cancel") {
         if (!info.inView) {
           dnd.crossCancel(e, info)
         }
         this._clearDragInfo();
-        return false;
+        return;
       }
       return undefined;
     }

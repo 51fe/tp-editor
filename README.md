@@ -79,4 +79,4 @@ npm run build
 
 - [HT Guide](https://www.hightopo.com/guide/guide/core/treetableview/examples/example_structure.html)
 - [HT API](https://www.hightopo.com/guide/doc/index.html)
-- [TP Editor Guide](https://www.yuque.com/docs/share/0200221e-0f40-427a-9793-8a61c93e283b?# 《拓扑编辑器使用手册》)
+- [TP Editor Guide](https://www.yuque.com/docs/share/0200221e-0f40-427a-9793-8a61c93e283b?#拓扑编辑器使用手册》)
